@@ -1,2 +1,3 @@
-# mitwelten-iot-hardware-poc
-Mitwelten.org IoT Hardware Proof of Concept
+# Mitwelten.org IoT Hardware Proof of Concept
+
+Work in progress.
