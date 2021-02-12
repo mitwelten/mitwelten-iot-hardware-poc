@@ -1,4 +1,4 @@
-// https://tamberg.mit-license.org/
+// https://fhnw.mit-license.org/
 
 #include <Adafruit_SleepyDog.h>
 

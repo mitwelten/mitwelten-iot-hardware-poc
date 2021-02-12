@@ -1,4 +1,4 @@
-// https://tamberg.mit-license.org/
+// https://fhnw.mit-license.org/
 
 // Based on https://github.com/mcci-catena/arduino-lmic/tree/master/examples
 // Copyright (c) 2015 Thomas Telkamp and Matthijs Kooijman
