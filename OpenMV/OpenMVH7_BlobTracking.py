@@ -1,8 +1,7 @@
-# License not entirely clear, do not use in production
+# https://fhnw.mit-license.org/
 
 # Based on https://github.com/openmv/openmv/blob/master/scripts/examples/OpenMV/10-Color-Tracking/single_color_grayscale_blob_tracking.py
-# Assuming the code to be Public Domain, as the examples are part of the OpenMV IDE.
-# Asked for clarification in https://github.com/openmv/openmv/issues/1167
+# Licensed under MIT License, https://github.com/openmv/openmv/blob/master/LICENSE
 
 # Single Color Grayscale Blob Tracking Example
 
