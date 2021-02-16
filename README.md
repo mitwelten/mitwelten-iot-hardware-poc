@@ -26,6 +26,11 @@ Work in progress.
 ## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
+### Hardware
+- [Geneko GWR352-EM770W](https://www.geneko.rs/en/products/m2m-products-and-solutions/gwr-cellular-router-series/gwr352-3g-router)
+- [IMST iC880a based LoRaWAN Gateway](https://www.thingiverse.com/thing:1665467)
+- RJ45 Cable
+
 ### Setup
 - TODO
 
