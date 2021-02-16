@@ -43,6 +43,17 @@ Work in progress.
 ### Setup
 - TODO
 
+## AudioMoth Audio Logger
+<img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
+
+<img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
+
+### Enclosure
+- [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by @brandonh
+
+### Setup
+- TODO
+
 ## Bug Tracking Camera
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
 
