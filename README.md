@@ -9,7 +9,7 @@ Work in progress.
 
 <img src="https://live.staticflickr.com/65535/50946175397_5f748fea67.jpg"/>
 
-## LoRaWAN Gateway with 3G Backlink
+## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
 ## Bug Tracking Camera
