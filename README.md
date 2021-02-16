@@ -11,8 +11,8 @@ Work in progress.
 
 - [FeatherM4Express_TtnVBattDHT11.ino](https://github.com/mitwelten/mitwelten-iot-hardware-poc/blob/main/Arduino/FeatherM4Express_TtnVBattDHT11/FeatherM4Express_TtnVBattDHT11.ino)
 - or [FeatherM4Express_TtnVBattMoisture.ino](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/Arduino/FeatherM4Express_TtnVBattMoisture/FeatherM4Express_TtnVBattMoisture.ino)
-- [Feather-M4-Express](https://github.com/tamberg/fhnw-iot/wiki/Feather-M4-Express)
-- [FeatherWing-RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
+- [Feather M4 Express](https://github.com/tamberg/fhnw-iot/wiki/Feather-M4-Express)
+- [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
 - [Grove Adapter](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#grove-shield-for-feather)
 - [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
 - [AP9 Case](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes)
