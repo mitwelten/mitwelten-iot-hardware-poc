@@ -21,6 +21,7 @@ Work in progress.
 
 ### Enclosure
 - [IoT Brick Temperature](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes)
+- [AP9 Fixture](https://www.thingiverse.com/thing:4762526)
 
 ## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
