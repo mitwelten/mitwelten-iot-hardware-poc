@@ -18,7 +18,7 @@ Work in progress.
 - [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
 - [Grove Adapter](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#grove-shield-for-feather)
 - [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
-- [AP9 Case](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes)
+- [AP9 Case](https://www.thingiverse.com/thing:3638252) or [Remixes](https://www.thingiverse.com/thing:3638252/remixes)
 
 ## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
