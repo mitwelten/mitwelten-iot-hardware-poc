@@ -9,10 +9,21 @@ Work in progress.
 
 <img src="https://live.staticflickr.com/65535/50946175397_5f748fea67.jpg"/>
 
+- https://github.com/mitwelten/mitwelten-iot-hardware-poc/blob/main/Arduino/FeatherM4Express_TtnVBattDHT11/FeatherM4Express_TtnVBattDHT11.ino
+- or https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/Arduino/FeatherM4Express_TtnVBattMoisture/FeatherM4Express_TtnVBattMoisture.ino
+- https://github.com/tamberg/fhnw-iot/wiki/Feather-M4-Express
+- https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W
+- https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#grove-shield-for-feather
+- https://github.com/tamberg/fhnw-iot/wiki/Various#sensors
+- https://www.thingiverse.com/thing:3638252 and [remixes](https://www.thingiverse.com/thing:3638252/remixes)
+
 ## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
+
+- TODO
 
 ## Bug Tracking Camera
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
 
-[OpenMVH7_BlobTracking.py](https://github.com/mitwelten/mitwelten-iot-hardware-poc/blob/main/OpenMV/OpenMVH7_BlobTracking.py)
+- https://openmv.io/collections/products/products/openmv-cam-h7
+- https://github.com/mitwelten/mitwelten-iot-hardware-poc/blob/main/OpenMV/OpenMVH7_BlobTracking.py
