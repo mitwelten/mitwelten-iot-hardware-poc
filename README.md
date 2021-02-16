@@ -49,7 +49,7 @@ Work in progress.
 <img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
 
 ### Enclosure
-- [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by @brandonh
+- [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
 
 ### Setup
 - TODO
