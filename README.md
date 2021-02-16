@@ -39,7 +39,7 @@ Work in progress.
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
 
 ### Software
-- [OpenMV/OpenMVH7_BlobTracking.py](OpenMV/OpenMVH7_BlobTracking.py)
+- [OpenMVH7_BlobTracking.py](OpenMV/OpenMVH7_BlobTracking.py)
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
