@@ -13,4 +13,4 @@ Work in progress.
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
 ## Bug Tracking Camera
-...
+<img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
