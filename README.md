@@ -14,3 +14,5 @@ Work in progress.
 
 ## Bug Tracking Camera
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
+
+[OpenMVH7_BlobTracking.py](https://github.com/mitwelten/mitwelten-iot-hardware-poc/blob/main/OpenMV/OpenMVH7_BlobTracking.py)
