@@ -17,7 +17,7 @@ Work in progress.
 - [Feather M4 Express](https://github.com/tamberg/fhnw-iot/wiki/Feather-M4-Express)
 - [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
 - [Grove Adapter](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#grove-shield-for-feather)
-- [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
+- [DHT11](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html) or [Soil Moisture](https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant.html) or other [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
 
 ### Enclosure
 - [IoT Brick Temperature](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes)
