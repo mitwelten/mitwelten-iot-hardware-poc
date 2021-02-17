@@ -50,7 +50,9 @@ Work in progress.
 - [AP10 Adapter](https://www.thingiverse.com/thing:1665467) by [@tamberg](https://www.thingiverse.com/tamberg/designs), CC BY-SA
 
 ### Setup
-- TODO
+- [TTN Console](https://console.thethingsnetwork.org/)
+- SIM Provider Backend
+- http://192.168.1.1/
 
 ## AudioMoth Audio Logger
 <img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
