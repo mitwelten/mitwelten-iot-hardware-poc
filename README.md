@@ -59,7 +59,7 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 - SIM Provider Backend
 
 ## AudioMoth Audio Logger
-This audio logger can record and store a broad range of frequencies, trggered by time of day or loudness.
+This audio logger can record and store a broad range of frequencies, triggered by time of day or loudness.
 
 <img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
 
