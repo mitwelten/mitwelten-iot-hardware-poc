@@ -3,6 +3,8 @@
 Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
 
 ## LoRaWAN Sensor Nodes
+These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with slow frequency (15+ min) over long distances (1+ km).
+
 <img src="https://live.staticflickr.com/65535/50949785202_b05df960fc.jpg"/>
 
 <img src="https://live.staticflickr.com/65535/50938710327_e62cc90963.jpg"/>
@@ -32,6 +34,8 @@ Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amber
 - [ThingSpeak](https://thingspeak.com/)
 
 ## LoRaWAN Gateway with 3G Uplink
+This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
+
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
 ### Hardware
@@ -55,6 +59,8 @@ Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amber
 - SIM Provider Backend
 
 ## AudioMoth Audio Logger
+This audio logger can record and store a broad range of frequencies, trggered by time of day or loudness.
+
 <img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
 
 <img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
@@ -75,6 +81,8 @@ Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amber
 - [Sonic Visualiser](https://sonicvisualiser.org/download.html)
 
 ## Bug Tracking Camera
+This bug tracking camera allows to track small blobs (pepper corn or bigger) in a lab setting.
+
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
 
 ### Software
