@@ -51,8 +51,8 @@ Work in progress.
 
 ### Setup
 - [TTN Console](https://console.thethingsnetwork.org/)
-- SIM Provider Backend
 - http://192.168.1.1/
+- SIM Provider Backend
 
 ## AudioMoth Audio Logger
 <img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
