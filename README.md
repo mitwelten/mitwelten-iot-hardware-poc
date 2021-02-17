@@ -18,6 +18,7 @@ Work in progress.
 - [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
 - [Grove Adapter](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#grove-shield-for-feather)
 - [DHT11](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html) or [Soil Moisture](https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant.html) or other [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
+- 2000 mAh LiPo Battery (check polarity)
 
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
@@ -50,6 +51,11 @@ Work in progress.
 <img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
 
 <img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
+
+### Hardware
+- https://www.openacousticdevices.info/audiomoth
+- 3 * AA Batteries
+- Micro SD Card
 
 ### Enclosure
 - [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
