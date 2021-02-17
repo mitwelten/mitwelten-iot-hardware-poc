@@ -26,6 +26,11 @@ Work in progress.
 - [AP9 Fixture](https://www.thingiverse.com/thing:4762526) by [@tamberg](https://www.thingiverse.com/tamberg/designs), CC BY-SA
 - [PVC Tube](https://www.bauundhobby.ch/maschinen-werkstatt/elektro-material/verlegware/rohre/rohr-kir-m20-grau-2-m/p/4002432)
 
+### Setup
+- [Arduino IDE](https://www.arduino.cc/en/software)
+- [TTN Console](https://console.thethingsnetwork.org/)
+- [ThingSpeak](https://thingspeak.com/)
+
 ## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
@@ -64,7 +69,8 @@ Work in progress.
 - [Glue](https://www.supermagnete.ch/werkstatt-magnete/uhu-max-repair_WS-ADH-01)
 
 ### Setup
-- TODO
+- [AudioMoth Desktop App](https://www.openacousticdevices.info/applications)
+- [Sonic Visualiser](https://sonicvisualiser.org/download.html)
 
 ## Bug Tracking Camera
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
@@ -77,3 +83,6 @@ Work in progress.
 
 ### Enclosure
 - TODO
+
+### Setup
+- [OpenMV IDE](https://openmv.io/pages/download)
