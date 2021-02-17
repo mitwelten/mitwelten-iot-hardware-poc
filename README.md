@@ -3,7 +3,7 @@
 Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
 
 ## LoRaWAN Sensor Nodes
-These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with slow frequency (15+ min) over long distances (1+ km).
+These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
 
 <img src="https://live.staticflickr.com/65535/50949785202_b05df960fc.jpg"/>
 
