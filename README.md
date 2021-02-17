@@ -20,8 +20,8 @@ Work in progress.
 - [DHT11](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html) or [Soil Moisture](https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant.html) or other [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
 
 ### Enclosure
-- [IoT Brick Temperature](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes)
-- [AP9 Fixture](https://www.thingiverse.com/thing:4762526) for [PVC Tube](https://www.bauundhobby.ch/maschinen-werkstatt/elektro-material/verlegware/rohre/rohr-kir-m20-grau-2-m/p/4002432)
+- [IoT Brick Temperature](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes) by @tamberg, CC BY-SA
+- [AP9 Fixture](https://www.thingiverse.com/thing:4762526) for [PVC Tube](https://www.bauundhobby.ch/maschinen-werkstatt/elektro-material/verlegware/rohre/rohr-kir-m20-grau-2-m/p/4002432) by @tamberg, CC BY-SA
 
 ## LoRaWAN Gateway with 3G Uplink
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
@@ -38,7 +38,7 @@ Work in progress.
 - SIM Card
 
 ### Enclosure
-- [AP10-based Box](https://www.thingiverse.com/thing:1665467)
+- [AP10-based Box w/ Adapter](https://www.thingiverse.com/thing:1665467) by @tamberg, CC BY-SA
 
 ### Setup
 - TODO
