@@ -12,7 +12,7 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 <img src="https://live.staticflickr.com/65535/50946175397_5f748fea67.jpg"/>
 
 ### Software
-- [FeatherM4Express_TtnVBattDHT11.ino](Arduino/FeatherM4Express_TtnVBattDHT11/FeatherM4Express_TtnVBattDHT11.ino) or
+- [FeatherM4Express_TtnVBattDHT11.ino](Arduino/FeatherM4Express_TtnVBattDHT11/FeatherM4Express_TtnVBattDHT11.ino)
 - [FeatherM4Express_TtnVBattMoisture.ino](Arduino/FeatherM4Express_TtnVBattMoisture/FeatherM4Express_TtnVBattMoisture.ino)
 - FeatherM4Express_TtnVBattButton.ino (TODO)
 - FeatherM4Express_TtnVBattPIR.ino (TODO)
