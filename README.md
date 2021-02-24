@@ -98,3 +98,15 @@ This bug tracking camera allows to track small blobs (pepper corn or bigger) in 
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
+
+## Streaming Raspberry Pi Camera
+This Raspberry Pi camera provides a basic video stream.
+
+### Software
+TODO
+
+### Hardware
+TODO
+
+### Setup
+TODO
