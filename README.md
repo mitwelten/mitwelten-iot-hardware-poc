@@ -35,6 +35,13 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 - [TTN Console](https://console.thethingsnetwork.org/)
 - [ThingSpeak](https://thingspeak.com/)
 
+## LoRaWAN Sensor Nodes with Solar
+As above, with additional solar power.
+### Hardware
+- [6V, 1W solar panel](https://www.adafruit.com/product/3809)
+- [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
+- [Jack Adapter](https://www.adafruit.com/product/4287)
+
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
 
