@@ -36,7 +36,7 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 - [ThingSpeak](https://thingspeak.com/)
 
 ## LoRaWAN Sensor Nodes with Solar Power
-As above, with additional solar power.
+Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar power.
 ### Hardware
 - [6V, 1W Solar Panel](https://www.adafruit.com/product/3809)
 - [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
