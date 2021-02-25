@@ -2,11 +2,11 @@
 
 Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
 
-- [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
-- [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
-- [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [AudioMoth Audio Logger](#audiomoth-audio-logger)
 - [Bug Tracking Camera](#bug-tracking-camera)
+- [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
+- [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
+- [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
 - [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera)
 - [Streaming Raspberry Pi Endoscope](#streaming-raspberry-pi-endoscope)
 
