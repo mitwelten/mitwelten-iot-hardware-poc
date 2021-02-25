@@ -81,7 +81,7 @@ This audio logger can record and store a broad range of frequencies, triggered b
 <img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
 
 ### Hardware
-- https://www.openacousticdevices.info/audiomoth
+- https://www.openacousticdevices.info/audiomoth ([Buy](https://store.groupgets.com/collections/audiomoth))
 - 3 * AA Batteries
 - Micro SD Card
 
