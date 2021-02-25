@@ -123,3 +123,8 @@ TODO
 
 ### Setup
 TODO
+
+## Streaming Raspberry Pi Endoscope
+Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera) with USB endoscope.
+
+- TODO
