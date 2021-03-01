@@ -54,7 +54,8 @@ Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar pow
 - [6V, 1W Solar Panel](https://www.adafruit.com/product/3809)
 - [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
 - [3.5/1.1mm to 5.5/2.1mm Jack Adapter](https://www.adafruit.com/product/4287)
-- [4700uF 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589)
+- [4700uF 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589) (optional)
+- [10K Precision Epoxy Thermistor](https://www.adafruit.com/product/372)(optional)
 
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
