@@ -108,7 +108,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.
 
-<img src=""/>
+<img src="https://live.staticflickr.com/65535/51013775987_e3de2c364e.jpg"/>
 
 ### Software
 - [OpenMVH7_PhotoLogging.py](OpenMV/OpenMVH7_PhotoLogging.py)
@@ -117,7 +117,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
 
 ### Enclosure
-- TODO
+- [IoT Brick OpenMV Cam H7](https://www.thingiverse.com/thing:4787263)
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
