@@ -3,10 +3,11 @@
 Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
 
 - [AudioMoth Audio Logger](#audiomoth-audio-logger)
-- [Bug Tracking Camera](#bug-tracking-camera)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
+- [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
+- [OpenMV Photo Logger Camera](#openmv-photo-logger-camera)
 - [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera)
 - [Streaming Raspberry Pi Endoscope](#streaming-raspberry-pi-endoscope)
 
@@ -104,7 +105,24 @@ This audio logger can record and store a broad range of frequencies, triggered b
 - [AudioMoth Desktop App](https://www.openacousticdevices.info/applications)
 - [Sonic Visualiser](https://sonicvisualiser.org/download.html)
 
-## Bug Tracking Camera
+## OpenMV Photo Logging Camera
+This photo logging camera allows to continuously take snapshots in an outdoor setting.
+
+<img src=""/>
+
+### Software
+- [OpenMVH7_PhotoLogging.py](OpenMV/OpenMVH7_PhotoLogging.py)
+
+### Hardware
+- [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
+
+### Enclosure
+- TODO
+
+### Setup
+- [OpenMV IDE](https://openmv.io/pages/download)
+
+## OpenMV Bug Tracking Camera
 This bug tracking camera allows to track small blobs (pepper corn or bigger) in a lab setting.
 
 <img src="https://live.staticflickr.com/65535/50950426063_26e88a4d96.jpg"/>
