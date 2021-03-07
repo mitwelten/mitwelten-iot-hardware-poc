@@ -2,14 +2,14 @@
 
 Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
 
-- [AudioMoth Audio Logger](#audiomoth-audio-logger)
+- [AudioMoth Audio Logging Mic](#audiomoth-audio-logging-mic)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
-- [OpenMV Photo Logger Camera](#openmv-photo-logger-camera)
-- [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera)
-- [Streaming Raspberry Pi Endoscope](#streaming-raspberry-pi-endoscope)
+- [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
+- [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
+- [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 
 ## LoRaWAN Sensor Nodes
 These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
@@ -139,7 +139,7 @@ This bug tracking camera allows to track small blobs (pepper corn or bigger) in 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
 
-## Streaming Raspberry Pi Camera
+## Raspberry Pi Streaming Camera
 This Raspberry Pi camera provides a basic video stream.
 
 ### Software
@@ -151,7 +151,7 @@ This Raspberry Pi camera provides a basic video stream.
 ### Setup
 - TODO
 
-## Streaming Raspberry Pi Endoscope
+## Raspberry Pi Streaming Endoscope
 Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera) with USB endoscope.
 
 <img src="https://live.staticflickr.com/65535/50979064987_da8b5c72d7.jpg"/>
