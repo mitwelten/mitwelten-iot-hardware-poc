@@ -2,7 +2,7 @@
 
 Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
 
-- [AudioMoth Audio Logging Mic](#audiomoth-audio-logging-mic)
+- [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
@@ -83,8 +83,8 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 - http://192.168.1.1/
 - SIM Provider Backend
 
-## AudioMoth Audio Logging Mic
-This audio logging mic can record and store a broad range of frequencies, triggered by time of day or loudness.
+## AudioMoth Audio Logging Microphone
+This audio logging microphone can record and store a broad range of frequencies, triggered by time of day or loudness.
 
 <img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
 
