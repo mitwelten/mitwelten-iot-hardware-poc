@@ -3,7 +3,7 @@
 # Based on https://github.com/openmv/openmv/tree/master/scripts/examples/OpenMV/05-Snapshot
 # Licensed under MIT License, https://github.com/openmv/openmv/blob/master/LICENSE
 
-# Snapshot Example
+# Photo Logging Example
 
 import utime, sensor, image, pyb
 
