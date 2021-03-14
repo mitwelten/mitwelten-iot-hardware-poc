@@ -143,7 +143,7 @@ This bug tracking camera allows to track small blobs (pepper corn or bigger) in 
 - [OpenMV IDE](https://openmv.io/pages/download)
 
 ## OpenMV Video Streaming Camera
-This video streaming camera allows to stream video via Wi-Fi in an outdoor setting.
+This video streaming camera provides a basic video stream.
 
 <img src="https://live.staticflickr.com/65535/51037428861_6bf4e2826f.jpg"/>
 
