@@ -13,6 +13,10 @@ PWRD = 'MY_PASSWORD'
 HOST = '' # any
 PORT = 8080
 
+def wlan_isconnected():
+    ip = wlan.ifconfig()[0];
+    return ip != '0.0.0.0';
+
 def start_streaming(s):
     print ('Accepting clients...')
     client, addr = s.accept()
@@ -42,17 +46,13 @@ def start_streaming(s):
         client.send(cframe)
         print(clock.fps())
 
-def is_connected():
-    ip = wlan.ifconfig()[0];
-    return ip != '0.0.0.0';
-
 sensor.reset()
 sensor.set_framesize(sensor.SVGA) # HD => MemoryError
 sensor.set_pixformat(sensor.RGB565) # or GRAYSCALE
 
 print("Connecting to network " + SSID + '...')
 wlan = network.WINC()
-while not is_connected():
+while not wlan_isconnected():
     wlan.connect(SSID, key=PWRD, security=wlan.WPA_PSK)
     time.sleep(1) # sec
 
