@@ -139,6 +139,24 @@ This bug tracking camera allows to track small blobs (pepper corn or bigger) in 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
 
+## OpenMV Video Streaming Camera
+This video streaming camera allows to stream video via Wi-Fi in an outdoor setting.
+
+<img src="TODO"/>
+
+### Software
+- [OpenMVH7_MjpegStreaming.py](OpenMV/OpenMVH7_MjpegStreaming.py)
+
+### Hardware
+- [OpenMV Cam H7 Plus](https://openmv.io/collections/cams/products/openmv-cam-h7-plus)
+- [WiFi Shield](https://openmv.io/collections/shields/products/wifi-shield-1)
+
+### Enclosure
+- [IoT Brick OpenMV Cam H7 Plus](https://www.thingiverse.com/thing:TODO)
+
+### Setup
+- [OpenMV IDE](https://openmv.io/pages/download)
+
 ## Raspberry Pi Streaming Camera
 This Raspberry Pi camera provides a basic video stream.
 
