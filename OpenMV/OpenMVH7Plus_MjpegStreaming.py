@@ -8,9 +8,9 @@
 
 import sensor, image, time, network, usocket, sys
 
-SSID='MY_SSID'
-KEY='MY_PASSWORD'
-HOST ='' # Use first available interface
+SSID = 'MY_SSID'
+PWRD = 'MY_PASSWORD'
+HOST = '' # any
 PORT = 8080
 
 sensor.reset()
@@ -19,7 +19,7 @@ sensor.set_pixformat(sensor.RGB565) # or GRAYSCALE
 
 print("Connecting to network " + SSID)
 wlan = network.WINC()
-wlan.connect(SSID, key=KEY, security=wlan.WPA_PSK)
+wlan.connect(SSID, key=PWRD, security=wlan.WPA_PSK)
 
 while not WLAN.isconnected():
     time.sleep(1) # sec
