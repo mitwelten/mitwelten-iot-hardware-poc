@@ -116,7 +116,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
-- [LiIon Battery Pack, 3.7V, 6600 mAh](https://www.adafruit.com/product/353)
+- [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
 - Micro SD Card (ExFAT)
 
 ### Enclosure
