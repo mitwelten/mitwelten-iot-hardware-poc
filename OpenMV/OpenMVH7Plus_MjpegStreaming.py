@@ -4,70 +4,53 @@
 # Licensed under MIT License, https://github.com/openmv/openmv/blob/master/LICENSE
 
 # MJPEG Streaming Example
+# NOTE: Disable IDE preview
 
 import sensor, image, time, network, usocket, sys
 
-SSID='MY_SSID' # Network SSID
-KEY='MY_PASSWORD' # Network key
+SSID='MY_SSID'
+KEY='MY_PASSWORD'
 HOST ='' # Use first available interface
-PORT = 8080  # Arbitrary non-privileged port
+PORT = 8080
 
-# Reset sensor
 sensor.reset()
+sensor.set_framesize(sensor.SVGA) # HD => MemoryError
+sensor.set_pixformat(sensor.RGB565) # or GRAYSCALE
 
-# Set sensor settings
-#sensor.set_contrast(1)
-#sensor.set_brightness(1)
-#sensor.set_saturation(1)
-#sensor.set_gainceiling(16)
-#sensor.set_framesize(sensor.QQVGA)
-#sensor.set_framesize(sensor.HD) # MemoryError
-sensor.set_framesize(sensor.SVGA)
-#sensor.set_pixformat(sensor.GRAYSCALE)
-sensor.set_pixformat(sensor.RGB565)
-
-# Init wlan module and connect to network
-print("Trying to connect... (may take a while)...")
+print("Connecting to network " + SSID)
 wlan = network.WINC()
 wlan.connect(SSID, key=KEY, security=wlan.WPA_PSK)
 
-# We should have a valid IP now via DHCP
-print(wlan.ifconfig()) # TODO: check IP, if 0.0.0.0, reset()
+while not WLAN.isconnected():
+    time.sleep(1) # sec
 
-# Create server socket
+print(wlan.ifconfig())
+
 s = usocket.socket(usocket.AF_INET, usocket.SOCK_STREAM)
-
-# Bind and listen
 s.bind([HOST, PORT])
 s.listen(5)
-
-# Set server socket to blocking
 s.setblocking(True)
 
 def start_streaming(s):
-    print ('Waiting for connections..')
+    print ('Accepting clients...')
     client, addr = s.accept()
-    # set client socket timeout to 2s
-    client.settimeout(2.0)
+    client.settimeout(2.0) # sec
     print ('Connected to ' + addr[0] + ':' + str(addr[1]))
 
-    # Read request from client
+    # Receive request
     data = client.recv(1024) # TODO: read to end of headers, \r\n\r\n
 
-    # Send multipart header
+    # Send multipart response header
     client.send("HTTP/1.1 200 OK\r\n" \
                 "Server: OpenMV\r\n" \
                 "Content-Type: multipart/x-mixed-replace;boundary=openmv\r\n" \
                 "Cache-Control: no-cache\r\n" \
                 "Pragma: no-cache\r\n\r\n")
 
-    # FPS clock
-    clock = time.clock()
-
     # Start streaming images
-    # NOTE: Disable IDE preview to increase streaming FPS.
+    clock = time.clock()
     while (True):
-        clock.tick() # Track elapsed milliseconds between snapshots().
+        clock.tick()
         frame = sensor.snapshot()
         cframe = frame.compressed(quality=50)
         header = "\r\n--openmv\r\n" \
@@ -79,7 +62,7 @@ def start_streaming(s):
 
 while (True):
     try:
-        start_streaming(s)
+        start_streaming(s) # TODO: move connecting here as well
     except OSError as e:
         print("socket error: ", e)
         #sys.print_exception(e)
