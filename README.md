@@ -148,14 +148,14 @@ This video streaming camera allows to stream video via Wi-Fi in an outdoor setti
 <img src="TODO"/>
 
 ### Software
-- [OpenMVH7_MjpegStreaming.py](OpenMV/OpenMVH7_MjpegStreaming.py)
+- [OpenMVH7Plus_MjpegStreaming.py](OpenMV/OpenMVH7Plus_MjpegStreaming.py)
 
 ### Hardware
 - [OpenMV Cam H7 Plus](https://openmv.io/collections/cams/products/openmv-cam-h7-plus)
 - [WiFi Shield](https://openmv.io/collections/shields/products/wifi-shield-1)
 
 ### Enclosure
-- [IoT Brick OpenMV Cam H7 Plus](https://www.thingiverse.com/thing:TODO)
+- TODO
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
