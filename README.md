@@ -8,6 +8,7 @@ Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amber
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
+- [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 
