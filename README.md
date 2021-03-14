@@ -94,7 +94,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 ### Hardware
 - https://www.openacousticdevices.info/audiomoth ([Buy](https://store.groupgets.com/collections/audiomoth))
 - 3 * AA Batteries
-- Micro SD Card
+- Micro SD Card (ExFAT)
 
 ### Enclosure
 - [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
@@ -116,6 +116,8 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
+- [LiIon Battery Pack, 3.7V, 6600 mAh](https://www.adafruit.com/product/353)
+- Micro SD Card (ExFAT)
 
 ### Enclosure
 - [IoT Brick OpenMV Cam H7](https://www.thingiverse.com/thing:4787263)
