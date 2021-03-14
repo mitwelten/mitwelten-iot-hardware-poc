@@ -13,24 +13,6 @@ PWRD = 'MY_PASSWORD'
 HOST = '' # any
 PORT = 8080
 
-sensor.reset()
-sensor.set_framesize(sensor.SVGA) # HD => MemoryError
-sensor.set_pixformat(sensor.RGB565) # or GRAYSCALE
-
-print("Connecting to network " + SSID)
-wlan = network.WINC()
-wlan.connect(SSID, key=PWRD, security=wlan.WPA_PSK)
-
-while not WLAN.isconnected():
-    time.sleep(1) # sec
-
-print(wlan.ifconfig())
-
-s = usocket.socket(usocket.AF_INET, usocket.SOCK_STREAM)
-s.bind([HOST, PORT])
-s.listen(5)
-s.setblocking(True)
-
 def start_streaming(s):
     print ('Accepting clients...')
     client, addr = s.accept()
@@ -59,6 +41,27 @@ def start_streaming(s):
         client.send(header)
         client.send(cframe)
         print(clock.fps())
+
+def is_connected():
+    ip = wlan.ifconfig()[0];
+    return ip != '0.0.0.0';
+
+sensor.reset()
+sensor.set_framesize(sensor.SVGA) # HD => MemoryError
+sensor.set_pixformat(sensor.RGB565) # or GRAYSCALE
+
+print("Connecting to network " + SSID + '...')
+wlan = network.WINC()
+while not is_connected():
+    wlan.connect(SSID, key=PWRD, security=wlan.WPA_PSK)
+    time.sleep(1) # sec
+
+print("Connected, ", wlan.ifconfig())
+
+s = usocket.socket(usocket.AF_INET, usocket.SOCK_STREAM)
+s.bind([HOST, PORT])
+s.listen(5)
+s.setblocking(True)
 
 while (True):
     try:
