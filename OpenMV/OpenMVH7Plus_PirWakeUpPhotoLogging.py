@@ -6,7 +6,7 @@
 # Photo Logging Example
 
 import utime, sensor, image, pyb, machine
-from pyb import Pin, ExtInt, LED
+from pyb import Pin, ExtInt, LED, RTC
 
 PIR_PIN = Pin.board.P4
 RED_LED_ID = 1
@@ -19,8 +19,8 @@ pir = Pin(PIR_PIN, Pin.IN)
 ext = ExtInt(pir, ExtInt.IRQ_RISING, Pin.PULL_NONE, callback)
 
 led.on()
-rtc = pyb.RTC()
-rtc.datetime((2021, 3, 21, 7, 16, 53, 0, 0)) # When connecting LiPo
+rtc = RTC()
+rtc.datetime((2021, 3, 21, 7, 17, 00, 0, 0)) # When connecting LiPo
 sensor.reset()
 sensor.set_pixformat(sensor.RGB565)
 sensor.set_framesize(sensor.WQXGA2)
