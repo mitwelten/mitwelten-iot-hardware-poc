@@ -8,6 +8,7 @@ Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amber
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
+- [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 
@@ -93,7 +94,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 ### Hardware
 - https://www.openacousticdevices.info/audiomoth ([Buy](https://store.groupgets.com/collections/audiomoth))
 - 3 * AA Batteries
-- Micro SD Card
+- Micro SD Card (ExFAT)
 
 ### Enclosure
 - [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
@@ -115,6 +116,8 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
+- [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
+- Micro SD Card (ExFAT)
 
 ### Enclosure
 - [IoT Brick OpenMV Cam H7](https://www.thingiverse.com/thing:4787263)
@@ -132,6 +135,24 @@ This bug tracking camera allows to track small blobs (pepper corn or bigger) in 
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
+
+### Enclosure
+- TODO
+
+### Setup
+- [OpenMV IDE](https://openmv.io/pages/download)
+
+## OpenMV Video Streaming Camera
+This video streaming camera provides a basic video stream.
+
+<img src="https://live.staticflickr.com/65535/51037428861_6bf4e2826f.jpg"/>
+
+### Software
+- [OpenMVH7Plus_MjpegStreaming.py](OpenMV/OpenMVH7Plus_MjpegStreaming.py)
+
+### Hardware
+- [OpenMV Cam H7 Plus](https://openmv.io/collections/cams/products/openmv-cam-h7-plus)
+- [WiFi Shield](https://openmv.io/collections/shields/products/wifi-shield-1)
 
 ### Enclosure
 - TODO
