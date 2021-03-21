@@ -1,5 +1,7 @@
 # https://fhnw.mit-license.org/
 
+# PIR sensor on GND, 3.3V, P4
+
 import pyb, utime
 from pyb import LED
 from pyb import Pin
@@ -7,7 +9,7 @@ from pyb import Pin
 PIR_PIN = Pin.board.P4
 RED_LED_ID = 1
 
-button = Pin(PIR_PIN, Pin.IN)
+pir = Pin(PIR_PIN, Pin.IN)
 led = LED(RED_LED_ID);
 
 while (True):
