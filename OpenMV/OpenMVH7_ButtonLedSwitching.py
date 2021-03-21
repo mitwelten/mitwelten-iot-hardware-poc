@@ -1,5 +1,7 @@
 # https://fhnw.mit-license.org/
 
+# Button on GND, P4
+
 import pyb, utime
 from pyb import LED
 from pyb import Pin
