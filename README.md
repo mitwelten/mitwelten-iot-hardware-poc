@@ -114,7 +114,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 
 ### Software
 - [OpenMVH7_PhotoLogging.py](OpenMV/OpenMVH7_PhotoLogging.py)
-- [OpenMVH7Plus_PhotoLogging.py](OpenMV/OpenMVH7Plus_PhotoLogging.py)
+- [OpenMVH7Plus_PhotoLogging.py](OpenMV/OpenMVH7Plus_PhotoLogging.py) (Deep Sleep)
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
