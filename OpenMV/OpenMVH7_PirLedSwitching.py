@@ -3,8 +3,7 @@
 # PIR sensor on GND, 3.3V, P4
 
 import pyb, utime
-from pyb import LED
-from pyb import Pin
+from pyb import LED, Pin
 
 PIR_PIN = Pin.board.P4
 RED_LED_ID = 1
