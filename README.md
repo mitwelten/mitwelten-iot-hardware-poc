@@ -125,6 +125,26 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
 
+## OpenMV Photo Logging Camera with PIR
+This photo logging camera allows to take snapshots in an outdoor setting when something moves.
+
+<img src="https://live.staticflickr.com/65535/51059049837_77f5a53bda.jpg"/>
+
+### Software
+- [OpenMVH7Plus_PirWakeUpPhotoLogging.py](OpenMV/OpenMVH7Plus_PirWakeUpPhotoLogging.py)
+
+### Hardware
+- [OpenMV Cam H7 Plus](https://openmv.io/collections/products/products/openmv-cam-h7-plus)
+- [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
+- [PIR Sensor](https://www.adafruit.com/product/189)
+- Micro SD Card (ExFAT)
+
+### Enclosure
+- TODO
+
+### Setup
+- [OpenMV IDE](https://openmv.io/pages/download)
+
 ## OpenMV Bug Tracking Camera
 This bug tracking camera allows to track small blobs (pepper corn or bigger) in a lab setting.
 
