@@ -6,9 +6,9 @@
 
 import machine, sensor, image, pyb
 
-RED_LED_PIN = 1
+RED_LED_ID = 1
 
-led = pyb.LED(RED_LED_PIN)
+led = pyb.LED(RED_LED_ID)
 rtc = pyb.RTC()
 #if (machine.reset_cause() is not machine.DEEPSLEEP_RESET):
 rtc.datetime((2021, 3, 22, 1, 0, 11, 0, 0)) # When connecting LiPo
