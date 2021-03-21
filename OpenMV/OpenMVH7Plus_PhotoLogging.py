@@ -16,7 +16,7 @@ rtc.datetime((2021, 3, 11, 4, 22, 45, 0, 0))
 # https://docs.openmv.io/library/omv.sensor.html
 sensor.reset()
 sensor.set_pixformat(sensor.RGB565)
-sensor.set_framesize(sensor.WQXGA2)
+sensor.set_framesize(sensor.WQXGA2) # VGA for H7
 sensor.skip_frames(time = 2000) # Let settings take effect
 pyb.LED(RED_LED_PIN).off()
 while True:
