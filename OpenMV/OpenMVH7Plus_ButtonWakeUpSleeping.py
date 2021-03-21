@@ -11,7 +11,10 @@ from pyb import Pin, ExtInt, LED
 BUTTON_PIN = Pin.board.P4
 RED_LED_ID = 1
 
-def blink_n(n):
+def callback(line):
+    pass
+
+def led_blink(n):
     while (n > 0):
         led.on()
         time.sleep_ms(100)
@@ -19,15 +22,12 @@ def blink_n(n):
         time.sleep_ms(100)
         n = n - 1
 
-def callback(line):
-    pass
-
 led = LED(RED_LED_ID)
 btn = Pin(BUTTON_PIN, Pin.IN, Pin.PULL_UP)
 ext = ExtInt(btn, ExtInt.IRQ_FALLING, Pin.PULL_UP, callback)
 
 n = 0
 while (True):
-    blink_n(n)
+    led_blink(n)
     n = n + 1 # n will be preserved
     machine.sleep() # IDE will disconnect
