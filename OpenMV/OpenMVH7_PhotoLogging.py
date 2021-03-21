@@ -12,11 +12,10 @@ BLUE_LED_PIN = 3
 
 pyb.LED(RED_LED_PIN).on()
 rtc = pyb.RTC()
-# rtc.datetime((2021, 3, 7, 7, 21, 50, 0, 0))
-# https://docs.openmv.io/library/omv.sensor.html
+rtc.datetime((2021, 3, 7, 7, 21, 50, 0, 0)) # When connecting LiPo
 sensor.reset()
 sensor.set_pixformat(sensor.RGB565)
-sensor.set_framesize(sensor.VGA)
+sensor.set_framesize(sensor.VGA) # Up to WQXGA2 for H7 Plus
 sensor.skip_frames(time = 2000) # Let settings take effect
 pyb.LED(RED_LED_PIN).off()
 while True:
@@ -30,6 +29,6 @@ while True:
     n = '%02d' % t[5]
     s = '%02d' % t[6]
     name = 'snapshot_' + y + '-' + m + '-' + d + 'T' + h + '-' + n + '-' + s + 'Z.jpg'
-    sensor.snapshot().save(name)
+    sensor.snapshot().save(name) # 0.25 A
     pyb.LED(BLUE_LED_PIN).off()
-    utime.sleep(20) # s
+    utime.sleep(20) # s, 0.18 A
