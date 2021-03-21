@@ -3,8 +3,7 @@
 # Button on GND, P4
 
 import pyb, utime
-from pyb import LED
-from pyb import Pin
+from pyb import LED, Pin
 
 BUTTON_PIN = Pin.board.P4
 RED_LED_ID = 1
