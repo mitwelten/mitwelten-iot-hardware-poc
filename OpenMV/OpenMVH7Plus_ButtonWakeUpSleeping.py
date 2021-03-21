@@ -14,7 +14,7 @@ RED_LED_ID = 1
 def callback(line):
     pass
 
-def led_blink(n):
+def blink(n):
     while (n > 0):
         led.on()
         time.sleep_ms(100)
@@ -28,6 +28,6 @@ ext = ExtInt(btn, ExtInt.IRQ_FALLING, Pin.PULL_UP, callback)
 
 n = 0
 while (True):
-    led_blink(n)
+    blink(n)
     n = n + 1 # n will be preserved
     machine.sleep() # IDE will disconnect
