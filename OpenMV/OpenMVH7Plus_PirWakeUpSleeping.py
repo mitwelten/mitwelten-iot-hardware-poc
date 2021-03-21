@@ -3,12 +3,12 @@
 # Based on https://github.com/openmv/openmv/tree/master/scripts/examples/OpenMV/19-Low-Power
 # Licensed under MIT License, https://github.com/openmv/openmv/blob/master/LICENSE
 
-# Button on GND, P4 - triggers external interrupt to wake device up from stop mode.
+# PIR on GND, P4 - triggers external interrupt to wake device up from stop mode.
 
 import time, pyb, machine
 from pyb import Pin, ExtInt, LED
 
-BUTTON_PIN = Pin.board.P4
+PIR_PIN = Pin.board.P4
 RED_LED_ID = 1
 
 def callback(line):
@@ -23,8 +23,8 @@ def blink(n):
         n = n - 1
 
 led = LED(RED_LED_ID)
-btn = Pin(BUTTON_PIN, Pin.IN, Pin.PULL_UP)
-ext = ExtInt(btn, ExtInt.IRQ_FALLING, Pin.PULL_UP, callback)
+pir = Pin(PIR_PIN, Pin.IN)
+ext = ExtInt(pir, ExtInt.IRQ_RISING, Pin.PULL_NONE, callback)
 
 n = 0
 while (True):
