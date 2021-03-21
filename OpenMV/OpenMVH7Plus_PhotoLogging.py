@@ -10,8 +10,8 @@ RED_LED_PIN = 1
 
 led = pyb.LED(RED_LED_PIN)
 rtc = pyb.RTC()
-if (machine.reset_cause() is not machine.DEEPSLEEP_RESET):
-    rtc.datetime((2021, 3, 22, 1, 0, 11, 0, 0)) # When connecting LiPo
+#if (machine.reset_cause() is not machine.DEEPSLEEP_RESET):
+rtc.datetime((2021, 3, 22, 1, 0, 11, 0, 0)) # When connecting LiPo
 
 led.on()
 sensor.reset()
@@ -32,4 +32,4 @@ sensor.sleep(True)
 sensor.shutdown(True)
 rtc.wakeup(20000) # ms
 led.off()
-machine.deepsleep() # 0.00 A, device will be reset on wakeup
+machine.deepsleep() # ~0.00 A, device will be reset on wakeup
