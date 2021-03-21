@@ -135,8 +135,9 @@ This photo logging camera allows to take snapshots in an outdoor setting when so
 
 ### Hardware
 - [OpenMV Cam H7 Plus](https://openmv.io/collections/products/products/openmv-cam-h7-plus)
+- [Proto Shield](https://openmv.io/collections/shields/products/proto-shield)
+- [PIR Motion Sensor](https://www.adafruit.com/product/189)
 - [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
-- [PIR Sensor](https://www.adafruit.com/product/189)
 - Micro SD Card (ExFAT)
 
 ### Enclosure
