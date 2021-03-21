@@ -3,10 +3,10 @@
 # Based on https://github.com/openmv/openmv/tree/master/scripts/examples/OpenMV/19-Low-Power
 # Licensed under MIT License, https://github.com/openmv/openmv/blob/master/LICENSE
 
-# Button on GND, P4, wakes device up from deep sleep
+# Button on GND, P4 - triggers external interrupt to wake device up from stop mode.
 
 import time, pyb, machine
-from pyb import Pin, ExtInt
+from pyb import Pin, ExtInt, LED
 
 BUTTON_PIN = Pin.board.P4
 RED_LED_ID = 1
@@ -22,7 +22,7 @@ def blink_n(n):
 def callback(line):
     pass
 
-led = pyb.LED(RED_LED_ID)
+led = LED(RED_LED_ID)
 btn = Pin(BUTTON_PIN, Pin.IN, Pin.PULL_UP)
 ext = ExtInt(btn, ExtInt.IRQ_FALLING, Pin.PULL_UP, callback)
 
