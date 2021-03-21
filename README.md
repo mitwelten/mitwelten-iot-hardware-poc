@@ -8,6 +8,7 @@ Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amber
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
+- [OpenMV Photo Logging Camera with PIR](#openmv-photo-logging-camera-with-pir)
 - [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
@@ -121,6 +122,27 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 
 ### Enclosure
 - [IoT Brick OpenMV Cam H7](https://www.thingiverse.com/thing:4787263)
+
+### Setup
+- [OpenMV IDE](https://openmv.io/pages/download)
+
+## OpenMV Photo Logging Camera with PIR
+This photo logging camera allows to take snapshots in an outdoor setting when something moves.
+
+<img src="https://live.staticflickr.com/65535/51059049837_77f5a53bda.jpg"/>
+
+### Software
+- [OpenMVH7Plus_PirWakeUpPhotoLogging.py](OpenMV/OpenMVH7Plus_PirWakeUpPhotoLogging.py)
+
+### Hardware
+- [OpenMV Cam H7 Plus](https://openmv.io/collections/products/products/openmv-cam-h7-plus)
+- [Proto Shield](https://openmv.io/collections/shields/products/proto-shield)
+- [PIR Motion Sensor](https://www.adafruit.com/product/189)
+- [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
+- Micro SD Card (ExFAT)
+
+### Enclosure
+- TODO
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
