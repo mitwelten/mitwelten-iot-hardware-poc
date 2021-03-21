@@ -4,16 +4,16 @@ import pyb, utime
 from pyb import LED
 from pyb import Pin
 
-SWITCH_PIN = Pin.board.P4
+BUTTON_PIN = Pin.board.P4
 RED_LED_ID = 1
 
-switch = Pin(SWITCH_PIN, Pin.IN, Pin.PULL_UP)
+button = Pin(BUTTON_PIN, Pin.IN, Pin.PULL_UP)
 led = LED(RED_LED_ID);
 
 while (True):
-    active = not switch.value() # inverted
-    print(active);
-    if (active):
+    pressed = not button.value() # inverted
+    print(pressed);
+    if (pressed):
         led.on()
     else:
         led.off()
