@@ -3,7 +3,7 @@
 # Based on https://github.com/openmv/openmv/tree/master/scripts/examples/OpenMV/19-Low-Power
 # Licensed under MIT License, https://github.com/openmv/openmv/blob/master/LICENSE
 
-# PIR on GND, P4 - triggers external interrupt to wake device up from stop mode.
+# PIR on GND, 3.3V, P4 - triggers external interrupt to wake device up from stop mode.
 
 import time, pyb, machine
 from pyb import Pin, ExtInt, LED
