@@ -28,6 +28,6 @@ ext = ExtInt(btn, ExtInt.IRQ_FALLING, Pin.PULL_UP, callback)
 
 n = 0
 while (True):
-    blink(n)
+    blink(n) # print won't work
     n = n + 1 # n will be preserved
     machine.sleep() # IDE will disconnect
