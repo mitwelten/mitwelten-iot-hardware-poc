@@ -1,3 +1,5 @@
+# https://fhnw.mit-license.org/
+
 import pyb, utime
 from pyb import LED
 from pyb import Pin
