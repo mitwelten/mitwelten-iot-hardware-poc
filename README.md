@@ -1,6 +1,6 @@
 # Mitwelten.org IoT Hardware Proof of Concept
 
-Work in progress. Questions? Contact [thomas.amberg@fhnw.ch](mailto:thomas.amberg@fhnw.ch)
+Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelten.technik@fhnw.ch)
 
 - [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
