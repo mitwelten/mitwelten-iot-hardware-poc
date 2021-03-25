@@ -187,10 +187,12 @@ This video streaming camera provides a basic video stream.
 This Raspberry Pi camera provides a basic video stream.
 
 ### Software
-- TODO
+- [StreamEye](https://github.com/ccrisan/streameye)
+- [FFmpeg](https://www.ffmpeg.org/)
 
 ### Hardware
-- TODO
+- Raspberry Pi 3B+
+- Raspberry Camera or USB Camera
 
 ### Setup
 - TODO
