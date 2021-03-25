@@ -46,6 +46,9 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 - [TTN Console](https://console.thethingsnetwork.org/)
 - [ThingSpeak](https://thingspeak.com/)
 
+### Data
+- https://thingspeak.com/channels/1130641
+
 ## LoRaWAN Sensor Nodes with Solar Power
 Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar power.
 
