@@ -215,7 +215,8 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 - [Red Connector](https://www.conrad.ch/de/p/vogt-verbindungstechnik-3902-flachsteckhuelse-steckbreite-4-8-mm-steckdicke-0-8-mm-180-teilisoliert-rot-1-st-736933.html)
 
 ### Enclosure
-- [IP67 Box with Transparent Cover](https://www.mouser.ch/ProductDetail/Bud-Industries/PIP-11774-C/?qs=%2Fha2pyFaduhWtJcHf4Wic0ePltHJ10nv%252BRGIcnz2UHY8U4iCR362lHUokvZ%252BawDliJqYr5a2Kxo%3D)
+Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
+- [IP67 Box with Clear Lid](https://www.mouser.ch/ProductDetail/Bud-Industries/PIP-11774-C/?qs=%2Fha2pyFaduhWtJcHf4Wic0ePltHJ10nv%252BRGIcnz2UHY8U4iCR362lHUokvZ%252BawDliJqYr5a2Kxo%3D)
 - [Laser-cut Inlay](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
 
 ## Raspberry Pi Streaming Endoscope
