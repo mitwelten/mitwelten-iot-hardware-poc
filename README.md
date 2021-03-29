@@ -5,12 +5,13 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
-- [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
+- [LoRaWAN Sensor Nodes with Power](#lorawan-sensor-nodes-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
 - [OpenMV Photo Logging Camera with PIR](#openmv-photo-logging-camera-with-pir)
 - [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
+- [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 
 ## LoRaWAN Sensor Nodes
@@ -199,6 +200,12 @@ This Raspberry Pi camera provides a basic video stream.
 
 ### Setup
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
+
+## Raspberry Pi Streaming Camera with Solar Power
+Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
+
+### Hardware
+
 
 ## Raspberry Pi Streaming Endoscope
 Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera) with USB endoscope.
