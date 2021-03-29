@@ -205,10 +205,11 @@ This Raspberry Pi camera provides a basic video stream.
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
 
 ### Hardware
-
+- [12V 9Ah Sealed Lead Battery](https://www.conrad.ch/de/p/conrad-energy-12-v-9-ah-250915-bleiakku-12-v-9-ah-blei-vlies-agm-b-x-h-x-t-151-x-94-x-65-mm-flachstecker-6-35-mm-war-250915.html)
+- [12V Battery Charger](https://www.conrad.ch/de/p/h-tronic-bleiakku-ladegeraet-al600plus-2-v-6-v-12-v-ladestrom-max-0-6-a-512315.html) (Optional)
 
 ## Raspberry Pi Streaming Endoscope
-Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera) with USB endoscope.
+Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but with a USB endoscope.
 
 <img src="https://live.staticflickr.com/65535/50979064987_da8b5c72d7.jpg"/>
 
