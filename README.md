@@ -205,7 +205,6 @@ This Raspberry Pi camera provides a basic video stream.
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
 
 ### Hardware
-- [Enclosure](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
 - [MPPT Solar Charger](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/)
 - [12V 30W 36 Cell Solar Panel](https://www.conrad.ch/de/p/phaesun-sun-plus-30-s-monokristallines-solarmodul-30-w-12-v-2178372.html)
 - [12V 9Ah Sealed Lead Battery](https://www.conrad.ch/de/p/conrad-energy-12-v-9-ah-250915-bleiakku-12-v-9-ah-blei-vlies-agm-b-x-h-x-t-151-x-94-x-65-mm-flachstecker-6-35-mm-war-250915.html)
@@ -214,6 +213,9 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 - [Red 2.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606261-fahrzeugleitung-flry-b-1-x-2-50-mm-rot-10-m-606261.html)
 - [Blue Connector](https://www.conrad.ch/de/p/vogt-verbindungstechnik-3905-flachsteckhuelse-steckbreite-4-8-mm-steckdicke-0-8-mm-180-teilisoliert-blau-1-st-736957.html)
 - [Red Connector](https://www.conrad.ch/de/p/vogt-verbindungstechnik-3902-flachsteckhuelse-steckbreite-4-8-mm-steckdicke-0-8-mm-180-teilisoliert-rot-1-st-736933.html)
+
+### Enclosure
+- [Enclosure](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
 
 ## Raspberry Pi Streaming Endoscope
 Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but with a USB endoscope.
