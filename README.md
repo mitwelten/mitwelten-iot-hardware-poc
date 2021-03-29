@@ -11,6 +11,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [OpenMV Photo Logging Camera with PIR](#openmv-photo-logging-camera-with-pir)
 - [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
+- [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe)
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 
@@ -200,6 +201,12 @@ This Raspberry Pi camera provides a basic video stream.
 
 ### Setup
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
+
+## Raspberry Pi Streaming Camera with PoE
+Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
+
+### Hardware
+- [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
 ## Raspberry Pi Streaming Camera with Solar Power
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
