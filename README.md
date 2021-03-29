@@ -204,7 +204,7 @@ This Raspberry Pi camera provides a basic video stream.
 ## Raspberry Pi Streaming Camera with Solar Power
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
 
-Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
+Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio), with local suppliers.
 
 ### Hardware
 - [MPPT Solar Charger](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/)
