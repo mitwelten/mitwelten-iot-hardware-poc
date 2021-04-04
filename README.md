@@ -72,9 +72,9 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
 ### Hardware
-- [Geneko GWR352-EM770W](https://www.geneko.rs/en/products/m2m-products-and-solutions/gwr-cellular-router-series/gwr352-3g-router)
+- [Geneko GWR352-EM770W 3G Router](https://www.geneko.rs/en/products/m2m-products-and-solutions/gwr-cellular-router-series/gwr352-3g-router)
 - [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
-- [IMST iC880a SPI](https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz)
+- [IMST iC880a SPI LoRaWAN Concentrator](https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz)
 - [Antenna](https://shop.imst.de/wireless-modules/accessories/19/sma-antenna-for-ic880a-spi-wsa01-im880b-and-lite-gateway)
 - [Pigtail](https://shop.imst.de/wireless-modules/accessories/20/u.fl-to-sma-pigtail-cable-for-ic880a-spi)
 - [Power Supply](https://www.raspberrypi.org/products/raspberry-pi-universal-power-supply/)
