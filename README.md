@@ -234,3 +234,12 @@ Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but wit
 
 ### Hardware
 - [USB endoscope](https://de.aliexpress.com/item/32954115464.html?spm=a2g0s.9042311.0.0.27424c4dtKIQ4i)
+
+## Wi-Fi Access Point with 4G Uplink and PoE
+This 220V powered Wi-Fi Access Point with 4G uplink provides Internet-connectivity to Wi-Fi and PoE sensor nodes.
+
+### Hardware
+- 
+
+### Enclosure
+- 
