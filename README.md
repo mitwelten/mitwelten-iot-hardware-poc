@@ -197,8 +197,8 @@ This Raspberry Pi camera provides a basic video stream.
 - [FFmpeg](https://www.ffmpeg.org/)
 
 ### Hardware
-- Raspberry Pi 3B+
-- Raspberry Camera or USB Camera
+- [Raspberry Pi 3B+](https://www.pi-shop.ch/raspberry-pi-3-model-b)
+- [Raspberry Camera](https://www.pi-shop.ch/raspberry-pi-kamera-module-v2) or USB Camera
 
 ### Setup
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
