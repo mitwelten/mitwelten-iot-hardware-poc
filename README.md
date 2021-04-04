@@ -240,7 +240,16 @@ Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but wit
 This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to Wi-Fi and PoE devices.
 
 ### Hardware
-- 
+- [TP-Link Wi-Fi Router with 4G](https://www.digitec.ch/de/s1/product/tp-link-tl-mr6400-router-6078813)
+- [TP-Link PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153)
+- [RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267) (0.5m)
+- [RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1000cm-netzwerkkabel-5692274) (10-30m)
+- [Multi-Plug](https://www.digitec.ch/de/s1/product/brennenstuhl-abzweigstecker-3-fach-sternfoermig-mehrfachstecker-3231053)
+- [Pur-Pur Power Cord](https://www.jumbo.ch/de/apparatekabel-pur-pur-13185?sku=1194420) (25-100m)
+- [T13 Power Coupling](https://www.jumbo.ch/de/gummikupplung-14466?sku=1251981)
+- [T12 Power Plug](https://www.jumbo.ch/de/gummistecker-typ12-10a-250v-16168?sku=1251977)
 
 ### Enclosure
-- 
+- [Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
+- [Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258) (4cm)
+- Inlays (TODO)
