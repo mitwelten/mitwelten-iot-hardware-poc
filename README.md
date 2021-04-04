@@ -63,7 +63,7 @@ Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar pow
 - [6V, 1W Solar Panel](https://www.adafruit.com/product/3809)
 - [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
 - [3.5/1.1mm to 5.5/2.1mm Jack Adapter](https://www.adafruit.com/product/4287)
-- [4700uF 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589) (optional)
+- [4700uF, 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589) (optional)
 - [10K Precision Epoxy Thermistor](https://www.adafruit.com/product/372)(optional)
 
 ## LoRaWAN Gateway with 3G Uplink
@@ -124,7 +124,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
-- [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
+- [3.7V, 6600 mAh LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
 - Micro SD Card (ExFAT)
 
 ### Enclosure
@@ -145,7 +145,7 @@ This photo logging camera allows to take snapshots in an outdoor setting when so
 - [OpenMV Cam H7 Plus](https://openmv.io/collections/products/products/openmv-cam-h7-plus)
 - [Proto Shield](https://openmv.io/collections/shields/products/proto-shield)
 - [PIR Motion Sensor](https://www.adafruit.com/product/189)
-- [3.7V, 6600 mAh, LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
+- [3.7V, 6600 mAh LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
 - Micro SD Card (ExFAT)
 
 ### Enclosure
@@ -216,8 +216,8 @@ Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/mast
 
 ### Hardware
 - [MPPT Solar Charger](https://www.tindie.com/products/globoy/mppt-solar-charger-for-intelligent-devices/)
-- [12V 30W 36 Cell Solar Panel](https://www.conrad.ch/de/p/phaesun-sun-plus-30-s-monokristallines-solarmodul-30-w-12-v-2178372.html)
-- [12V 9Ah Sealed Lead Battery](https://www.conrad.ch/de/p/conrad-energy-12-v-9-ah-250915-bleiakku-12-v-9-ah-blei-vlies-agm-b-x-h-x-t-151-x-94-x-65-mm-flachstecker-6-35-mm-war-250915.html)
+- [12V, 30W, 36 Cell Solar Panel](https://www.conrad.ch/de/p/phaesun-sun-plus-30-s-monokristallines-solarmodul-30-w-12-v-2178372.html)
+- [12V, 9Ah, Sealed Lead Battery](https://www.conrad.ch/de/p/conrad-energy-12-v-9-ah-250915-bleiakku-12-v-9-ah-blei-vlies-agm-b-x-h-x-t-151-x-94-x-65-mm-flachstecker-6-35-mm-war-250915.html)
 - [12V Battery Charger](https://www.conrad.ch/de/p/h-tronic-bleiakku-ladegeraet-al600plus-2-v-6-v-12-v-ladestrom-max-0-6-a-512315.html) (optional)
 - [Black 2.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606284-fahrzeugleitung-flry-b-1-x-2-50-mm-schwarz-10-m-606284.html)
 - [Red 2.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606261-fahrzeugleitung-flry-b-1-x-2-50-mm-rot-10-m-606261.html)
@@ -250,6 +250,6 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [T12 Power Plug](https://www.jumbo.ch/de/gummistecker-typ12-10a-250v-16168?sku=1251977)
 
 ### Enclosure
-- [30L/53cm/32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
-- [150cm/4cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
+- [30L, 53cm, 32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
+- [150cm, 4cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - Inlays (TODO)
