@@ -98,7 +98,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 <img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
 
 ### Hardware
-- https://www.openacousticdevices.info/audiomoth ([Buy](https://store.groupgets.com/collections/audiomoth))
+- https://www.openacousticdevices.info/audiomoth
 - 3 * AA Batteries
 - Micro SD Card (ExFAT)
 
