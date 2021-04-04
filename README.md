@@ -14,6 +14,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe)
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
+- [Wi-Fi Access Point with 4G Uplink and PoE](#wi-fi-access-point-with-4g-uplink-and-poe)
 
 ## LoRaWAN Sensor Nodes
 These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
