@@ -250,6 +250,6 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [T12 Power Plug](https://www.jumbo.ch/de/gummistecker-typ12-10a-250v-16168?sku=1251977)
 
 ### Enclosure
-- [Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
-- [Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258) (4cm)
+- [30L/53cm/32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
+- [150cm/4cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - Inlays (TODO)
