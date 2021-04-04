@@ -219,8 +219,8 @@ Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/mast
 - [12V, 30W, 36 Cell Solar Panel](https://www.conrad.ch/de/p/phaesun-sun-plus-30-s-monokristallines-solarmodul-30-w-12-v-2178372.html)
 - [12V, 9Ah, Sealed Lead Battery](https://www.conrad.ch/de/p/conrad-energy-12-v-9-ah-250915-bleiakku-12-v-9-ah-blei-vlies-agm-b-x-h-x-t-151-x-94-x-65-mm-flachstecker-6-35-mm-war-250915.html)
 - [12V Battery Charger](https://www.conrad.ch/de/p/h-tronic-bleiakku-ladegeraet-al600plus-2-v-6-v-12-v-ladestrom-max-0-6-a-512315.html) (optional)
-- [Black 2.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606284-fahrzeugleitung-flry-b-1-x-2-50-mm-schwarz-10-m-606284.html)
-- [Red 2.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606261-fahrzeugleitung-flry-b-1-x-2-50-mm-rot-10-m-606261.html)
+- [Black 1.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606241-fahrzeugleitung-flry-b-1-x-1-50-mm-schwarz-10-m-606241.html)
+- [Red 1.5mm Wire](https://www.conrad.ch/de/p/conrad-components-606216-fahrzeugleitung-flry-b-1-x-1-50-mm-rot-10-m-606216.html)
 - [Blue Connector](https://www.conrad.ch/de/p/vogt-verbindungstechnik-3905-flachsteckhuelse-steckbreite-4-8-mm-steckdicke-0-8-mm-180-teilisoliert-blau-1-st-736957.html)
 - [Red Connector](https://www.conrad.ch/de/p/vogt-verbindungstechnik-3902-flachsteckhuelse-steckbreite-4-8-mm-steckdicke-0-8-mm-180-teilisoliert-rot-1-st-736933.html)
 
