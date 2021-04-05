@@ -257,6 +257,6 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - Laser-cut Inlay Design Files (TODO)
 
 ### Stand
-- [150cm, 4cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
+- [4cm diameter, 150cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - [200cm, 50cm, 2.7cm Board](https://www.jumbo.ch/de/schalungstafel-5634?sku=1333377)
 - CNC-cut Stand Design Files (TODO)
