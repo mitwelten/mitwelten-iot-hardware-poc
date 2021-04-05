@@ -240,16 +240,21 @@ Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but wit
 This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to Wi-Fi and PoE devices.
 
 ### Hardware
-- [TP-Link TL-MR6400 4G Router](https://www.digitec.ch/de/s1/product/tp-link-tl-mr6400-router-6078813)
-- [TP-Link TL-SG105PE PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153)
+- [TP-Link TL-MR6400 4G Router](https://www.digitec.ch/de/s1/product/tp-link-tl-mr6400-router-6078813) (< 50 Mbit/s Upload)
+- [TP-Link TL-SG105PE PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153) (4 * 802.3af)
 - [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
 - 4 * [10m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1000cm-netzwerkkabel-5692274) (or [20m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-2000cm-netzwerkkabel-5692276) or [30m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-3000cm-netzwerkkabel-5692277))
 - [25m PUR-PUR Power Cord](https://www.jumbo.ch/de/apparatekabel-pur-pur-13185?sku=1194420) (or [50m](https://shop.meyerhwz.ch/?srv=search&pg=det&partnerId=9&rub=100044242&groupId=&artNr=100003741&markId=) or [100m](https://www.bauhaus.ch/de/pur-pur-kabel-3-x-15-mm-60079129))
 - [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/brennenstuhl-abzweigstecker-3-fach-sternfoermig-mehrfachstecker-3231053)
 - [T13 Power Coupling](https://www.jumbo.ch/de/gummikupplung-14466?sku=1251981)
 - [T12 Power Plug](https://www.jumbo.ch/de/gummistecker-typ12-10a-250v-16168?sku=1251977)
+- SIM Card
 
 ### Enclosure
 - [30L, 53cm, 32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
+- Laser-cut Inlay Design Files (TODO)
+
+### Stand
 - [150cm, 4cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
-- Inlays (TODO)
+- [200cm, 50cm, 2.7cm Board](https://www.jumbo.ch/de/schalungstafel-5634?sku=1333377)
+- CNC-cut Stand Design Files (TODO)
