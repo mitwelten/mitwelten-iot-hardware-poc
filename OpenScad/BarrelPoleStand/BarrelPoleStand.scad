@@ -1,3 +1,5 @@
+// CC BY-SA Thomas Amberg, FHNW
+
 $fn = 360;
 
 module leg(h, w_hi, w_lo, s_hi, s_lo, d) {
