@@ -1,3 +1,5 @@
+// CC BY-SA Thomas Amberg, FHNW
+
 $fn = 36; //360;
 
 //difference() {
