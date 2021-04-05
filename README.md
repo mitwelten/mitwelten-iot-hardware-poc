@@ -254,7 +254,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [30L, 53cm, 32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
 - [8mm, 600mm, 600mm Plywood](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310591) (or 2 * [4mm](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310584))
 - 3D-printed Pole Adapter (TODO)
-- Laser-cut [Barrel Fixture](OpenScad/BarrelFixture)
+- Laser-cut [Barrel Fixture](OpenScad/BarrelFixture) (TODO)
 
 ### Stand
 - [4cm diameter, 150cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
