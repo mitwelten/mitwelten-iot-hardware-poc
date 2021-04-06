@@ -245,7 +245,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/brennenstuhl-abzweigstecker-3-fach-sternfoermig-mehrfachstecker-3231053)
 - [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
 - 4 * [10m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1000cm-netzwerkkabel-5692274) (or [20m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-2000cm-netzwerkkabel-5692276) or [30m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-3000cm-netzwerkkabel-5692277))
-- [25m PUR-PUR Power Cord](https://www.jumbo.ch/de/apparatekabel-pur-pur-13185?sku=1194420) (or [50m](https://shop.meyerhwz.ch/?srv=search&pg=det&partnerId=9&rub=100044242&groupId=&artNr=100003741&markId=) or [100m](https://www.bauhaus.ch/de/pur-pur-kabel-3-x-15-mm-60079129))
+- [25m PUR-PUR Power Cord](https://www.jumbo.ch/de/apparatekabel-pur-pur-13185?sku=1194420) (or [50m](https://shop.meyerhwz.ch/?srv=search&pg=det&partnerId=9&rub=100044242&groupId=&artNr=100003741&markId=) or [100m](http://pur-kabel.ch/))
 - [T13 Power Coupling](https://www.jumbo.ch/de/gummikupplung-14466?sku=1251981)
 - [T12 Power Plug](https://www.jumbo.ch/de/gummistecker-typ12-10a-250v-16168?sku=1251977)
 - SIM Card
