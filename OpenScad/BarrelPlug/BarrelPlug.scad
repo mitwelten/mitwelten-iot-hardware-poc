@@ -3,10 +3,10 @@
 $fn = 360;
 
 r_hole = 68/2; // depends on tool
-r_pole = 40/2;
+r_pole = 39/2;
 r_220v = 9/2;
 r_rj45 = 7/2;
-d = 20; // depends on pvc
+d = 8 + 3 + 8; // depends on pvc
 s = 0.9; // or 0.8?
 
 linear_extrude(8) {
