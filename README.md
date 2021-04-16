@@ -111,6 +111,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 
 ### Setup
 - [AudioMoth Desktop App](https://www.openacousticdevices.info/applications)
+- [AudioMoth LED Guide](https://www.openacousticdevices.info/led-guide)
 - [Sonic Visualiser](https://sonicvisualiser.org/download.html)
 
 ## OpenMV Photo Logging Camera
