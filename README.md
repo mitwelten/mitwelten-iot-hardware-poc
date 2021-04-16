@@ -122,7 +122,7 @@ Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), 
 
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
-- Laser-cut [AP9 Adapter](OpenScad/AudioMothAP9Case)
+- Laser-cut [AP9 Adapter](OpenScad/AudioMothAP9Adapter)
 - [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
 - [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
 - [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
