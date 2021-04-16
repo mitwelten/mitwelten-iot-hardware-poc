@@ -5,7 +5,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
-- [LoRaWAN Sensor Nodes with Power](#lorawan-sensor-nodes-with-solar-power)
+- [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
 - [OpenMV Photo Logging Camera with PIR](#openmv-photo-logging-camera-with-pir)
