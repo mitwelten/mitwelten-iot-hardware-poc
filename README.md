@@ -118,6 +118,8 @@ This audio logging microphone can record and store a broad range of frequencies,
 ## AudioMoth Audio Logging Microphone with LiPo Battery
 Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), but with LiPo Battrey.
 
+<img src="https://live.staticflickr.com/65535/51119700755_c709654753.jpg"/>
+
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
