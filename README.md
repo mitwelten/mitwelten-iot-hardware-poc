@@ -3,6 +3,7 @@
 Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelten.technik@fhnw.ch)
 
 - [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
+- [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
@@ -113,6 +114,16 @@ This audio logging microphone can record and store a broad range of frequencies,
 - [AudioMoth Desktop App](https://www.openacousticdevices.info/applications)
 - [AudioMoth LED Guide](https://www.openacousticdevices.info/led-guide)
 - [Sonic Visualiser](https://sonicvisualiser.org/download.html)
+
+## AudioMoth Audio Logging Microphone with LiPo Battery
+Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), but with LiPo Battrey.
+
+### Enclosure
+- [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
+- [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
+- [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
+- [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
+- [USB Li-Ion charger](https://www.adafruit.com/product/1304) (optional)
 
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.
