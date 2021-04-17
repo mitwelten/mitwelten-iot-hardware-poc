@@ -143,7 +143,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - Micro SD Card (ExFAT)
 
 ### Enclosure
-- [IoT Brick OpenMV Cam H7](https://www.thingiverse.com/thing:4787263)
+- Laser-cut [AP9 Adapter](OpenScad/OpenMVCamAP9Adapter)
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
