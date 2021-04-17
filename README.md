@@ -122,7 +122,7 @@ Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), 
 
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
-- Laser-cut [AP9 Adapter](OpenScad/AudioMothAP9Adapter)
+- Laser-cut [AP9 Adapter](OpenScad/AudioMoth_AP9Adapter)
 - [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
 - [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
 - [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
@@ -143,7 +143,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - Micro SD Card (ExFAT)
 
 ### Enclosure
-- Laser-cut [AP9 Adapter](OpenScad/OpenMVCamAP9Adapter)
+- Laser-cut [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
