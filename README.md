@@ -102,7 +102,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 ### Hardware
 - https://www.openacousticdevices.info/audiomoth
 - 3 * AA Batteries
-- Micro SD Card (ExFAT)
+- [Micro SD Card](https://www.digitec.ch/de/s1/product/sandisk-extreme-microsd-a2-inkl-sd-adapter-microsdxc-64gb-u3-uhs-i-speicherkarte-9706365) (ExFAT)
 
 ### Enclosure
 - [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
