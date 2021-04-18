@@ -102,7 +102,7 @@ This audio logging microphone can record and store a broad range of frequencies,
 ### Hardware
 - https://www.openacousticdevices.info/audiomoth
 - 3 * AA Batteries
-- Micro SD Card (ExFAT)
+- [Micro SD Card](https://www.digitec.ch/de/s1/product/sandisk-extreme-microsd-a2-inkl-sd-adapter-microsdxc-64gb-u3-uhs-i-speicherkarte-9706365) (ExFAT)
 
 ### Enclosure
 - [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
@@ -122,7 +122,7 @@ Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), 
 
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
-- Laser-cut [AP9 Adapter](OpenScad/AudioMothAP9Adapter)
+- Laser-cut [AP9 Adapter](OpenScad/AudioMoth_AP9Adapter)
 - [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
 - [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
 - [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
@@ -143,7 +143,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - Micro SD Card (ExFAT)
 
 ### Enclosure
-- Laser-cut [AP9 Adapter](OpenScad/OpenMVCamAP9Adapter)
+- Laser-cut [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
@@ -268,11 +268,11 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 ### Enclosure
 - [30L, 53cm, 32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
 - [8mm, 600mm, 600mm Plywood](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310591) (or 2 * [4mm](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310584))
-- 3D-printed [Barrel Plug](OpenScad/BarrelPlug)
-- Laser-cut [Barrel Fixture](OpenScad/BarrelFixture) (TODO)
+- 3D-printed [Barrel Plug](OpenScad/AccessPoint_Plug)
+- Laser-cut [Barrel Fixture](OpenScad/AccessPoint_Fixture) (TODO)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
 
 ### Stand
 - [4cm diameter, 150cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - [200cm, 50cm, 2.7cm Board](https://www.jumbo.ch/de/schalungstafel-5634?sku=1333377)
-- CNC-cut [Barrel Pole Stand](OpenScad/BarrelPoleStand)
+- CNC-cut [Barrel Pole Stand](OpenScad/AccessPoint_PoleStand)
