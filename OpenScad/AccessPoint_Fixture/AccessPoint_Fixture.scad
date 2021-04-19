@@ -1,3 +1,5 @@
+// CC BY-SA, FHNW (University of Applied Sciences and Arts Northwestern Switzerland)
+
 // Prepend !projection() to isolate, make flat for DXF, SVG export
 
 $fn = 360;
