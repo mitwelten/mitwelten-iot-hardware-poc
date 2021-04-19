@@ -1,250 +1,151 @@
-// CC BY-SA, FHNW (University of Applied Sciences and Arts Northwestern Switzerland)
+// Prepend !projection() to isolate, make flat for DXF, SVG export
 
-$fn = 36; //360;
+$fn = 360;
 
-//difference() {
-color("#bfa522") {
-    // backpane
-    translate([-120, 190, 20]) {
-        cube([240, 500 - 190, 8]);
-    }
-    // lower front pole
-    translate([-22, 0, 20]) {
-        cube([44, 190 - 8, 22]);
-    }
-    // back pole
-    translate([-22, 0, -42]) {
-        cube([44, 500, 22]);
-    }
-    // barrel cover
-    translate([0, -8, 0]) {
-        rotate([90, 0, 0]) {
-            cylinder(8, 125, 125);
-        }
-    }
-    // lowest disc
-    translate([0, 0, 0]) {
-        rotate([90, 0, 0]) {
-            cylinder(8, 50, 50);
-        }
-    }
-    // lower disc
-    difference() {
-        translate([0, 190]) {
-            rotate([90, 0, 0]) {
-                cylinder(8, 125, 125);
-            }
-        }
-        // poe hole
-        translate([8 + 22, 190 - 9, -25 + 20]) {
-            cube([80, 9, 25]);
-        }
-    }
-    // highest disc
-    translate([0, 500]) {
-        rotate([90, 0, 0]) {
-            cylinder(8, 125, 125);
+module side() {
+    rotate([90, 0, 0]) {
+    !projection()
+        difference() {
+            cube([22 + 22 + 40, 128, 8]);
+            // screw holes
+            translate([(22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 + 22 + 40) - (22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 / 2), 128 - 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 + 22 + 40) - (22 / 2), 128 - 22, -1]) cylinder(8 + 2, 2, 2);
         }
     }
 }
-color("gray") {
-    // pole
-    translate([0, 501]) {
-        rotate([90, 0, 0]) {
-            //cylinder(1200, 20, 20);
-            cylinder(550, 20, 20);
-        }
-    }
-    // splint
-    translate([-60, 2, 0]) {
-        rotate([0, 90, 0]) {
-            cylinder(120, 2, 2);
-        }
-    }
-}
-//}
-color("black") {
-    // multiplug
-    translate([-(95/2), 190, -45 - 20 - 22]) {
-        cube([95, 45, 45]);
-        translate([37, -45, 0]) {
-                cube([20, 45, 45]);
-        }
-    }
-    // poe switch
-    translate([20, 190, -25 + 20]) {
-        cube([100, 100, 25]);
-    }
-    translate([-(175/2), 190, 20 + 8]) {
-        // wifi router
-        cube([175, 125, 35]);
-        // antenna
-        translate([0, 126]) {
-            cube([35, 165, 35]);
-        }
-        // antenna
-        translate([175 - 35, 126]) {
-            cube([35, 165, 35]);
-        }
-    }
-}
-color("red") {
-    // wifi power plug w/ adapter
-    translate([-100 + 50, 190 + 26, -46 - 20 - 22]) {
-        rotate([0, 0, 45]) {
-            cube([30, 47, 60]);
-            translate([15, 23.5, 60]) {
-                cylinder(20, 6, 6);
+
+module panel() {
+    rotate([90, 0, 0]) {
+        //!projection()
+        difference() {
+            union() {
+                cube([240, 310 + 8, 8]);
+                // fingers
+                translate([20, -8, 0]) cube([30, 8, 8]);
+                translate([240 - 20 - 30, -8, 0]) cube([30, 8, 8]);
+                translate([20, 310 + 8, 0]) cube([30, 8, 8]);
+                translate([240 - 20 - 30, 310 + 8, 0]) cube([30, 8, 8]);
             }
-            translate([-5, 23.5, 60 + 20]) {
-                rotate([90, 0, 0]) {
-                    rotate_extrude(angle = 90) {
-                        translate([20, 0, 0]) {
-                            circle(3);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // poe power plug
-    translate([-100 + 120, 190 + 26 + 20, -46 - 20 - 22]) {
-        rotate([0, 0, -45]) {
-            cube([30, 45, 47]);
-        }
-        rotate([90, 0, 45]) {
-            translate([35, 22.5, -20]) {
-                cylinder(20, 6, 6);
-            }
-        }
-    }
-    // poe power adapter
-    translate([-38 - 22, 190 + 90, -60 + 20]) {
-        cube([38, 105, 60]);
-        rotate([90, 0, 0]) {
-            translate([20, 45, 0]) {
-                cylinder(20, 6, 6);
-                cylinder(70, 3, 3);
-            }
-            translate([20, 30, -105 - 50]) {
-                cylinder(50, 10, 10);
-            }
-            translate([0, 30, -105 - 50]) {
-                rotate([90, 90, 0]) {
-                    rotate_extrude(angle = 90) {
-                        translate([20, 0, 0]) {
-                            circle(6);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // wifi power port
-    translate([-40, 190 + 125, 20 + 8 + 16.8]) {
-        rotate([90, 0, 180]) {
-            cylinder(70, 3, 3);
-            cylinder(20, 6, 6);
-        }
-    }
-    // poe power port
-    translate([100, 290, 20 - 12]) {
-        rotate([90, 0, 180]) {
-            cylinder(50, 3, 3);
-            cylinder(20, 6, 6);
-        }
-    }
-    
-    // multiplug 220V power
-    translate([-(95/2), 190, -45 - 20 - 22]) {
-        translate([37, -45 -45, 0]) {
-                cube([20, 45, 45]);
-        }
-        translate([37 + 10, -45 -45 - 20, 22.5]) {
-            rotate([90, 0, 180]) {
-                cylinder(20, 6, 6);
+            translate([40, 40, -1]) cube([38, 120, 8 + 2]);
+            translate([240 + - 38 - 40, 40, -1]) cube([38, 120, 8 + 2]);
+            translate([(240 - 100) / 2, -1, -1]) cube([100, 8 + 1, 8 + 2]);
+            // screw holes
+            translate([(240 - 84) / 2, 0, 0]) {
+                translate([(22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
+                translate([(22 + 22 + 40) - (22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
+                translate([(22 / 2), 160 + (22 / 2), -1]) cylinder(8 + 2, 2, 2);
+                translate([(22 + 22 + 40) - (22 / 2), 160 + (22 / 2), -1]) cylinder(8 + 2, 2, 2);
+                translate([(22 / 2), 310 + 8 - (22/2), -1]) cylinder(8 + 2, 2, 2);
+                translate([(22 + 22 + 40) - (22 / 2), 310 + 8 - (22/2), -1]) cylinder(8 + 2, 2, 2);
             }
         }
     }
 }
-color("orange") {
-    // wifi to lan port
-    translate([-35 + 10, 190 + 125, 20 + 8 + 16.8]) {
-        rotate([90, 0, 180]) {
-            cylinder(70, 3, 3);
-            cylinder(40, 6, 6);
-        }
-    }
-    // lan to wifi port
-    translate([40, 190, 20 - 12]) {
-        rotate([90, 0, 0]) {
-            cylinder(70, 3, 3);
-            cylinder(40, 6, 6);
-        }
-    }
-    // poe lan port
-    translate([55, 190, 20 - 12]) {
-        rotate([90, 0, 0]) {
-            cylinder(70, 3, 3);
-            cylinder(40, 6, 6);
-        }
-    }
-    // poe lan port
-    translate([70, 190, 20 - 12]) {
-        rotate([90, 0, 0]) {
-            cylinder(70, 3, 3);
-            cylinder(40, 6, 6);
-        }
-    }
-    // poe lan port
-    translate([85, 190, 20 - 12]) {
-        rotate([90, 0, 0]) {
-            cylinder(70, 3, 3);
-            cylinder(40, 6, 6);
-        }
-    }
-    // poe lan port
-    translate([100, 190, 20 - 12]) {
-        rotate([90, 0, 0]) {
-            cylinder(70, 3, 3);
-            cylinder(40, 6, 6);
-        }
+
+module poe_adapter() {
+    translate([0, 0, 80 + 105]) color("red") cube([60, 38, 25]);
+    translate([0, 0, 80]) color("black") cube([60, 38, 105]);
+    translate([0, 0, 0]) color("red") cube([60, 38, 80]);
+}
+
+module poe_switch() {
+    color("black") rotate([90, 0, 0]) cube([100, 100, 26]);
+}
+
+module wifi_router() {
+    color("black") rotate([90, 0, 0]) {
+        translate([0, 0, 0]) cube([35, 165, 35]);
+        translate([175 - 35, 0, 0]) cube([35, 165, 35]);
+        translate([0, 165, 0]) cube([175, 125, 35]);
     }
 }
-translate([0, 0, 0]) {
-color("#0000ff66") {
-    // lower ring
-    translate([0, 160]) {
-        rotate([90, 0, 0]) {
-            difference() {
-                translate([0, 0, 1]) {
-                    cylinder(160, 160, 125);
-                }
-                cylinder(162, 158, 123);
-            }
-        }
-    }
+
+module barrel() {
+    color("#0000ff66")
     // middle ring
-    translate([0, 340]) {
-        rotate([90, 0, 0]) {
+    translate([0, 0, 160]) {
             difference() {
                 translate([0, 0, 1]) {
                     cylinder(180, 160, 160);
                 }
                 cylinder(182, 158, 158);
             }
-        }
-    }
-    // higher ring
-    translate([0, 500]) {
-        rotate([90, 0, 0]) {
-            difference() {
-                translate([0, 0, 1]) {
-                    cylinder(160, 125, 160);
-                }
-                cylinder(162, 123, 158);
-            }
-        }
+    }    
+}
+
+module base_disk() {
+    //!projection() 
+    difference() {
+        cylinder(8, 125, 125);
+        // screw holes
+        translate([(22 + 40)/2, 0, -1]) cylinder(8 + 2, 2, 2);
+        translate([-(22 + 40)/2, 0, -1]) cylinder(8 + 2, 2, 2);
+        // finger holes
+        translate([-120 + 20, -22 -8, -1]) cube([30, 8, 8 + 2]);
+        translate([120 - 20 - 30, -22 -8, -1]) cube([30, 8, 8 + 2]);
+        translate([-120 + 20, 22, -1]) cube([30, 8, 8 + 2]);
+        translate([120 - 20 - 30, 22, -1]) cube([30, 8, 8 + 2]);
     }
 }
+
+module small_disk() {
+    //!projection() 
+    difference() {
+        cylinder(8, 52, 52);
+        translate([0, 0, -1]) cylinder(8 + 2, 20, 20);
+        translate([(22 + 40)/2, 0, -1]) cylinder(8 + 2, 2, 2);
+        translate([-(22 + 40)/2, 0, -1]) cylinder(8 + 2, 2, 2);
+    }
 }
+
+module mid_disk() {
+    //!projection() 
+    difference() {
+        cylinder(8, 125, 125);
+        //cylinder(8, 158, 158);
+        translate([-(22 + 22 + 40) / 2, - 44 / 2, -1]) cube([22 + 22 + 40, 44, 8 + 2]);
+        // multiplug hole
+        translate([-54/2, 22 + 8 + 35, -1]) cube([54, 43, 8 + 2]);
+        // poe holes
+        //translate([5 + (220 / 2) - 100, (44 / 2) + 8 + 7, -1]) cube([90, 19, 8 + 2]);
+        //translate([5 + -(220 / 2), (44 / 2) + 8 + 7, -1]) cube([90, 19, 8 + 2]);
+        translate([5 + (-100 / 2), (44 / 2) + 8 + 7, -1]) cube([90, 19, 8 + 2]);
+        // finger holes
+        translate([-120 + 20, -22 -8, -1]) cube([30, 8, 8 + 2]);
+        translate([120 - 20 - 30, -22 -8, -1]) cube([30, 8, 8 + 2]);
+        translate([-120 + 20, 22, -1]) cube([30, 8, 8 + 2]);
+        translate([120 - 20 - 30, 22, -1]) cube([30, 8, 8 + 2]);
+    }    
+}
+
+module mid_ring() {
+    //!projection()
+    difference() {
+        cylinder(8, 158, 158);
+        translate([0, 0, -1]) cylinder(8 + 2, 125, 125);
+        translate([-158, 0, -1]) cube([2 * 158, 158, 8 + 2]);
+    }
+}
+
+translate([0, 0, -26]) base_disk();
+translate([0, 0, -10]) small_disk();
+translate([0, 0, 500 + 2 * 8 + 10]) small_disk();
+translate([0, 0, 310 + 2 * 8 + 10]) mid_disk();
+translate([0, 0, 310 + 2 * 8 + 28]) mid_ring();
+translate([0, 0, 310 + 2 * 8 + 46]) rotate(180) mid_ring();
+translate([20, -44/2, 2 * 8]) cube([22, 44, 500]);
+translate([-20 - 22, -44/2, 2 * 8]) cube([22, 44, 500]);
+translate([-120, -22, 8]) panel();
+translate([-120, 22 + 8, 8]) panel();
+
+translate([-(22 + 22 + 40) / 2, 44/2 + 8, 500 - (190 - 8) + 2 * 8]) side();
+translate([-(22 + 22 + 40) / 2, -44/2, 500 - (190 - 8) + 2 * 8]) side();
+//translate([(220 / 2) - 100, (44 / 2) + 8 + 26, 310 - (100) + 2 * 8]) poe_switch();
+//translate([-(220 / 2), (44 / 2) + 8 + 26, 310 - (100) + 2 * 8]) poe_switch();
+translate([-100/2, (44 / 2) + 8 + 26, 310 - (100) + 2 * 8]) poe_switch();
+translate([(22 + 22 + 40) / 2, -28/2, 310 - (25 + 105 + 80) + 2 * 8]) poe_adapter();
+translate([-60 -(22 + 22 + 40) / 2, -28/2, 310 - (25 + 105 + 80) + 2 * 8]) poe_adapter();
+translate([-175 / 2, -8 - (44 / 2), (310 + 2 * 8) - (125 + 165)]) wifi_router();
+barrel();
