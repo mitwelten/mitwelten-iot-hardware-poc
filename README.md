@@ -37,7 +37,7 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 - [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
 - [Grove Adapter](https://github.com/tamberg/fhnw-iot/wiki/Grove-Adapters#grove-shield-for-feather)
 - [DHT11](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html) or [Soil Moisture](https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant.html) or other [Grove Sensors](https://github.com/tamberg/fhnw-iot/wiki/Various#sensors)
-- [3.7V, 2000 mAh LiPo Battery](https://de.aliexpress.com/wholesale?catId=0&initiative_id=SB_20191122074854&origin=y&SearchText=103450) (JST 2, check polarity)
+- [3.7V, 2000 mAh LiPo Battery](https://de.aliexpress.com/wholesale?catId=0&initiative_id=SB_20191122074854&origin=y&SearchText=103450) (JST 2, check polarity, e.g. [these](https://de.aliexpress.com/item/4001270935242.html))
 
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
@@ -63,6 +63,7 @@ Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar pow
 ### Hardware
 - [6V, 1W Solar Panel](https://www.adafruit.com/product/3809)
 - [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
+- [JST 2-pin Jumper Cable](https://www.adafruit.com/product/4714)
 - [3.5/1.1mm to 5.5/2.1mm Jack Adapter](https://www.adafruit.com/product/4287)
 - [4700uF, 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589) (optional)
 - [10K Precision Epoxy Thermistor](https://www.adafruit.com/product/372)(optional)
@@ -269,7 +270,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [30L, 53cm, 32cm Barrel](https://www.jumbo.ch/de/weithalsfass-6280?sku=1097137)
 - [8mm, 600mm, 600mm Plywood](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310591) (or 2 * [4mm](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310584))
 - 3D-printed [Barrel Plug](OpenScad/AccessPoint_Plug)
-- Laser-cut [Barrel Fixture](OpenScad/AccessPoint_Fixture) (TODO)
+- Laser-cut [Barrel Fixture](OpenScad/AccessPoint_Fixture)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
 
 ### Stand

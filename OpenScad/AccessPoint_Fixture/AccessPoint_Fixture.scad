@@ -6,7 +6,7 @@ $fn = 360;
 
 module side() {
     rotate([90, 0, 0]) {
-    !projection()
+        //!projection()
         difference() {
             cube([22 + 22 + 40, 128, 8]);
             // screw holes
