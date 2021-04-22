@@ -40,7 +40,7 @@ module wire_220v() {
 //    union() {
     difference() {
         rotate_extrude(angle=360) {
-            translate([r_pole + 1, 0, 0]) { // +1 added after test print
+            translate([r_pole, 0, 0]) {
                 difference() {      
                     union() {
                         color("blue") square([r_hole - r_pole, r_bend + d]);
