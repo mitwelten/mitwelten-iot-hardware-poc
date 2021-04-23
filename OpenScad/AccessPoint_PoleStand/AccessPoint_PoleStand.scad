@@ -14,8 +14,15 @@ module leg(h, w_hi, w_lo, s_hi, s_lo, d) {
                 translate([0 + r, w_hi - r]) circle(r);
             }
             // upper cuts
-            translate([0, 0]) { square([d, s_hi]); }
-            translate([0, 2 * s_hi]) { square([d, s_hi]); }
+            translate([0, 0]) {
+                square([d, s_hi]);
+                translate([d - 3, s_hi - 3]) circle(6);
+            }
+            translate([0, 2 * s_hi]) {
+                square([d, s_hi]);
+                translate([d - 3, 3]) circle(6);
+                translate([d - 3, s_hi - 3]) circle(6);
+            }
             // lower cut
             translate([h/2, 0]) { square([d, s_lo]); }
         }
@@ -29,6 +36,10 @@ module ring(r_inner, r_outer, d) {
             circle(r_outer);
         }
     }
+}
+
+module pocket() {
+    
 }
 
 //v = 0; // barrel stand
@@ -51,23 +62,67 @@ translate([0, 500/2, 0]) {
 translate([20 + r_hi_disc, 0]) {
     difference() {
         ring(r_hi_disc, v == 0 ? r_barrel : r_pole, d);
-        rotate([0, 0, 0]) translate([r_barrel + s_hi, -d/2, -1]) cube([s_hi, d, d + 2]);
-        rotate([0, 0, 90]) translate([r_barrel + s_hi, -d/2, -1]) cube([s_hi, d, d + 2]);
-        rotate([0, 0, 180]) translate([r_barrel + s_hi, -d/2, -1]) cube([s_hi, d, d + 2]);
-        rotate([0, 0, 270]) translate([r_barrel + s_hi, -d/2, -1]) cube([s_hi, d, d + 2]);
+        rotate([0, 0, 0]) translate([r_barrel + s_hi, -d/2, -1]) {
+            cube([s_hi, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
+        rotate([0, 0, 90]) translate([r_barrel + s_hi, -d/2, -1]) {
+            cube([s_hi, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
+        rotate([0, 0, 180]) translate([r_barrel + s_hi, -d/2, -1]) {
+            cube([s_hi, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
+        rotate([0, 0, 270]) translate([r_barrel + s_hi, -d/2, -1]) {
+            cube([s_hi, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+            translate([s_hi - 3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
         if (v == 0) {
-            rotate([0, 0, 45]) translate([r_barrel - 10, -75/2, -1]) cube([5 + 10, 75, d + 2]);
-            rotate([0, 0, 225]) translate([r_barrel - 10, -75/2, -1]) cube([5 + 10, 75, d + 2]);
+            rotate([0, 0, 45]) translate([r_barrel - 10, -75/2, -1]) {
+                cube([5 + 10, 75, d + 2]);
+            }
+            rotate([0, 0, 225]) translate([r_barrel - 10, -75/2, -1]) {
+                cube([5 + 10, 75, d + 2]);
+            }
         }
     }
 }
 translate([20 + 2 * r_hi_disc + 20 + r_lo_disc, 0, 0]) {
     difference() {
         ring(r_lo_disc, v == 0 ? r_barrel : r_pole, d);
-        rotate([0, 0, 0]) translate([r_barrel + s_lo, -d/2, -1]) cube([s_lo, d, d + 2]);
-        rotate([0, 0, 90]) translate([r_barrel + s_lo, -d/2, -1]) cube([s_lo, d, d + 2]);
-        rotate([0, 0, 180]) translate([r_barrel + s_lo, -d/2, -1]) cube([s_lo, d, d + 2]);
-        rotate([0, 0, 270]) translate([r_barrel + s_lo, -d/2, -1]) cube([s_lo, d, d + 2]);
+        rotate([0, 0, 0]) translate([r_barrel + s_lo, -d/2, -1]) {
+            cube([s_lo, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
+        rotate([0, 0, 90]) translate([r_barrel + s_lo, -d/2, -1]) {
+            cube([s_lo, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
+        rotate([0, 0, 180]) translate([r_barrel + s_lo, -d/2, -1]) {
+            cube([s_lo, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
+        rotate([0, 0, 270]) translate([r_barrel + s_lo, -d/2, -1]) {
+            cube([s_lo, d, d + 2]);
+            translate([3, 3, 0]) cylinder(d + 2, 6, 6);
+            translate([3, d - 3, 0]) cylinder(d + 2, 6, 6);
+        }
     }
 }
 
@@ -95,7 +150,7 @@ translate([20 + 2 * r_hi_disc + 20 + 2 * r_lo_disc + 20 + h_leg + 20 + h_leg, 23
 // plank
 color("#ffff0066") {
     translate([0, -250, 0.1]) {
-        //cube([2000, 500, d - 0.2]);
+//        cube([2000, 500, d - 0.2]);
     }
 }
 }
