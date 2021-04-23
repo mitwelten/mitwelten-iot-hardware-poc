@@ -31,9 +31,9 @@ module ring(r_inner, r_outer, d) {
     }
 }
 
-v = 0; // barrel stand
-//v = 1; // pole stand
-r_pole = 20;
+//v = 0; // barrel stand
+v = 1; // pole stand
+r_pole = 19.5;
 r_barrel = 125;
 r_hi_disc = r_barrel + 110;
 r_lo_disc = r_barrel + 110;
