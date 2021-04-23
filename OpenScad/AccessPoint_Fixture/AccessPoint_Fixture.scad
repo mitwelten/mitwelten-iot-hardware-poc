@@ -5,15 +5,16 @@
 $fn = 360;
 
 module side() {
+    h = 128 - 22; // for new plug
     rotate([90, 0, 0]) {
         //!projection()
         difference() {
-            cube([22 + 22 + 40, 128, 8]);
+            cube([22 + 22 + 40, h, 8]);
             // screw holes
             translate([(22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
             translate([(22 + 22 + 40) - (22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
-            translate([(22 / 2), 128 - 22, -1]) cylinder(8 + 2, 2, 2);
-            translate([(22 + 22 + 40) - (22 / 2), 128 - 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 / 2), h - 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 + 22 + 40) - (22 / 2), h - 22, -1]) cylinder(8 + 2, 2, 2);
         }
     }
 }
@@ -133,12 +134,12 @@ module mid_ring() {
 
 translate([0, 0, -26]) base_disk();
 translate([0, 0, -10]) small_disk();
-translate([0, 0, 500 + 2 * 8 + 10]) small_disk();
+translate([0, 0, 424 + 2 * 8 + 10]) small_disk();
 translate([0, 0, 310 + 2 * 8 + 10]) mid_disk();
 translate([0, 0, 310 + 2 * 8 + 28]) mid_ring();
 translate([0, 0, 310 + 2 * 8 + 46]) rotate(180) mid_ring();
-translate([20, -44/2, 2 * 8]) cube([22, 44, 500]);
-translate([-20 - 22, -44/2, 2 * 8]) cube([22, 44, 500]);
+translate([20, -44/2, 2 * 8]) cube([22, 44, 424]);
+translate([-20 - 22, -44/2, 2 * 8]) cube([22, 44, 424]);
 translate([-120, -22, 8]) panel();
 translate([-120, 22 + 8, 8]) panel();
 
