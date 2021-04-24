@@ -24,7 +24,11 @@ module leg(h, w_hi, w_lo, s_hi, s_lo, d) {
                 translate([d - 3, s_hi - 3]) circle(6);
             }
             // lower cut
-            translate([h/2, 0]) { square([d, s_lo]); }
+            translate([h/2, -1]) {
+                square([d, s_lo + 1]); 
+                translate([3, s_lo-3]) circle(6);
+                translate([d - 3, s_lo - 3]) circle(6);
+            }
         }
     }    
 }
