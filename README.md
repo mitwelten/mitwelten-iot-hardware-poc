@@ -44,8 +44,6 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 - [AP9 Template](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes) by [@tamberg](https://www.thingiverse.com/tamberg/designs), CC BY-SA
 - [AP9 Fixture](https://www.thingiverse.com/thing:4762526) by [@tamberg](https://www.thingiverse.com/tamberg/designs), CC BY-SA
 - [PVC Tube](https://www.bauundhobby.ch/maschinen-werkstatt/elektro-material/verlegware/rohre/rohr-kir-m20-grau-2-m/p/4002432)
-- [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
-- [Gore Nut](https://www.distrelec.ch/de/gegenmutter-fuer-kabelverschraubungen-m12-schwarz-jacob-50-212pa-flsw/p/30116542)
 
 ### Setup
 - [Arduino IDE](https://www.arduino.cc/en/software)
@@ -273,6 +271,8 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [8mm, 600mm, 600mm Plywood](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310591) (or 2 * [4mm](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310584))
 - 3D-printed [Barrel Plug](OpenScad/AccessPoint_Plug)
 - Laser-cut [Barrel Fixture](OpenScad/AccessPoint_Fixture)
+- [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- [Gore Nut](https://www.distrelec.ch/de/gegenmutter-fuer-kabelverschraubungen-m12-schwarz-jacob-50-212pa-flsw/p/30116542)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
 
 ### Stand
