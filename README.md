@@ -276,6 +276,6 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
 
 ### Stand
-- [4cm diameter, 150cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
+- [150cm, 4cm diameter Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - [200cm, 50cm, 2.7cm Board](https://www.jumbo.ch/de/schalungstafel-5634?sku=1333377)
 - CNC-cut [Barrel Pole Stand](OpenScad/AccessPoint_PoleStand)
