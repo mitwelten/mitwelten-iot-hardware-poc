@@ -272,7 +272,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - 3D-printed [Barrel Plug](OpenScad/AccessPoint_Plug)
 - Laser-cut [Barrel Fixture](OpenScad/AccessPoint_Fixture)
 - [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
-- [Gore Nut](https://www.distrelec.ch/de/gegenmutter-fuer-kabelverschraubungen-m12-schwarz-jacob-50-212pa-flsw/p/30116542)
+- [Gore Nut](https://www.distrelec.ch/de/gegenmutter-m12x1-m12-grau-gore-associates-gmbh-m10510-009/p/30155048)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
 
 ### Stand
