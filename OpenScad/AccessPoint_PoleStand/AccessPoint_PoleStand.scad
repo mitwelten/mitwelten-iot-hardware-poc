@@ -60,7 +60,7 @@ d = 27;
 s_hi = (r_hi_disc - r_barrel) / 3;
 s_lo = (r_lo_disc - r_barrel) / 2;
 
-//projection(cut=false) // for 2D exports
+projection(cut=false) // for 2D exports
 translate([0, 500/2, 0]) {
 // rings
 translate([20 + r_hi_disc, 0]) {
