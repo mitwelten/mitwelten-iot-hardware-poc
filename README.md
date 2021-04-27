@@ -271,9 +271,11 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [8mm, 600mm, 600mm Plywood](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310591) (or 2 * [4mm](https://www.jumbo.ch/de/sperrholz-pappel-12200?sku=1310584))
 - 3D-printed [Barrel Plug](OpenScad/AccessPoint_Plug)
 - Laser-cut [Barrel Fixture](OpenScad/AccessPoint_Fixture)
+- [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- [Gore Nut](https://www.distrelec.ch/de/gegenmutter-fuer-kabelverschraubungen-m12-schwarz-jacob-50-212pa-flsw/p/30116542)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
 
 ### Stand
-- [4cm diameter, 150cm Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
+- [150cm, 4cm diameter Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - [200cm, 50cm, 2.7cm Board](https://www.jumbo.ch/de/schalungstafel-5634?sku=1333377)
 - CNC-cut [Barrel Pole Stand](OpenScad/AccessPoint_PoleStand)
