@@ -31,6 +31,22 @@ module cover2(ring) {
 //    }
 //}
 
-cover2(false);
-translate([34 + 2, 0]) cover2(true);
-translate([-(34/2 + 20/2 + 2), 0]) cover(true);
+// bottom cam
+//cover2(false);
+//translate([34 + 2, 0]) cover2(true);
+//translate([-(34/2 + 20/2 + 2), 0]) cover(true);
+
+translate([0, 0]) { 
+    difference() {
+        translate([6, 6]) hull() {
+            translate([0, 0]) circle(6);
+            translate([94 - 2 * 6, 0]) circle(6);
+            translate([0, 94 - 2 * 6]) circle(6);
+            translate([94 - 2 * 6, 94 - 2 * 6]) circle(6);
+        }
+        translate([13, 13]) circle(d=2.5);
+        translate([13, 94 - 13]) circle(d=2.5);
+        translate([94 - 13, 13]) circle(d=2.5);
+        translate([94 - 13, 94 - 13]) circle(d=2.5);
+    }
+}
