@@ -48,7 +48,7 @@ translate([0, 0]) {
         translate([13.5, 94 - 13.5]) circle(d=2.5);
         translate([94 - 13.5, 13.5]) circle(d=2.5);
         translate([94 - 13.5, 94 - 13.5]) circle(d=2.5);
-        translate([94 - 13.5 - 25 - 3, 94 - 13.5 - 24]) square([25, 24]);
+        translate([94 - 13.5 - 24 - 4, 94 - 13.5 - 25.1]) square([24, 25.1]);
         //translate([7 + 2, 4]) square([57, 90]); // pi
         translate([7 + 2 + 18, 4 + 18]) square([57 - 2 * 18, 90 - 2 * 18]);
         translate([7, 22]) square([2, 5]);
