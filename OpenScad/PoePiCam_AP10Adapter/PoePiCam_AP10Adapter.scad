@@ -44,9 +44,14 @@ translate([0, 0]) {
             translate([0, 94 - 2 * 6]) circle(6);
             translate([94 - 2 * 6, 94 - 2 * 6]) circle(6);
         }
-        translate([13, 13]) circle(d=2.5);
-        translate([13, 94 - 13]) circle(d=2.5);
-        translate([94 - 13, 13]) circle(d=2.5);
-        translate([94 - 13, 94 - 13]) circle(d=2.5);
+        translate([13.5, 13.5]) circle(d=2.5);
+        translate([13.5, 94 - 13.5]) circle(d=2.5);
+        translate([94 - 13.5, 13.5]) circle(d=2.5);
+        translate([94 - 13.5, 94 - 13.5]) circle(d=2.5);
+        translate([94 - 13.5 - 25 - 3, 94 - 13.5 - 24]) square([25, 24]);
+        //translate([7 + 2, 4]) square([57, 90]); // pi
+        translate([7 + 2 + 18, 4 + 18]) square([57 - 2 * 18, 90 - 2 * 18]);
+        translate([7, 22]) square([2, 5]);
+        translate([66, 22]) square([2, 5]);
     }
 }
