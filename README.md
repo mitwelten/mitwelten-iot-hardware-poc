@@ -42,7 +42,7 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - [AP9 Template](https://www.thingiverse.com/thing:3638252) and [Remixes](https://www.thingiverse.com/thing:3638252/remixes) by [@tamberg](https://www.thingiverse.com/tamberg/designs), CC BY-SA
-- [AP9 Fixture](https://www.thingiverse.com/thing:4762526) by [@tamberg](https://www.thingiverse.com/tamberg/designs), CC BY-SA
+- [AP9 PVCTubeFixture](OpenScad/AP9_PVCTubeFixture)
 - [PVC Tube](https://www.bauundhobby.ch/maschinen-werkstatt/elektro-material/verlegware/rohre/rohr-kir-m20-grau-2-m/p/4002432)
 
 ### Setup
