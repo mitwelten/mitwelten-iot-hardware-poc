@@ -30,4 +30,4 @@
     ```
     # TODO
     ```
-- Install [Yaler](https://yaler.net/raspberrypi) for remote access (optional)
+- Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
