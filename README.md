@@ -222,6 +222,8 @@ This Raspberry Pi camera provides a basic video stream.
 ## Raspberry Pi Streaming Camera with PoE
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
 
+<img src="https://live.staticflickr.com/65535/51161321095_3d5992ed48.jpg"/>
+
 ### Hardware
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
