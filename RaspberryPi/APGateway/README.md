@@ -2,8 +2,8 @@
 ## Setup
 ### Prepare SD Card
 - On the computer, install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
-- Select Raspberry Pi OS (other) > Raspberry Pi OS Lite (32-bit)
-- Choose SD Card, Write
+- Select _Raspberry Pi OS (other)_ > _Raspberry Pi OS Lite (32-bit)_
+- Click _Choose SD Card_, then _Write_
 - Remove, re-insert SD Card, type
     ```
     $ touch /Volumes/boot/ssh
