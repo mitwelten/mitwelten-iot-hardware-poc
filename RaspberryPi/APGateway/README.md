@@ -33,6 +33,12 @@ On the Pi
     ```
     $ sudo raspi-config # Advanced Options > Expand Filesystem
     ```
+- Enable fan
+    ```
+    $ sudo nano /boot/config.txt
+    ...
+    dtoverlay=gpio-fan,gpiopin=18,temp=55000
+    ```
 - Mount the hard disk
     ```
     # TODO
