@@ -9,7 +9,7 @@
     $ touch /Volumes/boot/ssh
     ```
 
-### Prepare Raspberry Pi
+### Prepare Raspberry Pi 4B
 - Insert prepared SD Card
 - Connect to power via USB-C
 - Connect to Ethernet via RJ45
