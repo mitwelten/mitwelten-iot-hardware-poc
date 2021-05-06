@@ -1,10 +1,12 @@
 # APGateway
 ## Setup
 ### Prepare SD Card
-- On the computer, install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+On the computer
+- Install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 - Select _Raspberry Pi OS (other)_ > _Raspberry Pi OS Lite (32-bit)_
 - Click _Choose SD Card_, then _Write_
-- Remove, re-insert SD Card, type
+- Remove, re-insert SD Card
+- To enable SSH, type
     ```
     $ touch /Volumes/boot/ssh
     ```
@@ -18,7 +20,9 @@
     ```
     $ ssh pi@raspberrypi.local
     ```
-- On the Pi, change the password with
+
+On the Pi
+- Change the password with
     ```
     $ passwd
     ```
