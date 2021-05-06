@@ -263,6 +263,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [SD Card](https://www.pi-shop.ch/kingston-microsdxc-karte-canvas-select-plus-128-gb)
 - [USB C Power Supply](https://www.pi-shop.ch/raspberry-pi-15w-power-supply-eu-schwarz)
 - [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/brennenstuhl-abzweigstecker-3-fach-sternfoermig-mehrfachstecker-3231053)
+- [WD Elements HD, 2TB](https://www.digitec.ch/de/s1/product/wd-elements-2tb-externe-festplatte-448766)
 - 2 * [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
 - 4 * [10m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1000cm-netzwerkkabel-5692274) (or [20m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-2000cm-netzwerkkabel-5692276) or [30m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-3000cm-netzwerkkabel-5692277))
 - [25m PUR-PUR Power Cord](https://www.jumbo.ch/de/apparatekabel-pur-pur-13185?sku=1194420) (or [50m](https://shop.meyerhwz.ch/?srv=search&pg=det&partnerId=9&rub=100044242&groupId=&artNr=100003741&markId=) or [100m](http://pur-kabel.ch/))
