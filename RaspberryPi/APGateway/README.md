@@ -1,7 +1,7 @@
 # APGateway
 ## Setup
 ### Prepare SD Card
-- Install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+- On the computer, install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 - Select Raspberry Pi OS (other) > Raspberry Pi OS Lite (32-bit)
 - Choose SD Card, Write
 - Remove, re-insert SD Card, type
