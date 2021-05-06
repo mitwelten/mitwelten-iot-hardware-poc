@@ -255,6 +255,8 @@ Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but wit
 ## Wi-Fi and PoE Access Point with 4G Uplink
 This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to Wi-Fi and PoE devices.
 
+<img src="https://live.staticflickr.com/65535/51162161324_c2897a96b5.jpg"/>
+
 ### Hardware
 - [TP-Link TL-MR6400 4G Router](https://www.digitec.ch/de/s1/product/tp-link-tl-mr6400-router-6078813) (< 50 Mbit/s Upload)
 - [TP-Link TL-SG105PE PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153) (4 * 802.3af)
