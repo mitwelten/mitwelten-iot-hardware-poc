@@ -227,6 +227,9 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 ### Hardware
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
+### Enclosure
+- [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
+
 ## Raspberry Pi Streaming Camera with Solar Power
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
 
