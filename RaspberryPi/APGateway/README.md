@@ -25,7 +25,7 @@ On the computer
     ```
 
 On the Pi
-- Change the password with
+- Change the password
     ```
     $ passwd
     ```
