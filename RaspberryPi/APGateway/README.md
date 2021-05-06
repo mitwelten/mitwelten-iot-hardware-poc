@@ -12,11 +12,14 @@ On the computer
     ```
 
 ### Prepare Raspberry Pi 4B
+On the Pi
 - Insert prepared SD Card
 - Connect to power via USB-C
 - Connect to Ethernet via RJ45
+
+On the computer
 - Share Computer Wi-Fi to Ethernet
-- From the computer, login via SSH (pw: raspberry)
+- Log into Pi via SSH (pw: raspberry)
     ```
     $ ssh pi@raspberrypi.local
     ```
