@@ -33,7 +33,7 @@ On the Pi
     ```
     $ sudo raspi-config # Advanced Options > Expand Filesystem
     ```
-- Enable fan
+- Enable the fan
     ```
     $ sudo nano /boot/config.txt
     ...
