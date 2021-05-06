@@ -41,6 +41,6 @@ On the Pi
     ```
 - Mount the hard disk
     ```
-    # TODO
+    # [TODO](https://www.raspberrypi.org/documentation/configuration/external-storage.md)
     ```
 - Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
