@@ -40,7 +40,5 @@ On the Pi
     dtoverlay=gpio-fan,gpiopin=18,temp=55000
     ```
 - Mount the hard disk
-    ```
-    # [TODO](https://www.raspberrypi.org/documentation/configuration/external-storage.md)
-    ```
+    [TODO](https://www.raspberrypi.org/documentation/configuration/external-storage.md)
 - Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
