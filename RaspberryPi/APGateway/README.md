@@ -16,6 +16,7 @@ On the Pi
 - Insert prepared SD Card
 - Connect to power via USB-C
 - Connect to Ethernet via RJ45
+- Add Argon Poly+ case with fan
 
 On the computer
 - Share Computer Wi-Fi to Ethernet
