@@ -40,3 +40,26 @@ On the Pi
     $ sudo raspi-config # Interface Options > Camera
     ```
 - Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
+
+## Test the Pi cam
+On the Pi
+- Take a picture
+    ```
+    $ raspistill -o ./cam.jpg
+    ```
+- Flip the picture (if necessary)
+    ```
+    $ raspistill -hf -vf -o ./cam.jpg
+    ```
+- Record a video
+    ```
+    $ raspivid -t 60000 -w 640 -h 480 -fps 5 -b 1200000 -p 0,0,640,480 -o video.h264
+    ```
+- Convert the video to MP4
+    ```
+    $ MP4Box -add video.h264 video.mp4
+    ```
+
+On the computer
+- Get the picture via SCP
+
