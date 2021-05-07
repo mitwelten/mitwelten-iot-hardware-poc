@@ -70,7 +70,12 @@ On the Pi
     ```
 
 On the computer
-- Get the picture and video via SSH with SCP (via Yaler)
+- Get the picture and video via SSH with SCP
+    ```
+    $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/cam.jpg ~/Desktop/cam.jpg
+    $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/video.mp4 ~/Desktop/video.mp4
+    ```
+    or via Yaler
     ```
     $ scp -P 10023 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ~/Desktop/cam.jpg
     $ scp -P 10023 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ~/Desktop/video.mp4
