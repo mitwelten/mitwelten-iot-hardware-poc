@@ -56,11 +56,11 @@ On the Pi
 
 ## Test the Pi cam
 On the Pi
-- Take a picture (Flipped? Add `-hf -vf`)
+- Take a picture (add `-hf -vf` to flip it)
     ```
     $ raspistill -o ./cam.jpg
     ```
-- Record a video (Flipped? Add `-hf -vf`)
+- Record a video (add `-hf -vf` to flip it)
     ```
     $ raspivid -t 60000 -w 640 -h 480 -fps 5 -b 1200000 -p 0,0,640,480 -o video.h264
     ```
