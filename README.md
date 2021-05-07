@@ -251,7 +251,7 @@ Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/mast
 - Laser-cut [Box Fixture](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
 
 ### Setup
-- [PoE Pi Cam](RaspberryPi/PoEPiCam)
+- [PoEPiCam Setup](RaspberryPi/PoEPiCam)
 
 ## Raspberry Pi Streaming Endoscope
 Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but with a USB endoscope.
