@@ -30,6 +30,10 @@ On the Pi
     ```
     $ passwd
     ```
+- Note the MAC address
+    ```
+    $ ifconfig | grep ether
+    ```
 - Expand the filesystem
     ```
     $ sudo raspi-config # Advanced Options > Expand Filesystem
