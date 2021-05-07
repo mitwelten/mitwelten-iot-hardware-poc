@@ -39,6 +39,10 @@ On the Pi
     ```
     $ sudo raspi-config # Interface Options > Camera
     ```
+- Install GPAC (for MP4Box)
+    ```
+    $ sudo apt install -y gpac
+    ```
 - Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
 
 ## Test the connection
