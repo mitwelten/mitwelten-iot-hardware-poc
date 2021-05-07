@@ -1,4 +1,4 @@
-# APGateway
+# PoE Pi Cam
 ## Setup
 ### Prepare SD Card
 On the computer
