@@ -41,6 +41,15 @@ On the Pi
     ```
 - Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
 
+## Test the connection
+On the Pi
+- Run a speed test
+    ```
+    $ curl -Lo speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+    $ chmod +x speedtest-cli
+    $ ./speedtest-cli
+    ```
+
 ## Test the Pi cam
 On the Pi
 - Take a picture
