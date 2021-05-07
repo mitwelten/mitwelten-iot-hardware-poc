@@ -51,7 +51,7 @@ On the Pi
     $ sudo apt-get install nmap
     ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
-- Make sure Yaler is up and running (optional)
+- Make sure the daemon is up and running
     ```
     $ ps aux | grep [y]aler
     ```
