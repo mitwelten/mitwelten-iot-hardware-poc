@@ -60,10 +60,7 @@ On the Pi
     ```
     $ raspistill -o ./cam.jpg
     ```
-- Flip the picture (if necessary)
-    ```
-    $ raspistill -hf -vf -o ./cam.jpg
-    ```
+- To flip the picture add `-hf -vf`
 - Record a video
     ```
     $ raspivid -t 60000 -w 640 -h 480 -fps 5 -b 1200000 -p 0,0,640,480 -o video.h264
