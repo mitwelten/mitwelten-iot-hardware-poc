@@ -43,7 +43,7 @@ On the Pi
     ```
     $ sudo apt install -y gpac
     ```
-- Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
+- [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
 ## Test the connection
 On the Pi
