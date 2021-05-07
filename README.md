@@ -250,6 +250,9 @@ Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/mast
 - [IP67 Box with Clear Lid](https://www.mouser.ch/ProductDetail/Bud-Industries/PIP-11774-C/?qs=%2Fha2pyFaduhWtJcHf4Wic0ePltHJ10nv%252BRGIcnz2UHY8U4iCR362lHUokvZ%252BawDliJqYr5a2Kxo%3D)
 - Laser-cut [Box Fixture](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
 
+### Setup
+- [PoE Pi Cam](RaspberryPi/PoEPiCam)
+
 ## Raspberry Pi Streaming Endoscope
 Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but with a USB endoscope.
 
