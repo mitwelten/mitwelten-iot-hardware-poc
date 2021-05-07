@@ -42,4 +42,8 @@ On the Pi
     ```
 - Mount the hard disk
     [TODO](https://www.raspberrypi.org/documentation/configuration/external-storage.md)
+- Install nmap
+    ```
+    $ sudo apt-get install nmap
+    ```
 - Install [Yaler](https://yaler.net/raspberrypi) for remote SSH access (optional)
