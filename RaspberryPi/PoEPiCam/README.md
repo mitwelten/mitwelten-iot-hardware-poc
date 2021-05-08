@@ -75,7 +75,7 @@ On the computer
     $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/cam.jpg ~/Desktop/cam.jpg
     $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/video.mp4 ~/Desktop/video.mp4
     ```
-    or via Yaler
+    or via Yaler via SSH with [SCP](https://yaler.net/scp):
     ```
     $ scp -P 10023 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ~/Desktop/cam.jpg
     $ scp -P 10023 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ~/Desktop/video.mp4
