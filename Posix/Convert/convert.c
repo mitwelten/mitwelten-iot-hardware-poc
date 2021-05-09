@@ -48,17 +48,19 @@ int convert_name(char *name,
         struct stat s;
         stat(name, &s);
         struct tm *t = gmtime(&s.st_mtime);
-        // ISO8601, replace ':' with '-'
+// ISO8601, replace ':' with '-'
+        char *format = "%Y-%m-%dT%H-%M-%SZ";
         // yyyy-mm-ddThh-mm-ssZ => 20 characters
         size_t len = 20 + 1; // '\0' terminated
         assert(len + strlen(ext) <= conv_name_len);
-        len = strftime(conv_name, len, "%Y-%m-%dT%H-%M-%SZ", t);
+        len = strftime(conv_name, len, format, t);
         conv_name[len] = '\0';
         strcpy(conv_name + len, ext); // including '\0'
-        // yyyy-mm-dd => 20 characters
+        char *format2 = "%Y-%m-%d";
+        // yyyy-mm-dd => 10 characters
         size_t len2 = 10 + 1; // '\0' terminated
         assert(len2 <= conv_dir_len);
-        len2 = strftime(conv_dir, 10 + 1, "%Y-%m-%d", t);
+        len2 = strftime(conv_dir, 10 + 1, format2, t);
         conv_dir[len2] = '\0';
         result = 0;
     } else {
