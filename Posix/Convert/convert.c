@@ -48,7 +48,7 @@ int convert_name(char *name,
         struct stat s;
         stat(name, &s);
         struct tm *t = gmtime(&s.st_mtime);
-// ISO8601, replace ':' with '-'
+        // ISO8601, replace ':' with '-'
         char *format = "%Y-%m-%dT%H-%M-%SZ";
         // yyyy-mm-ddThh-mm-ssZ => 20 characters
         size_t len = 20 + 1; // '\0' terminated
