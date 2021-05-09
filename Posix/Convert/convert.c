@@ -47,7 +47,10 @@ int convert_name(char *name,
     {
         struct stat s;
         stat(name, &s);
-        struct tm *t = gmtime(&s.st_mtime);
+        //struct tm *t = gmtime(&s.st_ctime); // last change
+        //struct tm *t = gmtime(&s.st_mtime); // last modify
+        //struct tm *t = gmtime(&s.st_atime); // last access
+        struct tm *t = gmtime(&s.st_birthtime); // created
         // ISO8601, replace ':' with '-'
         char *format = "%Y-%m-%dT%H-%M-%SZ";
         // yyyy-mm-ddThh-mm-ssZ => 20 characters
