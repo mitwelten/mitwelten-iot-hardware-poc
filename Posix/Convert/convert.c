@@ -1,5 +1,14 @@
 // https://fhnw.mit-license.org/
 
+// $ stat 20210209_173300T.WAV
+// "Feb 11 14:47:48 2021"
+// "Feb  9 17:33:54 2021"
+// "May  9 14:36:32 2021"
+// "Feb  9 17:32:58 2021"
+
+// $ ./convert               
+// 20210209_173300T.WAV => 2021-02-09/2021-02-09T16-33-54Z.WAV
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,12 +28,6 @@ char *get_extension(char *name) {
     }
     return p;
 }
-
-// $ stat 20210209_173300T.WAV
-// "Feb 11 14:47:48 2021"
-// "Feb  9 17:33:54 2021"
-// "May  9 14:36:32 2021"
-// "Feb  9 17:32:58 2021"
 
 int convert_name(char *name,
     char *conv_name, size_t conv_name_len,
