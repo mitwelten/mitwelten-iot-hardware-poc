@@ -47,23 +47,25 @@ int convert_name(char *name,
     {
         struct stat s;
         stat(name, &s);
-        //struct tm *t = gmtime(&s.st_ctime); // last change
-        //struct tm *t = gmtime(&s.st_mtime); // last modify
-        //struct tm *t = gmtime(&s.st_atime); // last access
-        struct tm *t = gmtime(&s.st_birthtime); // created
+        //time_t *t = &s.st_ctime; // last change
+        //time_t *t = &s.st_mtime; // last modify
+        //time_t *t = &s.st_atime; // last access
+        time_t *t = &s.st_birthtime; // created
+        //struct tm *tm = gmtime(t);
+        struct tm *tm = localtime(t);
         // ISO8601, replace ':' with '-'
         char *format = "%Y-%m-%dT%H-%M-%SZ";
         // yyyy-mm-ddThh-mm-ssZ => 20 characters
         size_t len = 20 + 1; // '\0' terminated
         assert(len + strlen(ext) <= conv_name_len);
-        len = strftime(conv_name, len, format, t);
+        len = strftime(conv_name, len, format, tm);
         conv_name[len] = '\0';
         strcpy(conv_name + len, ext); // including '\0'
         char *format2 = "%Y-%m-%d";
         // yyyy-mm-dd => 10 characters
         size_t len2 = 10 + 1; // '\0' terminated
         assert(len2 <= conv_dir_len);
-        len2 = strftime(conv_dir, 10 + 1, format2, t);
+        len2 = strftime(conv_dir, 10 + 1, format2, tm);
         conv_dir[len2] = '\0';
         result = 0;
     } else {
