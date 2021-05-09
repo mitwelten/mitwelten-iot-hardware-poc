@@ -85,9 +85,9 @@ int main() {
                 conv_dir, conv_str_max);
             if (result == 0) {
                 printf("%s => %s/%s\n", e->d_name, conv_dir, conv_name);
-                // TODO: mkdir conv_dir_name
-                // TODO: mv name conv_dir_name/conv_name
-                // TODO: if mv fails, add post-fix to prevent overwriting files
+                // TODO: mkdir conv_dir
+                // TODO: mv name conv_dir/conv_name
+                // TODO: if mv fails, add postfix to prevent overwriting
             }
         }
         e = readdir(d);
