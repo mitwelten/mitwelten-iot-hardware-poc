@@ -87,10 +87,28 @@ int main() {
                 conv_name, conv_str_max, 
                 conv_dir, conv_str_max);
             if (result == 0) {
-                printf("%s => %s/%s\n", e->d_name, conv_dir, conv_name);
-                // TODO: mkdir conv_dir
-                // TODO: mv name conv_dir/conv_name
-                // TODO: if mv fails, add postfix to prevent overwriting
+                // TODO: use sprintf
+                char *mkdir_cmd = malloc(1024 * sizeof(char));
+                mkdir_cmd[0] = '\0';
+                mkdir_cmd = strcat(mkdir_cmd, "mkdir ");
+                mkdir_cmd = strcat(mkdir_cmd, conv_dir);
+                char *mv_cmd =  malloc(1024 * sizeof(char));
+                mv_cmd[0] = '\0';
+                mv_cmd = strcat(mv_cmd, "mv ");
+                mv_cmd = strcat(mv_cmd, e->d_name);
+                mv_cmd = strcat(mv_cmd, " ");
+                mv_cmd = strcat(mv_cmd, conv_dir);
+                mv_cmd = strcat(mv_cmd, "/");
+                mv_cmd = strcat(mv_cmd, conv_name);
+                if ((argc == 2) && (argv[1][0] == '!')) {
+                    system(mkdir_cmd);
+                    system(mv_cmd);
+                } else {
+                    printf("%s\n", mkdir_cmd);
+                    printf("%s\n", mv_cmd);
+                }
+                free(mkdir_cmd);
+                free(mv_cmd);
             }
         }
         e = readdir(d);
