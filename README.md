@@ -230,6 +230,7 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- M2.5 Screws
 
 ### Setup
 - [PoEPiCam Setup](RaspberryPi/PoEPiCam)
@@ -290,6 +291,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - [Gore Nut](https://www.distrelec.ch/de/gegenmutter-m12x1-m12-grau-gore-associates-gmbh-m10510-009/p/30155048)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
+- Wood Screws
 
 ### Stand
 - [150cm, 4cm diameter Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
