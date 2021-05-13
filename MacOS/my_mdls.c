@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
         close(fds[1]);
         int len = 1024 + 1;
         char buf[len];
-        int r = read(fds[0], buf, len);
+        int r = read(fds[0], buf, len); // blocking
         buf[r] = '\0';
         //printf("%s", buf);
         //kMDItemComment                         = "Recorded at 17:22:00 09/02/2021 (UTC) by AudioMoth 24E144085F2569BF at medium-high gain setting while battery state was 4.6V and temperature was 19.4C. Amplitude threshold was 60."
