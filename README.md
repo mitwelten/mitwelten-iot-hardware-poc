@@ -222,8 +222,18 @@ This Raspberry Pi camera provides a basic video stream.
 ## Raspberry Pi Streaming Camera with PoE
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
 
+<img src="https://live.staticflickr.com/65535/51161321095_3d5992ed48.jpg"/>
+
 ### Hardware
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
+
+### Enclosure
+- [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
+- [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- M2.5 Screws
+
+### Setup
+- [PoEPiCam Setup](RaspberryPi/PoEPiCam)
 
 ## Raspberry Pi Streaming Camera with Solar Power
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
@@ -255,12 +265,19 @@ Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but wit
 ## Wi-Fi and PoE Access Point with 4G Uplink
 This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to Wi-Fi and PoE devices.
 
+<img src="https://live.staticflickr.com/65535/51162813404_506099360e.jpg"/>
+
 ### Hardware
 - [TP-Link TL-MR6400 4G Router](https://www.digitec.ch/de/s1/product/tp-link-tl-mr6400-router-6078813) (< 50 Mbit/s Upload)
 - [TP-Link TL-SG105PE PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153) (4 * 802.3af)
-- [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/brennenstuhl-abzweigstecker-3-fach-sternfoermig-mehrfachstecker-3231053)
-- [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
-- 4 * [10m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1000cm-netzwerkkabel-5692274) (or [20m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-2000cm-netzwerkkabel-5692276) or [30m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-3000cm-netzwerkkabel-5692277))
+- [Raspberry Pi 4B, 2GB RAM](https://www.pi-shop.ch/raspberry-pi-4-model-b-2gb)
+- [Poly Case with Fan](https://www.pi-shop.ch/poly-case-for-rpi-4-with-dedicated-mini-cooling-fan)
+- [SD Card, 128 GB](https://www.pi-shop.ch/kingston-microsdxc-karte-canvas-select-plus-128-gb)
+- [Disk, 2TB](https://www.digitec.ch/de/s1/product/wd-elements-2tb-externe-festplatte-448766)
+- [USB C Power Supply](https://www.pi-shop.ch/raspberry-pi-15w-power-supply-eu-schwarz)
+- [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/steffen-abzweigstecker-3xt13-ks-schwarz-mehrfachstecker-6153542)
+- 2 * [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
+- 4 * [10m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1000cm-netzwerkkabel-5692274) (or [15m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-1500cm-netzwerkkabel-5692275) or [20m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-2000cm-netzwerkkabel-5692276) or [30m](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-3000cm-netzwerkkabel-5692277))
 - [25m PUR-PUR Power Cord](https://www.jumbo.ch/de/apparatekabel-pur-pur-13185?sku=1194420) (or [50m](https://shop.meyerhwz.ch/?srv=search&pg=det&partnerId=9&rub=100044242&groupId=&artNr=100003741&markId=) or [100m](http://pur-kabel.ch/))
 - [T13 Power Coupling](https://www.jumbo.ch/de/gummikupplung-14466?sku=1251981)
 - [T12 Power Plug](https://www.jumbo.ch/de/gummistecker-typ12-10a-250v-16168?sku=1251977)
@@ -274,8 +291,12 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - [Gore Nut](https://www.distrelec.ch/de/gegenmutter-m12x1-m12-grau-gore-associates-gmbh-m10510-009/p/30155048)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
+- Wood Screws
 
 ### Stand
 - [150cm, 4cm diameter Pole](https://www.jumbo.ch/de/rohrpfosten-verzinkt-5438?sku=1230258)
 - [200cm, 50cm, 2.7cm Board](https://www.jumbo.ch/de/schalungstafel-5634?sku=1333377)
 - CNC-cut [Barrel Pole Stand](OpenScad/AccessPoint_PoleStand)
+
+### Setup
+- [APGateway Setup](RaspberryPi/APGateway/README.md)
