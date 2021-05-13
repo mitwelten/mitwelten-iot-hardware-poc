@@ -32,8 +32,8 @@ int main(int argc, char *argv[]) {
             printf("Date = %s", asctime(&t));
         }
         if (r >= 162) {
-            float vbatt = atof(&buf[162]);
-            printf("VBatt = %1.2fV\n", vbatt);
+            float batt = atof(&buf[162]);
+            printf("Batt = %1.2fV\n", batt);
         }
         if (r >= 187) {
             float temp = atof(&buf[187]);
