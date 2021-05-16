@@ -1,5 +1,13 @@
 // https://fhnw.mit-license.org/
 
+// MacOS only
+// Compile with $ gcc -o amsync amsync.c
+// Copy amsync to SD card (this is done once)
+// Make sure SD-card name is, e.g. "0000-0001"
+// Make sure external disk name is "Elements"
+// Open a terminal, run $ amsync for a dry run
+// If console output looks fine, run $ amsync !
+
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
