@@ -11,6 +11,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <limits.h>
 #include <dirent.h>
 #include <sys/types.h>
@@ -58,6 +59,35 @@ void to_lower(/* inout */ char *s) {
     }
 }
 
+void readAudioMothDateUtc(char *name, /* out */ struct tm *t) {
+    int fds[2];
+    pipe(fds);
+    int pid = fork();
+    if (pid == 0) { // child
+        close(fds[0]);
+        dup2(fds[1], STDOUT_FILENO);
+        char cmd[1024];
+        sprintf(cmd, "mdls %s | grep kMDItemComment", name);
+        execl("/bin/sh", "sh", "-c", cmd, NULL);
+    } else { // parent
+        close(fds[1]);
+        int len = 1024 + 1;
+        char buf[len];
+        int r = read(fds[0], buf, len);
+        buf[r] = '\0';
+        //printf("%s", buf);
+        //kMDItemComment                         = "Recorded at 17:22:00 09/02/2021 (UTC) by AudioMoth 24E144085F2569BF at medium-high gain setting while battery state was 4.6V and temperature was 19.4C. Amplitude threshold was 60."
+        //kMDItemComment                         = "Recorded at 14:00:00 16/04/2021 (UTC) by AudioMoth 247475055F2569A5 at medium gain setting while battery state was 4.1V and temperature was 21.2C."
+        if (r >= 54) {
+            //struct tm t;
+            char format[] = "%H:%M:%S %d/%m/%Y";
+            strptime(&buf[54], format, t);
+        } else {
+            t = NULL;
+        }
+    }
+}
+
 int convert_name(char *name, char *cur_dir,
     char *conv_name, size_t conv_name_len,
     char *conv_dir, size_t conv_dir_len) 
@@ -77,33 +107,37 @@ int convert_name(char *name, char *cur_dir,
         (strcmp(ext, "wav") == 0)))
     {
         // https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/stat.2.html
-        struct stat s;
-        stat(name, &s); // seems to work only from current directory
+        //struct stat s;
+        //stat(name, &s); // seems to work only from current directory
 
         //time_t *t = &s.st_ctime; // last change
-        time_t *t = &s.st_mtime; // last modify
+        //time_t *t = &s.st_mtime; // last modify
         //time_t *t = &s.st_atime; // last access
         //time_t *t = &s.st_birthtime; // created // works on MacOS
-
         //struct tm *tm = gmtime(t);        
-        struct tm *tm = localtime(t);
+        //struct tm *tm = localtime(t);
+        
+        struct tm t;
+        readAudioMothDateUtc(name, &t);
+        //printf("Date = %s", asctime(&t));
+
         // ISO8601, replace ':' with '-'
         char *format = "%Y-%m-%dT%H-%M-%SZ";
         // yyyy-mm-ddThh-mm-ssZ => 20 characters
         size_t len = 20 + 1; // including '\0'
         char date[len];
-        len = strftime(date, len, format, tm);
+        len = strftime(date, len, format, &t);
         date[len] = '\0';
 
         assert(strlen(cur_dir) + 1 + len + 1 + strlen(ext) + 1 <= conv_name_len);
-        int x = sprintf(conv_name, "%s_%s.%s", cur_dir, date, ext);
-        conv_name[x] = '\0';
+        int len1 = sprintf(conv_name, "%s_%s.%s", cur_dir, date, ext);
+        conv_name[len1] = '\0';
 
         char *format2 = "%Y-%m-%d";
         // yyyy-mm-dd => 10 characters
         size_t len2 = 10 + 1; // '\0' terminated
         assert(len2 <= conv_dir_len);
-        len2 = strftime(conv_dir, 10 + 1, format2, tm);
+        len2 = strftime(conv_dir, 10 + 1, format2, &t);
         conv_dir[len2] = '\0';
         result = 0;
     } else {
