@@ -59,7 +59,8 @@ void to_lower(/* inout */ char *s) {
     }
 }
 
-void readAudioMothDateUtc(char *name, /* out */ struct tm *t) {
+int readAudioMothDateUtc(char *name, /* out */ struct tm *t) {
+    int result;
     int fds[2];
     pipe(fds);
     int pid = fork();
@@ -68,7 +69,7 @@ void readAudioMothDateUtc(char *name, /* out */ struct tm *t) {
         dup2(fds[1], STDOUT_FILENO);
         char cmd[1024];
         sprintf(cmd, "mdls %s | grep kMDItemComment", name);
-        execl("/bin/sh", "sh", "-c", cmd, NULL);
+        execl("/bin/sh", "sh", "-c", cmd, NULL); // never returns
     } else { // parent
         close(fds[1]);
         int len = 1024 + 1;
@@ -82,10 +83,12 @@ void readAudioMothDateUtc(char *name, /* out */ struct tm *t) {
             //struct tm t;
             char format[] = "%H:%M:%S %d/%m/%Y";
             strptime(&buf[54], format, t);
+            result = 0;
         } else {
-            t = NULL;
+            result = -1;
         }
     }
+    return result;
 }
 
 int convert_name(char *name, char *cur_dir,
@@ -101,10 +104,10 @@ int convert_name(char *name, char *cur_dir,
     int result;
     char *ext = get_extension(name);
     to_lower(ext);
-    if (ext != NULL &&
-        ((strcmp(ext, "jpg") == 0) ||
-        (strcmp(ext, "mp4") == 0) ||
-        (strcmp(ext, "wav") == 0)))
+    if (ext != NULL && (
+//        (strcmp(ext, "jpg") == 0) ||
+//        (strcmp(ext, "mp4") == 0) ||
+        (strcmp(ext, "wav") == 0))) // AudioMoth only
     {
         // https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/stat.2.html
         //struct stat s;
@@ -118,28 +121,34 @@ int convert_name(char *name, char *cur_dir,
         //struct tm *tm = localtime(t);
         
         struct tm t;
-        readAudioMothDateUtc(name, &t);
+        int res = readAudioMothDateUtc(name, &t);
         //printf("Date = %s", asctime(&t));
 
-        // ISO8601, replace ':' with '-'
-        char *format = "%Y-%m-%dT%H-%M-%SZ";
-        // yyyy-mm-ddThh-mm-ssZ => 20 characters
-        size_t len = 20 + 1; // including '\0'
-        char date[len];
-        len = strftime(date, len, format, &t);
-        date[len] = '\0';
+        if (res == 0) {
+            // ISO8601, replace ':' with '-'
+            char *format = "%Y-%m-%dT%H-%M-%SZ";
+            // yyyy-mm-ddThh-mm-ssZ => 20 characters
+            size_t len = 20 + 1; // including '\0'
+            char date[len];
+            len = strftime(date, len, format, &t);
+            date[len] = '\0';
 
-        assert(strlen(cur_dir) + 1 + len + 1 + strlen(ext) + 1 <= conv_name_len);
-        int len1 = sprintf(conv_name, "%s_%s.%s", cur_dir, date, ext);
-        conv_name[len1] = '\0';
+            assert(strlen(cur_dir) + 1 + len + 1 + strlen(ext) + 1 <= conv_name_len);
+            int len1 = sprintf(conv_name, "%s_%s.%s", cur_dir, date, ext);
+            conv_name[len1] = '\0';
 
-        char *format2 = "%Y-%m-%d";
-        // yyyy-mm-dd => 10 characters
-        size_t len2 = 10 + 1; // '\0' terminated
-        assert(len2 <= conv_dir_len);
-        len2 = strftime(conv_dir, 10 + 1, format2, &t);
-        conv_dir[len2] = '\0';
-        result = 0;
+            char *format2 = "%Y-%m-%d";
+            // yyyy-mm-dd => 10 characters
+            size_t len2 = 10 + 1; // '\0' terminated
+            assert(len2 <= conv_dir_len);
+            len2 = strftime(conv_dir, 10 + 1, format2, &t);
+            conv_dir[len2] = '\0';
+            result = 0;
+        } else {
+            conv_name[0] = '\0';
+            conv_dir[0] = '\0';
+            result = -1;
+        }
     } else {
         conv_name[0] = '\0';
         conv_dir[0] = '\0';
@@ -196,4 +205,3 @@ int main(int argc, char *argv[]) {
     }
     closedir(d);
 }
-
