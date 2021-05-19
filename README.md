@@ -229,6 +229,7 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
+- [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - M2.5 Screws
 
