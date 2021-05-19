@@ -82,4 +82,4 @@ module hinge_tube_fixture() {
 }
 
 ap10_hinge_fixture();
-//hinge_tube_fixture();
+hinge_tube_fixture();
