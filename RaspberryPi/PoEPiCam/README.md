@@ -77,6 +77,6 @@ On the computer
     ```
     or via Yaler via SSH with [SCP](https://yaler.net/scp):
     ```
-    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ~/Desktop/cam.jpg
-    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ~/Desktop/video.mp4
+    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
+    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
     ```
