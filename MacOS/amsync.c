@@ -87,6 +87,7 @@ int readAudioMothDateUtc(char *name, /* out */ struct tm *t) {
         } else {
             result = -1;
         }
+        wait(NULL);
     }
     return result;
 }
