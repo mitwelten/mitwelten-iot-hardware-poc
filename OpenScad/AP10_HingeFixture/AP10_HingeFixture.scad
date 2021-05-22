@@ -81,5 +81,14 @@ module hinge_tube_fixture() {
     }
 }
 
-ap10_hinge_fixture();
+difference() {
+    ap10_hinge_fixture();
+    translate([-1, 29, 100 + 8]) rotate([0, 90, 0]) linear_extrude(100 + 8 + 2) rounded_square(100, 9 + 4);
+    translate([-1, 29 - 9, 29 + 9]) rotate([0, 90, 0]) linear_extrude(100 + 8 + 2) {
+        difference() {
+            square(2 * 9, 2 * 9);
+            translate([2 * 9, 0]) circle(9);
+        }
+    }
+}
 //hinge_tube_fixture();
