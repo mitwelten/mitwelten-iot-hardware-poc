@@ -5,7 +5,7 @@ r_220v = 9 / 2;
 r_rj45 = 7 / 2;
 r_bend = 30;
 r_hole = 68 / 2;
-r_pole = 39 / 2;
+r_pole = 39 / 2; // 40?
 d = r_220v + 4;
 
 module wire(r) {
@@ -34,7 +34,7 @@ difference() {
         translate([0, 0, 8]) cylinder(30 + 8, r_hole, r_hole);
         cylinder(30, 52, 52);
     }
-    cylinder(60, r_pole + 1, r_pole + 1);
+    #cylinder(60, r_pole + 1, r_pole + 1);
     translate([0, 0, -1]) cylinder(9 + 1, r_hole + r_bend, r_hole + r_bend);
 // <<
     union() {

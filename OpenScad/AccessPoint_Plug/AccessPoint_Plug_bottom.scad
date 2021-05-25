@@ -5,7 +5,7 @@ r_220v = 9 / 2;
 r_rj45 = 7 / 2;
 r_bend = 30;
 r_hole = 68 / 2;
-r_pole = 39 / 2;
+r_pole = 39 / 2; // 40? 
 d = r_220v + 4;
 
 module wire(r) {
@@ -62,5 +62,6 @@ module wire_220v() {
         rotate(3 * 72) wire_rj45();
         rotate(4 * 72) wire_rj45();
 //        translate([0, 0, 8.15]) cylinder(1, 52 + 1, 52 + 1);
+        cylinder(60, r_pole + 1, r_pole + 1);
     }
 //}
