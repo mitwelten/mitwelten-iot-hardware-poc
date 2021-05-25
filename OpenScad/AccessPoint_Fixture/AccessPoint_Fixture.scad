@@ -20,31 +20,58 @@ module side() {
 }
 
 module panel() {
-    rotate([90, 0, 0]) {
-        //!projection()
-        difference() {
-            union() {
-                cube([240, 310 + 8, 8]);
-                // fingers
-                translate([20, -8, 0]) cube([30, 8, 8]);
-                translate([240 - 20 - 30, -8, 0]) cube([30, 8, 8]);
-                translate([20, 310 + 8, 0]) cube([30, 8, 8]);
-                translate([240 - 20 - 30, 310 + 8, 0]) cube([30, 8, 8]);
-            }
-            translate([40, 40, -1]) cube([38, 120, 8 + 2]);
-            translate([240 + - 38 - 40, 40, -1]) cube([38, 120, 8 + 2]);
-            translate([(240 - 100) / 2, -1, -1]) cube([100, 8 + 1, 8 + 2]);
-            // screw holes
-            translate([(240 - 84) / 2, 0, 0]) {
-                translate([(22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
-                translate([(22 + 22 + 40) - (22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
-                translate([(22 / 2), 160 + (22 / 2), -1]) cylinder(8 + 2, 2, 2);
-                translate([(22 + 22 + 40) - (22 / 2), 160 + (22 / 2), -1]) cylinder(8 + 2, 2, 2);
-                translate([(22 / 2), 310 + 8 - (22/2), -1]) cylinder(8 + 2, 2, 2);
-                translate([(22 + 22 + 40) - (22 / 2), 310 + 8 - (22/2), -1]) cylinder(8 + 2, 2, 2);
-            }
+    difference() {
+        union() {
+            cube([240, 310 + 8, 8]);
+            // fingers
+            translate([20, -8, 0]) cube([30, 8, 8]);
+            translate([240 - 20 - 30, -8, 0]) cube([30, 8, 8]);
+            translate([20, 310 + 8, 0]) cube([30, 8, 8]);
+            translate([240 - 20 - 30, 310 + 8, 0]) cube([30, 8, 8]);
+        }
+        translate([40, 40, -1]) cube([38, 120, 8 + 2]);
+        translate([240 + - 38 - 40, 40, -1]) cube([38, 120, 8 + 2]);
+        translate([(240 - 100) / 2, -1, -1]) cube([100, 8 + 1, 8 + 2]);
+        // screw holes
+        translate([(240 - 84) / 2, 0, 0]) {
+            translate([(22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 + 22 + 40) - (22 / 2), 22, -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 / 2), 160 + (22 / 2), -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 + 22 + 40) - (22 / 2), 160 + (22 / 2), -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 / 2), 310 + 8 - (22/2), -1]) cylinder(8 + 2, 2, 2);
+            translate([(22 + 22 + 40) - (22 / 2), 310 + 8 - (22/2), -1]) cylinder(8 + 2, 2, 2);
         }
     }
+}
+
+module wifi_panel() {
+    //! projection()
+    difference() {
+        panel();
+        // zip holes
+        translate([65, 300, -1]) cube([5, 2, 8 + 2]);
+        translate([65, 175, -1]) cube([5, 2, 8 + 2]);
+        translate([175 - 5, 300, -1]) cube([5, 2, 8 + 2]);
+        translate([175 - 5, 175, -1]) cube([5, 2, 8 + 2]);
+    }
+}
+
+module poe_panel() {
+    //! projection()
+    difference() {
+        panel();
+        // screw holes
+        translate([120, 216, -1]) cylinder(8 + 2, 1.5, 1.5);
+        translate([120 - 51.5, 216 + 50, -1]) cylinder(8 + 2, 1.5, 1.5);
+        translate([120 + 51.5, 216 + 50, -1]) cylinder(8 + 2, 1.5, 1.5);
+        // zip holes
+        translate([40, 90 + 80, -1]) cube([2, 5, 8 + 2]);   
+        translate([65, 90 + 80, -1]) cube([2, 5, 8 + 2]);
+        translate([165, 216 - 2, -1]) cube([5, 2, 8 + 2]);   
+
+        translate([25, 216 + 75, -1]) rotate([0, 0, 45]) cube([5, 2, 8 + 2]);   
+        translate([15, 216 + 85, -1]) rotate([0, 0, 45]) cube([5, 2, 8 + 2]);   
+    }    
 }
 
 module poe_adapter() {
@@ -120,6 +147,13 @@ module mid_disk() {
         translate([120 - 20 - 30, -22 -8, -1]) cube([30, 8, 8 + 2]);
         translate([-120 + 20, 22, -1]) cube([30, 8, 8 + 2]);
         translate([120 - 20 - 30, 22, -1]) cube([30, 8, 8 + 2]);
+        // rj45 hole
+        translate([-70, 60, -1]) cylinder(8 + 2, 10, 10);
+        // zip holes
+        translate([-40, 65, 0]) cube([5, 2, 8 + 2]);
+        translate([40 - 5, 65, 0]) cube([5, 2, 8 + 2]);
+        translate([-40, 40 + 65, 0]) cube([5, 2, 8 + 2]);
+        translate([40 - 5, 40 + 65, 0]) cube([5, 2, 8 + 2]);
     }    
 }
 
@@ -136,12 +170,12 @@ translate([0, 0, -26]) base_disk();
 translate([0, 0, -10]) small_disk();
 translate([0, 0, 424 + 2 * 8 + 10]) small_disk();
 translate([0, 0, 310 + 2 * 8 + 10]) mid_disk();
-translate([0, 0, 310 + 2 * 8 + 28]) mid_ring();
-translate([0, 0, 310 + 2 * 8 + 46]) rotate(180) mid_ring();
-translate([20, -44/2, 2 * 8]) cube([22, 44, 424]);
+//translate([0, 0, 310 + 2 * 8 + 28]) mid_ring();
+//translate([0, 0, 310 + 2 * 8 + 46]) rotate(180) mid_ring();
+#translate([20, -44/2, 2 * 8]) cube([22, 44, 424]);
 translate([-20 - 22, -44/2, 2 * 8]) cube([22, 44, 424]);
-translate([-120, -22, 8]) panel();
-translate([-120, 22 + 8, 8]) panel();
+translate([-120, -22, 8]) rotate([90, 0, 0]) wifi_panel();
+translate([-120, 22 + 8, 8]) rotate([90, 0, 0]) poe_panel();
 
 translate([-(22 + 22 + 40) / 2, 44/2 + 8, 500 - (190 - 8) + 2 * 8]) side();
 translate([-(22 + 22 + 40) / 2, -44/2, 500 - (190 - 8) + 2 * 8]) side();
@@ -150,5 +184,5 @@ translate([-(22 + 22 + 40) / 2, -44/2, 500 - (190 - 8) + 2 * 8]) side();
 translate([-100/2, (44 / 2) + 8 + 26, 310 - (100) + 2 * 8]) poe_switch();
 translate([(22 + 22 + 40) / 2, -28/2, 310 - (25 + 105 + 80) + 2 * 8]) poe_adapter();
 translate([-60 -(22 + 22 + 40) / 2, -28/2, 310 - (25 + 105 + 80) + 2 * 8]) poe_adapter();
-translate([-175 / 2, -8 - (44 / 2), (310 + 2 * 8) - (125 + 165)]) wifi_router();
-barrel();
+translate([-175 / 2, -8 - (44 / 2), (-10 + 310 + 2 * 8) - (125 + 165)]) wifi_router();
+//barrel();
