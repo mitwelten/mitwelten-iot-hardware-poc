@@ -44,8 +44,16 @@ On the Pi
     ...
     dtoverlay=gpio-fan,gpiopin=18,temp=55000
     ```
-- Mount the hard disk
-    [TODO](https://www.raspberrypi.org/documentation/configuration/external-storage.md)
+- Mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
+    ```
+    $ sudo apt update
+    $ sudo apt install exfat-fuse
+    $ sudo blkid # note UUID, e.g. 0000-0001
+    $ sudo nano /etc/fstab # edit using UUID
+    ...
+    UUID=0000-0001 /mnt/elements exfat defaults,auto,users,rw,nofail 0 0
+    $ 
+    ```
 - Install nmap
     ```
     $ sudo apt-get install nmap
