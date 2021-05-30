@@ -10,3 +10,7 @@ On the computer
 - http://192.168.1.1/
 - Default user: admin
 - Set a password
+
+### Resources
+- [Datasheet](https://static.digitecgalaxus.ch/Files/7/5/9/4/0/1/9/TL-MR6400UN_V1_Datasheet.pdf)
+- [User Giude](https://static.digitecgalaxus.ch/Files/7/5/9/4/0/2/0/TL-MR6400EU_V1_UG.pdf)
