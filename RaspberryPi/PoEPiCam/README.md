@@ -88,7 +88,8 @@ On the computer
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
     ```
-- Record the VLC video stream with
+<s>- Record the VLC video stream with
     ```
     $ curl http://LOCAL_IP:8160 --output recording
     ```
+</s>
