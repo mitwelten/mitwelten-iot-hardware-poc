@@ -41,6 +41,7 @@ On the Pi
     ```
 - Install GPAC (for MP4Box)
     ```
+    $ sudo apt-get update
     $ sudo apt install -y gpac
     ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
