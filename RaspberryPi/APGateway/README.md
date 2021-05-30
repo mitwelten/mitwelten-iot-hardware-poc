@@ -52,7 +52,7 @@ On the Pi
     $ sudo nano /etc/fstab # edit using UUID
     ...
     UUID=0000-0001 /mnt/elements exfat defaults,auto,users,rw,nofail 0 0
-    $ 
+    $ ls /mnt/elements
     ```
 - Install nmap
     ```
