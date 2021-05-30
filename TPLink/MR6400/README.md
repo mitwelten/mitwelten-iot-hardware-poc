@@ -1,6 +1,6 @@
-# TP-Link MR6400
+# TP-Link TL-MR6400
 ## Setup
-### Prepare TP-Link MR6400
+### Prepare TP-Link TL-MR6400
 On the TP-Link
 - Insert SIM Card
 - Connect to power
