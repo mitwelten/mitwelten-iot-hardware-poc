@@ -108,4 +108,7 @@ On the computer
     $ curl http://LOCAL_IP:8160 --output recording
     ```
 - Access the video stream with
-    http://LOCAL_IP:8080/?action=stream or [?action=snapshot](http://LOCAL_IP:8080/?action=snapshot)
+    ```
+    http://LOCAL_IP:8080/?action=stream or
+    http://LOCAL_IP:8080/?action=snapshot
+    ```
