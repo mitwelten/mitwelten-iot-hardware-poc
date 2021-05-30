@@ -73,7 +73,7 @@ On the Pi
     ```
     $ MP4Box -add video.h264 video.mp4
     ```
-- Provide a video stream with VLC
+- <s>Provide a video stream with VLC</s>
     ```
     $ raspivid -o - -t 0 -hf -w 800 -h 400 -fps 5 | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
     ```
@@ -88,8 +88,7 @@ On the computer
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
     ```
-<s>- Record the VLC video stream with
+- <s>Record the VLC video stream with</s>
     ```
     $ curl http://LOCAL_IP:8160 --output recording
     ```
-</s>
