@@ -44,9 +44,20 @@ On the Pi
     $ sudo apt-get update
     $ sudo apt install -y gpac
     ```
-- Install VLC (for streaming)
+- <s>Install VLC (for streaming)</s>
     ```
     $ sudo apt-get install vlc
+    ```
+- Install mjpeg_streamer
+    ```
+    $ cd ~
+    $ sudo apt-get install cmake libjpeg8-dev
+    $ sudo apt-get install gcc g++
+    $ git clone https://github.com/jacksonliam/mjpg-streamer
+    $ cd mjpg-streamer
+    $ cd mjpg-streamer-experimental
+    $ make
+    $ ./mjpeg_streamer
     ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
@@ -76,6 +87,10 @@ On the Pi
 - <s>Provide a video stream with VLC</s>
     ```
     $ raspivid -o - -t 0 -hf -w 800 -h 400 -fps 5 | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+    ```
+- Provide a video stream with mjpeg_streamer
+    ```
+    $ ./mjpg_streamer -i "input_uvc.so -r 1024x576 -d /dev/video0" -o "output_http.so -p 8080 --credentials MY_USER:MY_PASSWORD -www ./www"
     ```
 On the computer
 - Get the picture and video via SSH with SCP
