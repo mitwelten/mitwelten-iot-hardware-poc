@@ -39,7 +39,7 @@ On the Pi
     ```
     $ sudo raspi-config # Interface Options > Camera
     ```
-- Install GPAC (for MP4Box)
+- <s>Install GPAC (for MP4Box)</s>
     ```
     $ sudo apt-get update
     $ sudo apt install -y gpac
@@ -76,11 +76,11 @@ On the Pi
     ```
     $ raspistill -o ./cam.jpg
     ```
-- Record a video (add `-hf -vf` to flip it)
+- <s>Record a video (add `-hf -vf` to flip it)</s>
     ```
     $ raspivid -t 60000 -w 640 -h 480 -fps 5 -b 1200000 -p 0,0,640,480 -o video.h264
     ```
-- Convert the video to MP4
+- <s>Convert the video to MP4</s>
     ```
     $ MP4Box -add video.h264 video.mp4
     ```
@@ -93,12 +93,12 @@ On the Pi
     $ ./mjpg_streamer -i "input_uvc.so -r 1024x576 -d /dev/video0" -o "output_http.so -p 8080 --credentials MY_USER:MY_PASSWORD -www ./www"
     ```
 On the computer
-- Get the picture and video via SSH with SCP
+- <s>Get the picture and video via SSH with SCP</s>
     ```
     $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/cam.jpg ./cam.jpg
     $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/video.mp4 ./video.mp4
     ```
-    or via Yaler via SSH with [SCP](https://yaler.net/scp):
+    <s>or via Yaler via SSH with [SCP](https://yaler.net/scp):</s>
     ```
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
