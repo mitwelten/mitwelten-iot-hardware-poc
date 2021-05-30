@@ -44,6 +44,10 @@ On the Pi
     $ sudo apt-get update
     $ sudo apt install -y gpac
     ```
+- Install VLC (for streaming)
+    ```
+    $ sudo apt-get install vlc
+    ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
 ## Test the connection
@@ -69,7 +73,10 @@ On the Pi
     ```
     $ MP4Box -add video.h264 video.mp4
     ```
-
+- Provide a video stream with VLC
+    ```
+    $ raspivid -o - -t 0 -hf -w 800 -h 400 -fps 5 | cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+    ```
 On the computer
 - Get the picture and video via SSH with SCP
     ```
@@ -80,4 +87,8 @@ On the computer
     ```
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
+    ```
+- Record the VLC video stream with
+    ```
+    $ curl http://LOCAL_IP:8160 --output recording
     ```
