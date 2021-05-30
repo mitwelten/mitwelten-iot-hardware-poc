@@ -105,7 +105,7 @@ On the computer
     ```
 - <s>Record the VLC video stream with</s>
     ```
-    $ curl http://LOCAL_IP:8160 --output recording
+    $ curl http://LOCAL_IP:8160 --output ./video.h264
     ```
 - Access the MJPEG video stream with
     ```
