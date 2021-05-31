@@ -93,17 +93,17 @@ On the Pi
     $ ./mjpg_streamer -i "input_uvc.so -r 1024x576 -d /dev/video0" -o "output_http.so -p 8080 --credentials MY_USER:MY_PASSWORD -www ./www"
     ```
 On the computer
-- <s>Get the picture and video via SSH with SCP</s>
+- Get the picture and video via SSH with SCP
     ```
     $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/cam.jpg ./cam.jpg
     $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/video.mp4 ./video.mp4
     ```
-    <s>or via Yaler via SSH with [SCP](https://yaler.net/scp):</s>
+    or via Yaler via SSH with [SCP](https://yaler.net/scp):
     ```
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
     $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
     ```
-- <s>Record the VLC video stream with</s>
+- Record the VLC video stream with
     ```
     $ curl http://LOCAL_IP:8160 --output ./video.h264
     ```
