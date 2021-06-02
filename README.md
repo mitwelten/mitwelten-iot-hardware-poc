@@ -302,3 +302,4 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 
 ### Setup
 - [APGateway Setup](RaspberryPi/APGateway/README.md)
+- [TPLink MR6400 Setup](TPLink/MR6400/README.md)
