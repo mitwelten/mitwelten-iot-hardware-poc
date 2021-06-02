@@ -7,7 +7,7 @@ difference() {
         translate([-14, 0, 0]) rotate([0, 90, 0]) cylinder(28, 10, 10);
         translate([-14, -8, 10]) rotate([0, 90, 0]) cube([20, 8, 28]);
         translate([-14, -(14 + 8), 24 + 5]) rotate([0, 90, 0]) cube([34 + 5, 14, 28]);
-        translate([-14, -23.9, -12.1]) rotate([5, 0, 0]) cube([28, 26, 10]);
+        translate([-14, -24.2, -11.25]) rotate([3, 0, 0]) cube([28, 26, 10]);
         translate([0, -10 + 2, 24 + 5]) rotate([90, 0, 0]) cylinder(14, 14, 14);
     }
     translate([0, 0, 24 + 5]) rotate([90, 0, 0]) cylinder(28, 10, 10);
