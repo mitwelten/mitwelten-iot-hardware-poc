@@ -39,9 +39,13 @@ On the Pi
     ```
     $ sudo raspi-config # Interface Options > Camera
     ```
-- <s>Install GPAC (for MP4Box)</s>
+- Install git
     ```
     $ sudo apt-get update
+    $ sudo apt-get install git
+    ```
+- <s>Install GPAC (for MP4Box)</s>
+    ```
     $ sudo apt install -y gpac
     ```
 - <s>Install VLC (for streaming)</s>
