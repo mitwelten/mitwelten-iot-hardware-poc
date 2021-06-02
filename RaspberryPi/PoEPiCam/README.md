@@ -61,7 +61,7 @@ On the Pi
     $ cd mjpg-streamer
     $ cd mjpg-streamer-experimental
     $ make
-    $ ./mjpeg_streamer
+    $ ./mjpg_streamer
     ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
