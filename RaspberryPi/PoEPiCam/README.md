@@ -63,6 +63,15 @@ On the Pi
     $ make
     $ ./mjpg_streamer
     ```
+- Start mjpeg_streamer as a systemd service:
+  copy the files [mjpgstreamer.service](mjpgstreamer.service) and [.mjpgconf](.mjpgconf) to `/etc/systemd/system`
+    ```
+    sudo systemctl daemon-reload
+    sudo systemctl enable mjpgstreamer.service
+    sudo systemctl start mjpgstreamer.service
+    ```
+    > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
+    
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
 ## Test the connection
