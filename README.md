@@ -224,6 +224,8 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 
 <img src="https://live.staticflickr.com/65535/51161321095_3d5992ed48.jpg"/>
 
+<img src="https://live.staticflickr.com/65535/51222661454_4bfd413109.jpg"/>
+
 ### Hardware
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 

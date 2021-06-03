@@ -39,9 +39,13 @@ On the Pi
     ```
     $ sudo raspi-config # Interface Options > Camera
     ```
-- <s>Install GPAC (for MP4Box)</s>
+- Install git
     ```
     $ sudo apt-get update
+    $ sudo apt-get install git
+    ```
+- <s>Install GPAC (for MP4Box)</s>
+    ```
     $ sudo apt install -y gpac
     ```
 - <s>Install VLC (for streaming)</s>
@@ -57,7 +61,7 @@ On the Pi
     $ cd mjpg-streamer
     $ cd mjpg-streamer-experimental
     $ make
-    $ ./mjpeg_streamer
+    $ ./mjpg_streamer
     ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
