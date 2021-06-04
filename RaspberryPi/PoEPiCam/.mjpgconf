@@ -1,2 +1,2 @@
-INPUTARG=-i "input_raspicam.so -x 3280  -y 2464 -fps 5"
+INPUTARG=-i "input_raspicam.so -x 1920 -y 1080 -fps 1"
 OUTPUTARG=-o "output_http.so -p 8080 --credentials MY_USER:MY_PASSWORD -www ./www"
