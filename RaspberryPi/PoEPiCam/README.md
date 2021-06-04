@@ -67,8 +67,8 @@ On the Pi
   copy the files [mjpg-streamer.service](mjpg-streamer.service) and [.mjpgconf](.mjpgconf) to `/etc/systemd/system`
     ```
     sudo systemctl daemon-reload
-    sudo systemctl enable mjpgstreamer.service
-    sudo systemctl start mjpgstreamer.service
+    sudo systemctl enable mjpg-streamer.service
+    sudo systemctl start mjpg-streamer.service
     ```
     
     > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
