@@ -109,13 +109,13 @@ On the Pi
 On the computer
 - Get the picture and video via SSH with SCP
     ```
-    $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/cam.jpg ./cam.jpg
-    $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/video.mp4 ./video.mp4
+    $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/cam.jpg ./
+    $ scp -P 22 -o ServerAliveInterval=5 pi@LOCAL_IP:~/video.mp4 ./
     ```
     or via Yaler via SSH with [SCP](https://yaler.net/scp):
     ```
-    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./cam.jpg
-    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./video.mp4
+    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/cam.jpg ./
+    $ scp -P 10022 -o ServerAliveInterval=5 pi@localhost:~/video.mp4 ./
     ```
 - Record the VLC video stream with
     ```
