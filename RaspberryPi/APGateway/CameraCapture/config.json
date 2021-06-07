@@ -1,10 +1,10 @@
 {
-    "output_directory": "/mnt/elements/images/",
+    "output_directory": "/mnt/elements/",
     "basic_auth_user": "this_is_the_username",
     "basic_auth_password": "this_is_the_password",
-    "camera_hostnames": [
-        "cam-1967-0514.local",
-        "cam-1975-0305.local",
-        "cam-2020-2024.local"
+    "camera_ids": [
+        "1967-0514",
+        "1975-0305",
+        "2020-2024"
     ]
 }
