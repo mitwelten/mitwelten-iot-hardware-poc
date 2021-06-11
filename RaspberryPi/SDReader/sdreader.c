@@ -27,7 +27,7 @@ void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
             char format[] = "%H:%M:%S %d/%m/%Y (UTC)";
             strptime(s + strlen(date_prefix), format, &t);
             char iso_format[] = "%Y-%m-%dT%H:%M:%SZ";
-            char iso_date[21]; // e.g. 2018-12-29T12:17:25Z
+            // e.g. 2018-12-29T12:17:25Z
             strftime(iso_date, 21, iso_format, &t);
         }
         char *batt_prefix = "battery state was ";
