@@ -5,9 +5,12 @@
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
-        printf("usage: %s file\n", argv[0]);
+        printf("usage: sudo %s file\n", argv[0]);
         exit(-1);
     }
+    // ensure sd card is mounted
+    system("mkdir /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
+    system("mount /dev/sda1 /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/mount.2.html
     int fds[2];
     pipe(fds);
     int pid = fork();
@@ -24,5 +27,6 @@ int main(int argc, char *argv[]) {
         int r = read(fds[0], buf, len); // blocking
         buf[r] = '\0';
         printf("%s", buf);
+        system("umount /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/umount.2.html
     }
 }
