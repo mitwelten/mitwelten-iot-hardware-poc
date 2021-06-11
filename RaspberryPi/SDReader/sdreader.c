@@ -30,32 +30,34 @@ int main(int argc, char *argv[]) {
         char buf[len];
         int r = read(fds[0], buf, len); // blocking
         buf[r] = '\0';
-        printf("%s\n", buf);
-
-        char *s = strstr(buf, "Recorded at ");
-printf("s = %s\n", s);
+        //printf("%s\n", buf);
+        char *date_prefix = "Recorded at ";
+        char *s = strstr(buf, date_prefix);
         if (s != NULL) {
             struct tm t;
             char format[] = "%H:%M:%S %d/%m/%Y (UTC)";
-            strptime(s + strlen("Recorded at "), format, &t);
-            char iso_format[] = "%Y-%m-%dT%H:%M:%SZ"; // 2018-12-29T12:17:25Z
-            char iso_date[21];
+            strptime(s + strlen(date_prefix), format, &t);
+            char iso_format[] = "%Y-%m-%dT%H:%M:%SZ";
+            char iso_date[21]; // e.g. 2018-12-29T12:17:25Z
             strftime(iso_date, 21, iso_format, &t);
             printf("Date = %s\n", iso_date);
         }
-        s = strstr(s, "battery state was ");
+        char *batt_prefix = "battery state was ";
+        s = strstr(s, batt_prefix);
         if (s != NULL) {
-            float batt = atof(s + strlen("battery state was "));
+            float batt = atof(s + strlen(batt_prefix));
             printf("Batt = %1.2fV\n", batt);
         }
-        s = strstr(s, "temperature was ");
+        char *temp_prefix = "temperature was ";
+        s = strstr(s, temp_prefix);
         if (s != NULL) {
-            float temp = atof(s + strlen("temperature was "));
+            float temp = atof(s + strlen(temp_prefix));
             printf("Temp = %2.2fC\n", temp);
         }
-        s = strstr(s, "Amplitude threshold was ");
+        char *ampl_prefix = "Amplitude threshold was ";
+        s = strstr(s, ampl_prefix);
         if (s != NULL) {
-            int ampl = atoi(s + strlen("Amplitude threshold was "));
+            int ampl = atoi(s + strlen(ampl_prefix));
             printf("Ampl = %d\n", ampl);
         }
         system("umount /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/umount.2.html
