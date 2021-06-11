@@ -10,7 +10,7 @@
 void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
     int len = 1024 + 1;
     char buf[len];
-    int r = read(fds[0], buf, len); // blocking
+    int r = read(fd, buf, len); // blocking
     if (r == -1) {
         perror("read");
         exit(-1);
