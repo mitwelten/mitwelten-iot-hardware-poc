@@ -1,7 +1,7 @@
 import requests
 from requests.auth import HTTPBasicAuth
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from time import time
+import time
 import os
 import datetime
 import shutil
@@ -20,8 +20,19 @@ camera_ids = config["camera_ids"]
 basicauth_user = config["basic_auth_user"]
 basicauth_password = config["basic_auth_password"]
 output_path = config["output_directory"]
+capture_interval = config["capture_interval"]
+start_hour = config["start_hour"]
+stop_hour = config["stop_hour"]
 print("camera_ids", camera_ids)
 print("output_path", output_path)
+
+
+def check_time_of_day():
+    utc_time = datetime.datetime.utcnow()
+    if (utc_time.hour >= start_hour) and (utc_time.hour <= stop_hour):
+        return True
+    else:
+        return False
 
 
 def get_image_from(camera_id):
@@ -50,15 +61,19 @@ def get_image_from(camera_id):
         print(e)
 
 
-start = time()
+def capture_all():
+    start = time.time()
+    processes = []
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        for camera_id in camera_ids:
+            processes.append(executor.submit(get_image_from, camera_id))
 
-processes = []
-with ThreadPoolExecutor(max_workers=10) as executor:
-    for camera_id in camera_ids:
-        processes.append(executor.submit(get_image_from, camera_id))
-
-for task in as_completed(processes):
-    print(task.result())
+    for task in as_completed(processes):
+        print(task.result())
+    print(f"Time taken: {time.time() - start}")
 
 
-print(f"Time taken: {time() - start}")
+while True:
+    if check_time_of_day():
+        capture_all()
+    time.sleep(capture_interval)
