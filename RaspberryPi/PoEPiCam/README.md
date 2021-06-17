@@ -63,16 +63,20 @@ On the Pi
     $ make
     $ ./mjpg_streamer
     ```
-- Start mjpeg_streamer as a systemd service:
-  copy the files [mjpg-streamer.service](mjpg-streamer.service) and [.mjpgconf](.mjpgconf) to `/etc/systemd/system`
+- Install mjpg-streamer.service
+    ```
+    $ sudo wget -O /etc/systemd/system/mjpg-streamer.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/mjpg-streamer.service
+    $ cat /etc/systemd/system/mjpg-streamer.service
+    $ sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/.mjpgconf
+    $ cat /etc/systemd/system/.mjpgconf
+    ```
+    > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
+- Start mjpg-streamer.service
     ```
     sudo systemctl daemon-reload
     sudo systemctl enable mjpg-streamer.service
     sudo systemctl start mjpg-streamer.service
-    ```
-    
-    > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
-    
+    ```    
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 
 ## Test the connection
