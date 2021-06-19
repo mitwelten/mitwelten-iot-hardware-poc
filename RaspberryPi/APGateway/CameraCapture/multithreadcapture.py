@@ -41,7 +41,7 @@ def get_image_from(camera_id):
     utc_time = datetime.datetime.utcnow()
     filename = camera_id + "_" + utc_time.strftime("%Y-%m-%dT%H-%M-%SZ") + ".jpg"
     savepath = (
-        output_path + camera_id + "/" + utc_time.strftime("%Y-%m-%d") + "/" + filename
+        output_path + camera_id + "/" + utc_time.strftime("%Y-%m-%d") + "/" + utc_time.strftime("%H") + "/" + filename
     )
     try:
         os.makedirs(
