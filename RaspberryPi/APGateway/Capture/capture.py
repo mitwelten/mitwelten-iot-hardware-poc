@@ -20,16 +20,16 @@ camera_ids = config["camera_ids"]
 basicauth_user = config["basic_auth_user"]
 basicauth_password = config["basic_auth_password"]
 output_path = config["output_directory"]
-capture_interval = config["capture_interval"]
-start_hour = config["start_hour"]
-stop_hour = config["stop_hour"]
+capture_interval_s = config["capture_interval_s"]
+start_hour_utc = config["start_hour_utc"]
+stop_hour_utc = config["stop_hour_utc"]
 print("camera_ids", camera_ids)
 print("output_path", output_path)
 
 
 def check_time_of_day():
     utc_time = datetime.datetime.utcnow()
-    if (utc_time.hour >= start_hour) and (utc_time.hour <= stop_hour):
+    if (utc_time.hour >= start_hour_utc) and (utc_time.hour <= stop_hour_utc):
         return True
     else:
         return False
@@ -76,5 +76,5 @@ while True:
     if check_time_of_day():
         capture_all()
     d = time.time() - t0
-    d = d % capture_interval
-    time.sleep(capture_interval - d)
+    d = d % capture_interval_s
+    time.sleep(capture_interval_s - d)
