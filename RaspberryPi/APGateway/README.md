@@ -59,8 +59,19 @@ On the Pi
     ```
     $ sudo apt-get install nmap
     ```
-- [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
-- Make sure the daemon is up and running
+- Install capture.py & .service
     ```
+    $ cd ~
+    $ mkdir capture
+    $ cd capture
+    $ wget -O capture.py https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.py
+    $ wget -O config.json https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/config.json
+    $ nano config.json # edit camera_ids
+    $ sudo wget -O /etc/systemd/system/capture.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.service
+    ```
+- [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
+- Make sure the daemons are up and running
+    ```
+    $ ps aux | grep [c]apture
     $ ps aux | grep [y]aler
     ```
