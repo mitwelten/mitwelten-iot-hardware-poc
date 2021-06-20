@@ -63,13 +63,13 @@ def get_image_from(camera_id):
 
 def capture_all():
     start = time.time()
-    processes = []
+    futures = []
     with ThreadPoolExecutor(max_workers=10) as executor:
         for camera_id in camera_ids:
-            processes.append(executor.submit(get_image_from, camera_id))
+            futures.append(executor.submit(get_image_from, camera_id))
 
-    for task in as_completed(processes):
-        print(task.result())
+    for future in as_completed(futures):
+        print(future.result())
     print(f"Time taken: {time.time() - start}")
 
 
