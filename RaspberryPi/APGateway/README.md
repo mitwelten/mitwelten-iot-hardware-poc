@@ -68,6 +68,9 @@ On the Pi
     $ wget -O config.json https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/config.json
     $ nano config.json # edit camera_ids
     $ sudo wget -O /etc/systemd/system/capture.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.service
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl enable capture.service
+    $ sudo systemctl start capture.service
     ```
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 - Make sure the daemons are up and running
