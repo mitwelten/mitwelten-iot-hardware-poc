@@ -2,9 +2,9 @@
     "output_directory": "/mnt/elements/",
     "basic_auth_user": "MY_USER",
     "basic_auth_password": "MY_PASSWORD",
-    "capture_interval": 6,
-    "start_hour": 8,
-    "stop_hour": 13,
+    "capture_interval_s": 6,
+    "start_hour_utc": 8,
+    "stop_hour_utc": 13,
     "camera_ids": [
         "0000-0001",
         "0000-0002",
