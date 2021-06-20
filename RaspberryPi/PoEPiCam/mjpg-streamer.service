@@ -8,7 +8,6 @@ User=pi
 WorkingDirectory=/home/pi/mjpg-streamer/mjpg-streamer-experimental
 EnvironmentFile=/etc/systemd/system/.mjpgconf
 ExecStart=/home/pi/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer $INPUTARG $OUTPUTARG
-#ExecStart=/home/pi/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer 
 Restart=always
 TimeoutSec=10
 
