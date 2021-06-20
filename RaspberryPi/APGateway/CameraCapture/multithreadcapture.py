@@ -62,7 +62,6 @@ def get_image_from(camera_id):
 
 
 def capture_all():
-    start = time.time()
     futures = []
     with ThreadPoolExecutor(max_workers=10) as executor:
         for camera_id in camera_ids:
@@ -70,10 +69,12 @@ def capture_all():
 
     for future in as_completed(futures):
         print(future.result())
-    print(f"Time taken: {time.time() - start}")
-
 
 while True:
+    t0 = time.time()
+    print(str(t0))
     if check_time_of_day():
         capture_all()
-    time.sleep(capture_interval)
+    d = time.time() - t0
+    d = d % capture_interval
+    time.sleep(capture_interval - d)
