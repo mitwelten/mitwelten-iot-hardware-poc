@@ -1,3 +1,4 @@
+// $ sudo ./sdreader /media/sda1/20210209_172300T.WAV
 
 #define _XOPEN_SOURCE
 
