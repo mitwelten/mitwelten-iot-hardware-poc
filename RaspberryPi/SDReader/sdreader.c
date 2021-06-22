@@ -1,6 +1,7 @@
 // $ sudo ./sdreader /media/sda1/20210209_172300T.WAV
 
 #define _XOPEN_SOURCE
+#define _DEFAULT_SOURCE
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -20,7 +21,8 @@ char *get_extension(char *name) {
     return p;
 }
 
-void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
+int parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
+    int result = 0;
     int len = 1024 + 1;
     char buf[len];
     int r = read(fd, buf, len); // blocking
@@ -29,7 +31,7 @@ void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
         exit(-1);
     } else if (r == 0) {
         printf("No metainfo comment found.\n");
-        exit(-1);
+        result = -1;
     } else {
         buf[r] = '\0';
         //printf("%s\n", buf);
@@ -58,10 +60,11 @@ void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
         if (s != NULL) {
             *ampl = atoi(s + strlen(ampl_prefix));
         }
+        return result;
     }
 }
 
-process_file(char *name) {
+void process_file(char *name) {
     int fds[2];
     pipe(fds);
     int pid = fork();
@@ -77,17 +80,19 @@ process_file(char *name) {
         float batt;
         float temp;
         int ampl;
-        parse_aminfo(fds[0], iso_date, &batt, &temp, &ampl);
-        printf("Date = %s\n", iso_date);
-        printf("Batt = %1.2fV\n", batt);
-        printf("Temp = %2.2fC\n", temp);
-        printf("Ampl = %d\n", ampl);
-    }    
+        int res = parse_aminfo(fds[0], iso_date, &batt, &temp, &ampl);
+        if (res == 0) {
+            printf("Date = %s\n", iso_date);
+            printf("Batt = %1.2fV\n", batt);
+            printf("Temp = %2.2fC\n", temp);
+            printf("Ampl = %d\n", ampl);
+        }
+    }
 }
 
 int main(int argc, char *argv[]) {
-    if (argc != 2) {
-        printf("usage: sudo %s file\n", argv[0]);
+    if (argc != 1) {
+        printf("usage: sudo %s\n", argv[0]);
         exit(-1);
     }
     // ensure sd card is mounted
@@ -102,15 +107,18 @@ int main(int argc, char *argv[]) {
     struct dirent *e = readdir(d);
     while (e != NULL) {
         if (e->d_type == DT_REG) { // regular file
-            char *ext = get_extension(e->d_name);
+            char name[1024];
+            strcpy(name, "/media/sda1/");
+            strcat(name, e->d_name);
+            char *ext = get_extension(name);
             if (ext != NULL &&
-                ((strcmp(ext, ".wav") == 0) || 
+                ((strcmp(ext, ".wav") == 0) ||
                 (strcmp(ext, ".WAV") == 0)))
             {
-                printf("Processing %s\n", e->d_name);
-                process_file(e->d_name);
+                printf("Processing %s\n", name);
+                process_file(name);
             } else {
-                printf("Skipping %s\n", e->d_name);
+                printf("Skipping %s\n", name);
             }
         }
         e = readdir(d);
