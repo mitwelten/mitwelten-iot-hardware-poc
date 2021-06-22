@@ -7,6 +7,18 @@
 #include <unistd.h>
 #include <string.h>
 #include <time.h>
+#include <dirent.h>
+
+char *get_extension(char *name) {
+    char *p = NULL;
+    while(*name != '\0') {
+        if (*name == '.') {
+            p = name;
+        }
+        name++;
+    }
+    return p;
+}
 
 void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
     int len = 1024 + 1;
@@ -49,14 +61,7 @@ void parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
     }
 }
 
-int main(int argc, char *argv[]) {
-    if (argc != 2) {
-        printf("usage: sudo %s file\n", argv[0]);
-        exit(-1);
-    }
-    // ensure sd card is mounted
-    system("mkdir /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
-    system("mount /dev/sda1 /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/mount.2.html
+process_file(char *name) {
     int fds[2];
     pipe(fds);
     int pid = fork();
@@ -64,7 +69,7 @@ int main(int argc, char *argv[]) {
         close(fds[0]);
         dup2(fds[1], STDOUT_FILENO);
         char cmd[1024];
-        sprintf(cmd, "mediainfo %s | grep Comment", argv[1]);
+        sprintf(cmd, "mediainfo %s | grep Comment", name);
         execl("/bin/sh", "sh", "-c", cmd, NULL);
     } else {
         close(fds[1]);
@@ -77,6 +82,40 @@ int main(int argc, char *argv[]) {
         printf("Batt = %1.2fV\n", batt);
         printf("Temp = %2.2fC\n", temp);
         printf("Ampl = %d\n", ampl);
+    }    
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("usage: sudo %s file\n", argv[0]);
+        exit(-1);
     }
+    // ensure sd card is mounted
+    system("mkdir /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
+    system("mount /dev/sda1 /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/mount.2.html
+
+    DIR *d = opendir("/media/sda1");
+    if (d == NULL) {
+        perror("opendir");
+        exit(-1);
+    }
+    struct dirent *e = readdir(d);
+    while (e != NULL) {
+        if (e->d_type == DT_REG) { // regular file
+            char *ext = get_extension(e->d_name);
+            if (ext != NULL &&
+                ((strcmp(ext, ".wav") == 0) || 
+                (strcmp(ext, ".WAV") == 0)))
+            {
+                printf("Processing %s\n", e->d_name);
+                process_file(e->d_name);
+            } else {
+                printf("Skipping %s\n", e->d_name);
+            }
+        }
+        e = readdir(d);
+    }
+    closedir(d);
+
     system("umount /media/sda1"); // TODO: use https://man7.org/linux/man-pages/man2/umount.2.html
 }
