@@ -110,7 +110,7 @@ void process_file(char *name) {
             strcpy(mkdir_cmd, "mkdir -p ");
             strcat(mkdir_cmd, path);
             printf("%s\n", mkdir_cmd);
-            //system(mkdir_cmd); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
+            system(mkdir_cmd); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
 
             char mv_cmd[1024];
             strcpy(mv_cmd, "mv ");
@@ -123,7 +123,7 @@ void process_file(char *name) {
             strcat(mv_cmd, iso_date);
             strcat(mv_cmd, ".wav");
             printf("%s\n", mv_cmd);
-            //system(mv_cmd); // TODO: use read() / write()?
+            system(mv_cmd); // TODO: use read() / write()?
         }
         close(fds[0]);
     }
