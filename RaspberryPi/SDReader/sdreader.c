@@ -1,4 +1,4 @@
-// $ sudo ./sdreader /media/sda1/20210209_172300T.WAV
+// $ sudo ./sdreader
 
 #define _XOPEN_SOURCE
 #define _DEFAULT_SOURCE
@@ -87,6 +87,7 @@ void process_file(char *name) {
             printf("Temp = %2.2fC\n", temp);
             printf("Ampl = %d\n", ampl);
         }
+        close(fds[0]);
     }
 }
 
