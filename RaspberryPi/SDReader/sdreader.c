@@ -105,10 +105,6 @@ void process_file(char *name) {
             strcat(path, iso_yyyymmdd);
             strcat(path, "/");
             strcat(path, iso_hour);
-            strcat(path, "/");
-            strcat(path, device_id);
-            strcat(path, "_");
-            strcat(path, iso_date);
 
             char mkdir_cmd[1024];
             strcpy(mkdir_cmd, "mkdir -p ");
@@ -121,6 +117,11 @@ void process_file(char *name) {
             strcat(mv_cmd, name);
             strcat(mv_cmd, " ");
             strcat(mv_cmd, path);
+            strcat(mv_cmd, "/");
+            strcat(mv_cmd, device_id);
+            strcat(mv_cmd, "_");
+            strcat(mv_cmd, iso_date);
+            strcat(mv_cmd, ".wav");
             printf("%s\n", mv_cmd);
             //system(mv_cmd); // TODO: use read() / write()?
         }
