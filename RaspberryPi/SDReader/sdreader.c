@@ -21,7 +21,7 @@ char *get_extension(char *name) {
     return p;
 }
 
-int parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
+int parse_aminfo(int fd, struct tm *date, float *batt, float *temp, int *ampl) {
     int result = 0;
     int len = 1024 + 1;
     char buf[len];
@@ -38,12 +38,8 @@ int parse_aminfo(int fd, char *iso_date, float *batt, float *temp, int *ampl) {
         char *date_prefix = "Recorded at ";
         char *s = strstr(buf, date_prefix);
         if (s != NULL) {
-            struct tm t;
             char format[] = "%H:%M:%S %d/%m/%Y (UTC)";
-            strptime(s + strlen(date_prefix), format, &t);
-            char iso_format[] = "%Y-%m-%dT%H:%M:%SZ";
-            // e.g. 2018-12-29T12:17:25Z
-            strftime(iso_date, 21, iso_format, &t);
+            strptime(s + strlen(date_prefix), format, &date);
         }
         char *batt_prefix = "battery state was ";
         s = strstr(s, batt_prefix);
@@ -76,12 +72,22 @@ void process_file(char *name) {
         execl("/bin/sh", "sh", "-c", cmd, NULL);
     } else {
         close(fds[1]);
-        char iso_date[21];
+        struct tm date;
         float batt;
         float temp;
         int ampl;
-        int res = parse_aminfo(fds[0], iso_date, &batt, &temp, &ampl);
+        int res = parse_aminfo(fds[0], &date, &batt, &temp, &ampl);
         if (res == 0) {
+            char iso_date[21]; // e.g. 2018-12-29T12:17:25Z
+            char iso_format[] = "%Y-%m-%dT%H:%M:%SZ";
+            strftime(iso_date, 21, iso_format, &date);
+
+            char iso_yyyymmdd[10]; // e.g. 2018-12-29
+            strftime(iso_yyyymmdd, 10, "%Y-%m-%d", &date);
+
+            char iso_hour[2]; // e.g. 12
+            strftime(iso_hour, 2, "%H", &date);
+
             printf("Date = %s\n", iso_date);
             printf("Batt = %1.2fV\n", batt);
             printf("Temp = %2.2fC\n", temp);
@@ -93,7 +99,7 @@ void process_file(char *name) {
             strcat(path, "/");
             strcat(path, iso_yyyymmdd);
             strcat(path, "/");
-            strcat(path, iso_hh);
+            strcat(path, iso_hour);
             strcat(path, "/");
             strcat(path, device_id);
             strcat(path, "_");
