@@ -83,12 +83,12 @@ void process_file(char *name) {
             strftime(iso_date, 21, iso_format, &date);
             printf("%s\n", iso_date);
 
-            char iso_yyyymmdd[10]; // e.g. 2018-12-29
-            strftime(iso_yyyymmdd, 10, "%Y-%m-%d", &date);
+            char iso_yyyymmdd[11]; // e.g. 2018-12-29
+            strftime(iso_yyyymmdd, 11, "%Y-%m-%d", &date);
             printf("%s\n", iso_yyyymmdd);
 
-            char iso_hour[2]; // e.g. 12
-            strftime(iso_hour, 2, "%H", &date);
+            char iso_hour[3]; // e.g. 12
+            strftime(iso_hour, 3, "%H", &date);
             printf("%s\n", iso_hour);
 
             printf("Date = %s\n", iso_date);
