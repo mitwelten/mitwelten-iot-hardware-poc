@@ -86,6 +86,32 @@ void process_file(char *name) {
             printf("Batt = %1.2fV\n", batt);
             printf("Temp = %2.2fC\n", temp);
             printf("Ampl = %d\n", ampl);
+
+            char path[1024];
+            strcpy(path, "/mnt/elements/");
+            strcat(path, device_id);
+            strcat(path, "/");
+            strcat(path, iso_yyyymmdd);
+            strcat(path, "/");
+            strcat(path, iso_hh);
+            strcat(path, "/");
+            strcat(path, device_id);
+            strcat(path, "_");
+            strcat(path, iso_date);
+
+            char mkdir_cmd[1024];
+            strcpy(mkdir_cmd, "mkdir -p ");
+            strcat(mkdir_cmd, path);
+            printf("%s\n", mkdir_cmd);
+            //system(mkdir_cmd); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
+
+            char mv_cmd[1024];
+            strcpy(mv_cmd, "mv ");
+            strcat(mv_cmd, name);
+            strcat(mv_cmd, " ");
+            strcat(mv_cmd, path);
+            printf("%s\n", mv_cmd);
+            //system(mv_cmd); // TODO: use read() / write()?
         }
         close(fds[0]);
     }
