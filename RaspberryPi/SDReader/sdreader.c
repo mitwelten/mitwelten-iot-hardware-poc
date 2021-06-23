@@ -39,7 +39,7 @@ int parse_aminfo(int fd, struct tm *date, float *batt, float *temp, int *ampl) {
         char *s = strstr(buf, date_prefix);
         if (s != NULL) {
             char format[] = "%H:%M:%S %d/%m/%Y (UTC)";
-            strptime(s + strlen(date_prefix), format, &date);
+            strptime(s + strlen(date_prefix), format, date);
         }
         char *batt_prefix = "battery state was ";
         s = strstr(s, batt_prefix);
@@ -81,17 +81,22 @@ void process_file(char *name) {
             char iso_date[21]; // e.g. 2018-12-29T12:17:25Z
             char iso_format[] = "%Y-%m-%dT%H:%M:%SZ";
             strftime(iso_date, 21, iso_format, &date);
+            printf("%s\n", iso_date);
 
             char iso_yyyymmdd[10]; // e.g. 2018-12-29
             strftime(iso_yyyymmdd, 10, "%Y-%m-%d", &date);
+            printf("%s\n", iso_yyyymmdd);
 
             char iso_hour[2]; // e.g. 12
             strftime(iso_hour, 2, "%H", &date);
+            printf("%s\n", iso_hour);
 
             printf("Date = %s\n", iso_date);
             printf("Batt = %1.2fV\n", batt);
             printf("Temp = %2.2fC\n", temp);
             printf("Ampl = %d\n", ampl);
+
+            char *device_id = "0000-0001";
 
             char path[1024];
             strcpy(path, "/mnt/elements/");
@@ -138,7 +143,9 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
     struct dirent *e = readdir(d);
-    while (e != NULL) {
+    int i = 0; // TODO: remove
+    // while (e != NULL) { // TODO: restore
+    while ((e != NULL) && (i < 3)) { // TODO: remove
         if (e->d_type == DT_REG) { // regular file
             char name[1024];
             strcpy(name, "/media/sda1/");
@@ -148,6 +155,7 @@ int main(int argc, char *argv[]) {
                 ((strcmp(ext, ".wav") == 0) ||
                 (strcmp(ext, ".WAV") == 0)))
             {
+                i++; // TODO: remove
                 printf("Processing %s\n", name);
                 process_file(name);
             } else {
