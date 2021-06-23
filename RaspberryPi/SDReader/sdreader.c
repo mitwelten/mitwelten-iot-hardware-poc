@@ -78,8 +78,8 @@ void process_file(char *name) {
         int ampl;
         int res = parse_aminfo(fds[0], &date, &batt, &temp, &ampl);
         if (res == 0) {
-            char iso_date[21]; // e.g. 2018-12-29T12:17:25Z
-            char iso_format[] = "%Y-%m-%dT%H:%M:%SZ";
+            char iso_date[21]; // e.g. 2018-12-29T12:17:25Z, but w/
+            char iso_format[] = "%Y-%m-%dT%H-%M-%SZ"; // ':' => '-'
             strftime(iso_date, 21, iso_format, &date);
             printf("%s\n", iso_date);
 
