@@ -43,7 +43,7 @@ On the Pi
     ```
     $ sudo raspi-config > Performance Options > GPU Memory > 256
     ```
-    Required for highest resolution, [v2 mode](https://picamera.readthedocs.io/en/latest/fov.html#sensor-modes) 2, 3
+    Required for highest resolution, [v2 mode](https://picamera.readthedocs.io/en/latest/fov.html#sensor-modes) 2 and 3
 - Install git
     ```
     $ sudo apt-get update
