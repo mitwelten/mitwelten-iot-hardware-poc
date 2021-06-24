@@ -39,6 +39,10 @@ On the Pi
     ```
     $ sudo raspi-config # Interface Options > Camera
     ```
+- Increase GPU RAM
+    ```
+    $ sudo raspi-config > Performance Options > GPU Memory > 256
+    ```
 - Install git
     ```
     $ sudo apt-get update
@@ -66,9 +70,7 @@ On the Pi
 - Install mjpg-streamer.service
     ```
     $ sudo wget -O /etc/systemd/system/mjpg-streamer.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/mjpg-streamer.service
-    $ cat /etc/systemd/system/mjpg-streamer.service
     $ sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/.mjpgconf
-    $ cat /etc/systemd/system/.mjpgconf
     ```
     > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
 - Start mjpg-streamer.service
