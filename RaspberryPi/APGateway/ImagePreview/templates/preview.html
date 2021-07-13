@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- 
+Parameters:
+file_names = array of file names
+camera_id = camera_id
+date = date
+hour = hour
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preview {{camera_id}}</title>
+    <style>
+        .header {
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container__half {
+            flex: 1;
+        }
+
+        .container_fix {
+            right: 0;
+            position: fixed;
+            top: 50%;
+            transform: translate(0px, -50%);
+            margin-right: 20px;
+            max-width: 50%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #9efc96;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function loadImage(el) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = el.dataset.src
+            console.log(el.data)
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = el.dataset.fname
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+            el.style.color='red' // indicate that you have already seen this img.
+        }
+    </script>
+    <!-- Header -->
+    <div>
+        <header class="header">
+            <h1>{{camera_id}}</h1>
+            <h3>{{date}}</h3>
+            <h3>{{hour}}(utc)</h3>
+        </header>
+    </div>
+    <div class="container">
+
+        <!-- Left content -->
+        <div class="container__half">
+
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>Full size link</th>
+                </tr>
+                {% for file_name in file_names %}
+                <tr>
+                    <td data-src="/small/{{camera_id}}/{{date}}/{{hour}}/{{file_name}}" data-fname="{{file_name}}"
+                        onclick="loadImage(this);">{{file_name}}</td>
+                    <td><a href="/{{camera_id}}/{{date}}/{{hour}}/{{file_name}}">full size</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+
+
+        </div>
+
+        <!-- Right content -->
+        <div class="container__half">
+
+
+        </div>
+    </div>
+    <div class="container_fix">
+        <div class="column">
+
+            <img id="expandedImg">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+    </div>
+</body>
+
+</html>
