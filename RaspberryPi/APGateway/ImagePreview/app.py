@@ -25,6 +25,9 @@ def resize(filepath):
     img_io.seek(0)
     return send_file(img_io, mimetype="image/jpeg")
 
+@app.route("/favicon.png")
+def favicon():
+    return send_file("favicon.png")
 
 @app.route("/")
 def index():
