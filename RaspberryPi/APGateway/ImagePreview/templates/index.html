@@ -12,6 +12,15 @@
  </head>
 
 <body>
+    <script>
+        //https://stackoverflow.com/a/38947678
+        (function RedirNonHttps() {
+            if (location.href.indexOf("https://") == -1) 
+            {
+                location.href = location.href.replace("http://", "https://");
+            }
+         })();
+    </script>
   <h1>{{title}}</h1>
   {% for dir in directory_list %}
   <p>
