@@ -26,12 +26,6 @@ def resize(filepath):
     img_io.seek(0)
     return send_file(img_io, mimetype="image/jpeg")
 
-@app.before_request
-def before_request():
-    print(request.url)
-    if not request.is_secure:
-        url = request.url.replace('http://', 'https://', 1)
-        return redirect(url)
 
 @app.route("/favicon.ico")
 def favicon():
