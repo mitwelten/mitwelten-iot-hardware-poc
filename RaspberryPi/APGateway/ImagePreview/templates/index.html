@@ -1,18 +1,23 @@
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{{title}}</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-    </style>
- </head>
-
-<body>
-    <script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>{{title}}</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                display: flex;
+                height: 100%;
+            }
+            .container__half {
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
         //https://stackoverflow.com/a/38947678
         (function RedirNonHttps() {
             if (location.href.indexOf("https://") == -1) 
@@ -20,12 +25,19 @@
                 location.href = location.href.replace("http://", "https://");
             }
          })();
-    </script>
-  <h1>{{title}}</h1>
-  {% for dir in directory_list %}
-  <p>
-  <a href = "{{dir}}">{{dir}}</a>
-  </p>
-  {% endfor %}
-</body>
+        </script>
+        <div class="container">
+           <div class="container__half">
+                <h1>{{title}}</h1>
+                {% for dir in directory_list %}
+                  <p>
+                  <a href = "{{dir}}">{{dir}}</a>
+                  </p>
+                {% endfor %}
+            </div>
+            <div class="container__half">
+                <embed src="https://www.mitwelten.org/map/" style="width:100%; height:100%;">
+            </div>
+        </div>
+    </body>
 </html>
