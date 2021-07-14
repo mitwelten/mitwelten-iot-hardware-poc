@@ -1,6 +1,6 @@
 import os
 from PIL import Image
-from flask import Flask, request, render_template, send_from_directory
+from flask import Flask, request, render_template, send_from_directory, redirect
 from werkzeug.utils import secure_filename
 from io import BytesIO, StringIO
 from flask.helpers import send_file
