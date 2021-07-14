@@ -1,6 +1,21 @@
-<h1>{{title}}</h1>
-{% for dir in directory_list %}
-<p>
-<a href = "{{dir}}">{{dir}}</a>
-</p>
-{% endfor %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+ </head>
+
+<body>
+  <h1>{{title}}</h1>
+  {% for dir in directory_list %}
+  <p>
+  <a href = "{{dir}}">{{dir}}</a>
+  </p>
+  {% endfor %}
+</body>
