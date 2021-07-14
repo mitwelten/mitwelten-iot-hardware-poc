@@ -1,9 +1,50 @@
-<h1>{{camera_id}}</h1>
+<html>
 
-{% for dir in directory_list %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{camera_id}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+              position: sticky;
+              top: 0;
+        }
+        .breadcrumb {
+            /* Content is centered vertically */
+            align-items: center;
+            display: flex;
+        }
 
-<p>
-<a href = "{{dir}}">{{dir}}</a>
-</p>
+        .breadcrumb__separator {
+            margin: 0 8px;
+        }
+    </style>
+ </head>
 
-{% endfor %}
+<body>
+      <div>
+        <header class="header">
+                <div class="breadcrumb">
+                    <!-- Breadcrumb item -->
+                    <h2><a href="/"> &#128738; Gateway</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2>{{camera_id}}</h2>
+
+                    
+                </div>
+        </header>
+    </div>
+
+
+
+  {% for dir in directory_list %}
+
+  <p>
+  <a href = "{{dir}}">{{dir}}</a>
+  </p>
+  {% endfor %}
+</body>
+</html>
