@@ -64,6 +64,11 @@ hour = hour
         .breadcrumb__separator {
             margin: 0 8px;
         }
+        .container_nav {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -174,11 +179,17 @@ hour = hour
     </div>
     <div class="container_fix">
         <div class="column">
-
             <img id="expandedImg">
-
             <!-- Image text -->
             <div id="imgtext"></div>
+        </div>
+        <div class="container_nav">
+            <!-- Previous link sticks to the left -->
+            <button id="prev">prev</button>
+
+            <!-- Next link sticks to the right -->
+            <button id="next">next</button>
+
         </div>
     </div>
 </body>
