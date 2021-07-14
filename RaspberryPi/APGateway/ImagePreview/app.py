@@ -12,7 +12,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 base_directory = "/mnt/elements"
 
-basewidth = 400
+basewidth = 512
 
 
 def resize(filepath):
