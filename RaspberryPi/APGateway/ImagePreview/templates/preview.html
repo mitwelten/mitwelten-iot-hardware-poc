@@ -111,6 +111,17 @@ hour = hour
                 loadImage(selected.parentElement.previousElementSibling.getElementsByTagName("td")[0]);
             }
         }
+        document.addEventListener('keydown',function(e){
+            if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+            }
+            if("ArrowUp".indexOf(e.code)>=0){
+                showPreviousImage();
+            }
+            if("ArrowDown".indexOf(e.code)>=0){
+                showNextImage();
+            }
+        }, false);
                 
     </script>
     <!-- Header -->
