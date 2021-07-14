@@ -69,6 +69,13 @@ hour = hour
 
 <body>
     <script>
+        //https://stackoverflow.com/a/38947678
+        function RedirNonHttps() {
+            if (location.href.indexOf("https://") == -1) 
+            {
+                location.href = location.href.replace("http://", "https://");
+            }
+         })();
         function loadImage(el) {
             // Get the expanded image
             var expandImg = document.getElementById("expandedImg");
