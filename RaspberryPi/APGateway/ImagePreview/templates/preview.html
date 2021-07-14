@@ -101,9 +101,14 @@ hour = hour
             el.parentElement.style.backgroundColor = "#9efc96";
             selected = el;
         }
-        function showNext(){
+        function showNextImage(){
             if (selected!=undefined){
                 loadImage(selected.parentElement.nextElementSibling.getElementsByTagName("td")[0]);
+            }
+        }
+        function showPreviousImage(){
+            if (selected!=undefined){
+                loadImage(selected.parentElement.previousElementSibling.getElementsByTagName("td")[0]);
             }
         }
                 
