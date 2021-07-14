@@ -4,10 +4,10 @@ from flask import Flask, request, render_template, send_from_directory, redirect
 from werkzeug.utils import secure_filename
 from io import BytesIO, StringIO
 from flask.helpers import send_file
-from flask_sslify import SSLify
+
 
 app = Flask(__name__)
-sslify = SSLify(app)
+
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 base_directory = "/mnt/elements"
@@ -26,7 +26,12 @@ def resize(filepath):
     img_io.seek(0)
     return send_file(img_io, mimetype="image/jpeg")
 
-
+@app.before_request
+def before_request():
+    if not request.is_secure:
+        url = request.url.replace('http://', 'https://', 1)
+        code = 301
+        return redirect(url, code=code)
 
 @app.route("/favicon.ico")
 def favicon():
