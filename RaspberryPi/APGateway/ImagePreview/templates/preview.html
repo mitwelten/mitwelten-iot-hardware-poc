@@ -69,6 +69,7 @@ hour = hour
 
 <body>
     <script>
+        // redirect to https
         //https://stackoverflow.com/a/38947678
         (function RedirNonHttps() {
             if (location.href.indexOf("https://") == -1) 
@@ -76,6 +77,9 @@ hour = hour
                 location.href = location.href.replace("http://", "https://");
             }
          })();
+        
+        var selected;
+        
         function loadImage(el) {
             // Get the expanded image
             var expandImg = document.getElementById("expandedImg");
@@ -95,7 +99,14 @@ hour = hour
             }
             el.style.color='#8f8f8f' // indicate that you have already seen this img.
             el.parentElement.style.backgroundColor = "#9efc96";
+            selected = el;
         }
+        function showNext(){
+            if (selected!=undefined){
+                loadImage(selected.parentElement.nextElementSibling.getElementsByTagName("td")[0]);
+            }
+        }
+                
     </script>
     <!-- Header -->
     <div>
