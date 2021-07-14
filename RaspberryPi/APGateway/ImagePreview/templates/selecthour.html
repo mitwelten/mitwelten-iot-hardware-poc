@@ -25,6 +25,15 @@
  </head>
 
 <body>
+    <script>
+        //https://stackoverflow.com/a/38947678
+        (function RedirNonHttps() {
+            if (location.href.indexOf("https://") == -1) 
+            {
+                location.href = location.href.replace("http://", "https://");
+            }
+         })();
+    </script>
       <div>
         <header class="header">
                 <div class="breadcrumb">
