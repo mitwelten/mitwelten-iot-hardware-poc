@@ -13,6 +13,9 @@ hour = hour
     <meta name="viewport" content="width=device-width">
     <title>Preview {{camera_id}}</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         .header {
             position: sticky;
             top: 0;
@@ -52,6 +55,15 @@ hour = hour
         tr:hover {
             background-color: #9efc96;
         }
+        .breadcrumb {
+            /* Content is centered vertically */
+            align-items: center;
+            display: flex;
+        }
+
+        .breadcrumb__separator {
+            margin: 0 8px;
+        }
     </style>
 </head>
 
@@ -69,15 +81,33 @@ hour = hour
             imgText.innerHTML = el.dataset.fname
             // Show the container element (hidden with CSS)
             expandImg.parentElement.style.display = "block";
-            el.style.color='red' // indicate that you have already seen this img.
+            // highlight active row
+            var rows = el.parentElement.parentElement.getElementsByTagName("tr") ;
+            for (var i=0; i<rows.length; i++) {
+                rows[i].style.backgroundColor = "";
+            }
+            el.style.color='#8f8f8f' // indicate that you have already seen this img.
+            el.parentElement.style.backgroundColor = "#9efc96";
         }
     </script>
     <!-- Header -->
     <div>
         <header class="header">
-            <h1>{{camera_id}}</h1>
-            <h3>{{date}}</h3>
-            <h3>{{hour}}(utc)</h3>
+                <div class="breadcrumb">
+                    <!-- Breadcrumb item -->
+                    <h2><a href="/"> &#128738; Gateway</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2><a href="/{{camera_id}}">{{camera_id}}</a></h2>
+                
+                    <!-- Separator -->
+                    <div class="breadcrumb__separator">/</div>
+                    <h2><a href="/{{camera_id}}/{{date}}">{{date}}</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2>{{hour}}:00 (utc)</h2>
+                
+                    <!-- Repeated items and separators -->
+                    
+                </div>
         </header>
     </div>
     <div class="container">
