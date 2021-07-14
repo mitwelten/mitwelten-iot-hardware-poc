@@ -28,6 +28,7 @@ def resize(filepath):
 
 @app.before_request
 def before_request():
+    print(request.url)
     if not request.is_secure:
         url = request.url.replace('http://', 'https://', 1)
         return redirect(url)
