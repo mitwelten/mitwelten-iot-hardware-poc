@@ -32,5 +32,6 @@ wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main
 ## Run it
 
 ```sh
+cd ~/ImagePreview
 python3 app.py
 ```
