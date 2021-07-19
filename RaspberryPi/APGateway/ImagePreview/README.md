@@ -17,12 +17,12 @@ pip3 install pillow
 ```sh
 mkdir ImagePreview
 cd ImagePreview
-
+# download app.py
 wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/app.py
 
 mkdir templates
 cd templates
-
+# download html templates
 wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/templates/index.html
 wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/templates/preview.html
 wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/templates/selectday.html
