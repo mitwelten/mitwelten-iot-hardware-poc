@@ -12,9 +12,10 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 base_directory = "/mnt/elements"
 
+# width of the preview image
 basewidth = 512
 
-
+# create the preview image
 def resize(filepath):
     print(filepath)
     img = Image.open(filepath)
@@ -41,6 +42,7 @@ def index():
     return render_template("index.html", title="Cameras", directory_list=dirs)
 
 
+# camera selected, select date
 @app.route("/<camera_id>/")
 def get_date(camera_id):
     dirs = []
@@ -51,7 +53,7 @@ def get_date(camera_id):
             dirs.append(item)
     return render_template("selectday.html", camera_id=camera_id, directory_list=dirs)
 
-
+# camera and date selected, select time
 @app.route("/<camera_id>/<date>/")
 def get_hour(camera_id, date):
     dirs = []
@@ -65,7 +67,7 @@ def get_hour(camera_id, date):
         "selecthour.html", camera_id=camera_id, date=date, directory_list=dirs
     )
 
-
+# preview page
 @app.route("/<camera_id>/<date>/<hour>/")
 def get_images(camera_id, date, hour):
     dirs = []
@@ -81,7 +83,7 @@ def get_images(camera_id, date, hour):
         hour=hour,
     )
 
-
+# sends full size image
 @app.route("/<camera_id>/<date>/<hour>/<filename>")
 def send_image(camera_id, date, hour, filename):
     camera_id = secure_filename(camera_id)
@@ -93,7 +95,7 @@ def send_image(camera_id, date, hour, filename):
         base_directory + "/" + camera_id + "/" + date + "/" + hour, filename
     )
 
-
+# sends preview image
 @app.route("/small/<camera_id>/<date>/<hour>/<filename>")
 def send_imagesmall(camera_id, date, hour, filename):
     camera_id = secure_filename(camera_id)
