@@ -1,10 +1,11 @@
 import os
 from PIL import Image
 from flask import Flask, request, render_template, send_from_directory, redirect
+from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from io import BytesIO, StringIO
 from flask.helpers import send_file
-
+from flask_httpauth import HTTPBasicAuth
 
 app = Flask(__name__)
 
