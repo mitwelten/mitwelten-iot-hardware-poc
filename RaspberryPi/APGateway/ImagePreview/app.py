@@ -12,6 +12,9 @@ HOSTNAME = socket.gethostname()
 base_directory = "/mnt/elements"
 
 BASIC_AUTH_PASSWORD = os.environ.get("IMAGEPREVIEW_PASSWORD")
+if BASIC_AUTH_PASSWORD == None:
+    print("No password set in env variable, stopping.")
+    exit(1)
 
 users = {"mitwelten": generate_password_hash(str(BASIC_AUTH_PASSWORD))}
 
