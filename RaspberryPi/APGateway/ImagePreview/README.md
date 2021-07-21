@@ -10,6 +10,7 @@ sudo apt install python3-pip
 ```sh
 pip3 install flask
 pip3 install pillow
+pip3 install Flask-HTTPAuth
 ```
 
 ## Install it
