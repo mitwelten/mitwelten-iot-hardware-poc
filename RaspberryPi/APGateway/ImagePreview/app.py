@@ -7,7 +7,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from io import BytesIO, StringIO
 import socket
-print(socket.gethostname())
+
+HOSTNAME = socket.gethostname()
+
 app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -42,7 +44,7 @@ def index():
         if os.path.isdir(base_directory + "/" + item):
             if not item.startswith("."):
                 dirs.append(item)
-    return render_template("index.html", title="Cameras", directory_list=dirs)
+    return render_template("index.html", title=HOSTNAME, directory_list=dirs)
 
 
 # camera selected, select date
