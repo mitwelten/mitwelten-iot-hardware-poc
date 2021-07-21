@@ -11,7 +11,7 @@ import socket
 HOSTNAME = socket.gethostname()
 base_directory = "/mnt/elements"
 
-BASIC_AUTH_PASSWORD = os.environ.get("IMAGEPREVEW_PASSWORD")
+BASIC_AUTH_PASSWORD = os.environ.get("IMAGEPREVIEW_PASSWORD")
 
 users = {"mitwelten": generate_password_hash(str(BASIC_AUTH_PASSWORD))}
 
