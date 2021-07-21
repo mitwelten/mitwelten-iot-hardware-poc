@@ -1,12 +1,13 @@
 import os
 from PIL import Image
 from flask import Flask, request, render_template, send_from_directory, redirect
+from flask.helpers import send_file
+from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from io import BytesIO, StringIO
-from flask.helpers import send_file
-from flask_httpauth import HTTPBasicAuth
-
+import socket
+print(socket.gethostname())
 app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
