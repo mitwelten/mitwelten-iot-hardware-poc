@@ -9,12 +9,16 @@ from io import BytesIO, StringIO
 import socket
 
 HOSTNAME = socket.gethostname()
+base_directory = "/mnt/elements"
+
+BASIC_AUTH_PASSWORD = os.environ.get("IMAGEPREVEW_PASSWORD")
+
+users = {"mitwelten": generate_password_hash(str(BASIC_AUTH_PASSWORD))}
 
 app = Flask(__name__)
-
+auth = HTTPBasicAuth()
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-base_directory = "/mnt/elements"
 
 # width of the preview image
 basewidth = 512
@@ -31,12 +35,18 @@ def resize(filepath):
     img_io.seek(0)
     return send_file(img_io, mimetype="image/jpeg")
 
+@auth.verify_password
+def verify_password(username, password):
+    if username in users and check_password_hash(users.get(username), password):
+        return username
 
 @app.route("/favicon.ico")
+@auth.login_required
 def favicon():
     return send_file("favicon.ico")
 
 @app.route("/")
+@auth.login_required
 def index():
     dirs = []
     directories = os.listdir(base_directory)
@@ -49,6 +59,7 @@ def index():
 
 # camera selected, select date
 @app.route("/<camera_id>/")
+@auth.login_required
 def get_date(camera_id):
     dirs = []
     camera_id = secure_filename(camera_id)
@@ -60,6 +71,7 @@ def get_date(camera_id):
 
 # camera and date selected, select time
 @app.route("/<camera_id>/<date>/")
+@auth.login_required
 def get_hour(camera_id, date):
     dirs = []
     camera_id = secure_filename(camera_id)
@@ -74,6 +86,7 @@ def get_hour(camera_id, date):
 
 # preview page
 @app.route("/<camera_id>/<date>/<hour>/")
+@auth.login_required
 def get_images(camera_id, date, hour):
     dirs = []
     camera_id = secure_filename(camera_id)
@@ -90,6 +103,7 @@ def get_images(camera_id, date, hour):
 
 # sends full size image
 @app.route("/<camera_id>/<date>/<hour>/<filename>")
+@auth.login_required
 def send_image(camera_id, date, hour, filename):
     camera_id = secure_filename(camera_id)
     date = secure_filename(date)
@@ -102,6 +116,7 @@ def send_image(camera_id, date, hour, filename):
 
 # sends preview image
 @app.route("/small/<camera_id>/<date>/<hour>/<filename>")
+@auth.login_required
 def send_imagesmall(camera_id, date, hour, filename):
     camera_id = secure_filename(camera_id)
     date = secure_filename(date)
