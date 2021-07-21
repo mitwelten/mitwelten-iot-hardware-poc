@@ -26,13 +26,14 @@
 
 <body>
     <script>
-        //https://stackoverflow.com/a/38947678
+      /*  //https://stackoverflow.com/a/38947678
         (function RedirNonHttps() {
             if (location.href.indexOf("https://") == -1) 
             {
                 location.href = location.href.replace("http://", "https://");
             }
          })();
+         */
     </script>
       <div>
         <header class="header">
@@ -40,7 +41,7 @@
                     <!-- Breadcrumb item -->
                     <h2><a href="/"> &#128738; Gateway</a></h2>
                     <div class="breadcrumb__separator">/</div>
-                    <h2><a href="/{{camera_id}}">{{camera_id}}</a></h2>
+                    <h2><a href="/{{camera_id}}/">{{camera_id}}</a></h2>
                     <div class="breadcrumb__separator">/</div>
                     <h2>{{date}}</h2>
                 </div>
