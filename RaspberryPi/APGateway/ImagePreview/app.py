@@ -39,7 +39,8 @@ def index():
     directories = os.listdir(base_directory)
     for item in directories:
         if os.path.isdir(base_directory + "/" + item):
-            dirs.append(item)
+            if not item.startswith("."):
+                dirs.append(item)
     return render_template("index.html", title="Cameras", directory_list=dirs)
 
 
