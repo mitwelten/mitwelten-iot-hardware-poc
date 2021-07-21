@@ -30,6 +30,23 @@ wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main
 wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/templates/selecthour.html
 ```
 
+## Set the password
+
+```sh
+nano ~/.bash_profile
+```
+
+Add the password to `.bash_profile`:
+
+```sh
+export IMAGEPREVIEW_PASSWORD=yourpassword
+```
+
+Add the variable
+```sh
+source ~/.bash_profile
+```
+
 ## Run it
 
 ```sh
