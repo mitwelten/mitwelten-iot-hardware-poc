@@ -96,7 +96,7 @@ def get_images(camera_id, date, hour):
     date = secure_filename(date)
     hour = secure_filename(hour)
     image_names = os.listdir(base_directory + "/" + camera_id + "/" + date + "/" + hour)
-    image_names.sort(reverse=True)
+    image_names.sort(reverse=False)
     return render_template(
         "preview.html",
         file_names=image_names,
