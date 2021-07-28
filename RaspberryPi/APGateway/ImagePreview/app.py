@@ -57,6 +57,7 @@ def index():
         if os.path.isdir(base_directory + "/" + item):
             if not item.startswith("."):
                 dirs.append(item)
+    dirs.sort()
     return render_template("index.html", title=HOSTNAME, directory_list=dirs)
 
 
@@ -70,6 +71,7 @@ def get_date(camera_id):
     for item in directories:
         if os.path.isdir(base_directory + "/" + camera_id + "/" + item):
             dirs.append(item)
+    dirs.sort()
     return render_template("selectday.html", camera_id=camera_id, directory_list=dirs)
 
 # camera and date selected, select time
@@ -83,6 +85,7 @@ def get_hour(camera_id, date):
     for item in directories:
         if os.path.isdir(base_directory + "/" + camera_id + "/" + date + "/" + item):
             dirs.append(item)
+    dirs.sort()
     return render_template(
         "selecthour.html", camera_id=camera_id, date=date, directory_list=dirs
     )
