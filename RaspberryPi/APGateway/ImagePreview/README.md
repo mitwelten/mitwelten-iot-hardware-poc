@@ -21,6 +21,9 @@ cd ImagePreview
 # download app.py
 wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/app.py
 
+# download credentials file
+wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/ImagePreview/credentials.py
+
 mkdir templates
 cd templates
 # download html templates
@@ -33,18 +36,9 @@ wget https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main
 ## Set the password
 
 ```sh
-nano ~/.bash_profile
-```
+nano credentials.py
 
-Add the password to `.bash_profile`:
-
-```sh
-export IMAGEPREVIEW_PASSWORD=yourpassword
-```
-
-Add the variable
-```sh
-source ~/.bash_profile
+# set the password
 ```
 
 ## Run it
