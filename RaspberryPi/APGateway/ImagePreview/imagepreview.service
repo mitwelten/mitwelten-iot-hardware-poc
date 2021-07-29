@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=pi
 WorkingDirectory=/home/pi/ImagePreview
-ExecStart=/home/pi/ImagePreview/app.py
+ExecStart=/usr/bin/python3 /home/pi/ImagePreview/app.py
 Restart=always
 TimeoutSec=10
 
