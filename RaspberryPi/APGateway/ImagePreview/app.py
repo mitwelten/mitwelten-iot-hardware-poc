@@ -7,11 +7,12 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from io import BytesIO, StringIO
 import socket
+from credentials import password
 
 HOSTNAME = socket.gethostname()
 base_directory = "/mnt/elements"
 
-BASIC_AUTH_PASSWORD = os.environ.get("IMAGEPREVIEW_PASSWORD")
+BASIC_AUTH_PASSWORD = password()
 if BASIC_AUTH_PASSWORD == None:
     print("No password set in env variable, stopping.")
     exit(1)
