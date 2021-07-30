@@ -16,6 +16,14 @@
 8. Upload the code to the ESP32 and open a serial console
 9. The debug output will include the DEVEUI to set in the TTN console.
 
+## TTN Parameters
+
+Parameter|Value
+-|-
+LoRaWAN version|MAC v1.0.3
+Frequency Plan|Europe 863-870 MHz (SF9 for RX2 - recommended)
+
+
 ## Configuration
 
 Replace `ESP32-Paxcounter/src/paxcounter.conf` with [paxcounter.conf](src/paxcounter.conf)
