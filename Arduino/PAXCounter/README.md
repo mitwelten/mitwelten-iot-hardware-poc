@@ -16,5 +16,16 @@
 8. Upload the code to the ESP32 and open a serial console
 9. The debug output will include the DEVEUI to set in the TTN console.
 
+## Configuration
+
+Replace `ESP32-Paxcounter/src/paxcounter.conf` with [paxcounter.conf](paxcounter.conf)
+
+In the file `ESP32-Paxcounter/platformio.ini`, set `debug_level = 0` to prevent a memory leak.
+
+Increase the version number in the file `ESP32-Paxcounter/platformio.ini`, clean, build and upload the code.
+
+## Notes
+
+
 
 
