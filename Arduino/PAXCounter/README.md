@@ -2,9 +2,11 @@
 
 ## Setup
 
-Clone the repository
+1. Clone the repository
 ```sh
 git clone https://github.com/cyberman54/ESP32-Paxcounter
 ```
 
-Download [featheresp32.h](src/hal/featheresp32.h)
+2. Download [featheresp32.h](src/hal/featheresp32.h) and save it to `ESP32-Paxcounter/src/hal/featheresp32.h`
+
+
