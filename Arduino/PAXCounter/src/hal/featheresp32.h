@@ -13,8 +13,9 @@
 // disable brownout detection (avoid unexpected reset on some boards)
 #define DISABLE_BROWNOUT 1 // comment out if you want to keep brownout feature
 
-#define HAS_LORA 1       // comment out if device shall not send data via LoRa
+#define HAS_LED 13
 
+#define HAS_LORA 1       // comment out if device shall not send data via LoRa
 
 #define CFG_sx1276_radio 1 // RFM95 module
 
