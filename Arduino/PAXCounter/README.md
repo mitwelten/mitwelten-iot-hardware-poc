@@ -18,7 +18,7 @@
 
 ## Configuration
 
-Replace `ESP32-Paxcounter/src/paxcounter.conf` with [paxcounter.conf](paxcounter.conf)
+Replace `ESP32-Paxcounter/src/paxcounter.conf` with [paxcounter.conf](src/paxcounter.conf)
 
 In the file `ESP32-Paxcounter/platformio.ini`, set `debug_level = 0` to prevent a memory leak.
 
