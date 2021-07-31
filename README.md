@@ -129,6 +129,11 @@ Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), 
 - [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
 - [USB Li-Ion charger](https://www.adafruit.com/product/1304) (optional)
 
+## LiPo/Li-Ion Charging Station
+This charging station allows to safely charge LiPo or Li-Ion batteries.
+
+<img src="https://live.staticflickr.com/65535/51264412719_f9fc83c7d6.jpg"/>
+
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.
 
