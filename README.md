@@ -4,7 +4,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 
 - [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
-- [LiPo/Li-Ion Charging Station](#)
+- [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
