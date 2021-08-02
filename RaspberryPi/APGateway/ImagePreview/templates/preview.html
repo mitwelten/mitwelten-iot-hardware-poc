@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- 
+Parameters:
+file_names = array of file names
+camera_id = camera_id
+date = date
+hour = hour
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preview {{camera_id}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container__half {
+            flex: 1;
+        }
+
+        .container_fix {
+            right: 0;
+            position: fixed;
+            top: 50%;
+            transform: translate(0px, -50%);
+            margin-right: 20px;
+            max-width: 50%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #9efc96;
+        }
+        .breadcrumb {
+            /* Content is centered vertically */
+            align-items: center;
+            display: flex;
+        }
+
+        .breadcrumb__separator {
+            margin: 0 8px;
+        }
+        .container_nav {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+          background-color: #e7e7e7; /* Gray */
+          border: none;
+          color: black;
+          padding: 10px 30px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 0px;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+      /*  // redirect to https
+        //https://stackoverflow.com/a/38947678
+        (function RedirNonHttps() {
+            if (location.href.indexOf("https://") == -1) 
+            {
+                location.href = location.href.replace("http://", "https://");
+            }
+         })();
+        */
+        var selected;
+        
+        function loadImage(el) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = el.dataset.src
+            console.log(el.data)
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = el.dataset.fname
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+            // highlight active row
+            var rows = el.parentElement.parentElement.getElementsByTagName("tr") ;
+            for (var i=0; i<rows.length; i++) {
+                rows[i].style.backgroundColor = "";
+            }
+            el.style.color='#8f8f8f' // indicate that you have already seen this img.
+            el.parentElement.style.backgroundColor = "#9efc96";
+            selected = el;
+        }
+        function showNextImage(){
+            if (selected!=undefined){
+                loadImage(selected.parentElement.nextElementSibling.getElementsByTagName("td")[0]);
+            }
+        }
+        function showPreviousImage(){
+            if (selected!=undefined){
+                loadImage(selected.parentElement.previousElementSibling.getElementsByTagName("td")[0]);
+            }
+        }
+        document.addEventListener('keydown',function(e){
+            if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+            }
+            if("ArrowUp".indexOf(e.code)>=0){
+                showPreviousImage();
+            }
+            if("ArrowDown".indexOf(e.code)>=0){
+                showNextImage();
+            }
+        }, false);
+                
+    </script>
+    <!-- Header -->
+    <div>
+        <header class="header">
+                <div class="breadcrumb">
+                    <!-- Breadcrumb item -->
+                    <h2><a href="/"> &#128738; Gateway</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2><a href="/{{camera_id}}/">{{camera_id}}</a></h2>
+                
+                    <!-- Separator -->
+                    <div class="breadcrumb__separator">/</div>
+                    <h2><a href="/{{camera_id}}/{{date}}/">{{date}}</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2>{{hour}}:00 (utc)</h2>
+                
+                    <!-- Repeated items and separators -->
+                    
+                </div>
+        </header>
+    </div>
+    <div class="container">
+
+        <!-- Left content -->
+        <div class="container__half">
+
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>Full size link</th>
+                </tr>
+                {% for file_name in file_names %}
+                <tr>
+                    <td data-src="/small/{{camera_id}}/{{date}}/{{hour}}/{{file_name}}" data-fname="{{file_name}}"
+                        onclick="loadImage(this);">{{file_name}}</td>
+                    <td><a href="/{{camera_id}}/{{date}}/{{hour}}/{{file_name}}" target="_blank">full size</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+
+
+        </div>
+
+        <!-- Right content -->
+        <div class="container__half">
+
+
+        </div>
+    </div>
+    <div class="container_fix">
+        <div class="column">
+            <img id="expandedImg">
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+        <div class="container_nav">
+            <!-- Previous link sticks to the left -->
+            <button id="prev" onclick="showPreviousImage();">prev</button>
+            <!--<button id="play">play</button> -->
+
+            <!-- Next link sticks to the right -->
+            <button id="next" onclick="showNextImage();">next</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

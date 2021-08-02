@@ -4,6 +4,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 
 - [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
+- [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
 - [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
@@ -128,6 +129,11 @@ Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), 
 - [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
 - [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
 - [USB Li-Ion charger](https://www.adafruit.com/product/1304) (optional)
+
+## LiPo/Li-Ion Charging Station
+This charging station allows to safely charge LiPo or Li-Ion batteries.
+
+<img src="https://live.staticflickr.com/65535/51264412719_f9fc83c7d6.jpg"/>
 
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.

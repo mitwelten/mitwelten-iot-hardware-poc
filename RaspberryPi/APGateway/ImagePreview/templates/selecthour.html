@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{camera_id}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+              position: sticky;
+              top: 0;
+        }
+        .breadcrumb {
+            /* Content is centered vertically */
+            align-items: center;
+            display: flex;
+        }
+
+        .breadcrumb__separator {
+            margin: 0 8px;
+        }
+    </style>
+ </head>
+
+<body>
+    <script>
+      /*  //https://stackoverflow.com/a/38947678
+        (function RedirNonHttps() {
+            if (location.href.indexOf("https://") == -1) 
+            {
+                location.href = location.href.replace("http://", "https://");
+            }
+         })();
+         */
+    </script>
+      <div>
+        <header class="header">
+                <div class="breadcrumb">
+                    <!-- Breadcrumb item -->
+                    <h2><a href="/"> &#128738; Gateway</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2><a href="/{{camera_id}}/">{{camera_id}}</a></h2>
+                    <div class="breadcrumb__separator">/</div>
+                    <h2>{{date}}</h2>
+                </div>
+        </header>
+    </div>
+
+
+
+{% for dir in directory_list %}
+
+<p>
+<a href = "{{dir}}/">{{dir}}:00 (utc)</a>
+</p>
+
+{% endfor %}
+  
+</body>
+</html>

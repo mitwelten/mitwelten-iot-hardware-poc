@@ -105,24 +105,25 @@ void process_file(char *name) {
             strcat(path, iso_yyyymmdd);
             strcat(path, "/");
             strcat(path, iso_hour);
-            strcat(path, "/");
-            strcat(path, device_id);
-            strcat(path, "_");
-            strcat(path, iso_date);
 
             char mkdir_cmd[1024];
             strcpy(mkdir_cmd, "mkdir -p ");
             strcat(mkdir_cmd, path);
             printf("%s\n", mkdir_cmd);
-            //system(mkdir_cmd); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
+            system(mkdir_cmd); // TODO: use https://man7.org/linux/man-pages/man2/mkdir.2.html
 
             char mv_cmd[1024];
             strcpy(mv_cmd, "mv ");
             strcat(mv_cmd, name);
             strcat(mv_cmd, " ");
             strcat(mv_cmd, path);
+            strcat(mv_cmd, "/");
+            strcat(mv_cmd, device_id);
+            strcat(mv_cmd, "_");
+            strcat(mv_cmd, iso_date);
+            strcat(mv_cmd, ".wav");
             printf("%s\n", mv_cmd);
-            //system(mv_cmd); // TODO: use read() / write()?
+            system(mv_cmd); // TODO: use read() / write()?
         }
         close(fds[0]);
     }

@@ -47,11 +47,13 @@ On the Pi
 - Mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
     ```
     $ sudo apt update
-    $ sudo apt install exfat-fuse
+    $ sudo apt install exfat-fuse # for ExFAT
+    $ sudo apt install ntfs-3g # for NTFS
     $ sudo blkid # note UUID, e.g. 0000-0001
     $ sudo nano /etc/fstab # edit using UUID
     ...
-    UUID=0000-0001 /mnt/elements exfat defaults,auto,users,rw,nofail,x-systemd.device-timeout=30 0 0
+    #UUID=0000-0001 /mnt/elements exfat defaults,auto,users,rw,nofail,x-systemd.device-timeout=30 0 0
+    UUID=0000-0001 /mnt/elements ntfs defaults,auto,users,rw,nofail,umask=000,x-systemd.device-timeout=30 0 0
     $ sudo reboot
     $ ls /mnt/elements
     ```
