@@ -128,6 +128,10 @@ void process_file(char *name) {
     }
 }
 
+// TODO: 
+// $ sudo blkid -s LABEL /dev/sda1
+// /dev/sda1: LABEL="0000-0001"
+
 int main(int argc, char *argv[]) {
     if (argc != 1) {
         printf("usage: sudo %s\n", argv[0]);
