@@ -240,6 +240,8 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
 - [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
+- [Pot Fixture](OpenScad/PoePiCam_PotFixture)
+- [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - M4 * 25mm Screw
 - M4 Locking Nut
