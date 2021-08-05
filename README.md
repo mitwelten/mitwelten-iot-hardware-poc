@@ -301,6 +301,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - [Gore Nut](https://www.distrelec.ch/de/gegenmutter-m12x1-m12-grau-gore-associates-gmbh-m10510-009/p/30155048)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
+- [Sun Protection](https://www.jumbo.ch/de/rettungsdecke-160x210cm-4633?sku=1074645) (optional)
 - 4 * 30 mm Wood Screws
 
 ### Stand
