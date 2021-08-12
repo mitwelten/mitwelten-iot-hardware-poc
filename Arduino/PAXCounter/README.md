@@ -23,6 +23,9 @@ Parameter|Value
 LoRaWAN version|MAC v1.0.3
 Frequency Plan|Europe 863-870 MHz (SF9 for RX2 - recommended)
 
+## TTN Decoder
+
+Use [packed_decodeUplink.js](https://raw.githubusercontent.com/cyberman54/ESP32-Paxcounter/master/src/TTNv3/packed_decodeUplink.js) as uplink payload formatter.
 
 ## Configuration
 
