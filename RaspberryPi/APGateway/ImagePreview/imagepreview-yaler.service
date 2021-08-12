@@ -1,0 +1,9 @@
+[Unit]
+Description=yalertunnel service on port 5000
+
+[Service]
+WorkingDirectory=/home/pi/yalertunnel
+ExecStart=/home/pi/yalertunnel/yalertunnel server 127.0.0.1:5000 tls:try.yaler.io:443 RELAY_DOMAIN -min-listeners 8
+
+[Install] 
+WantedBy=multi-user.target

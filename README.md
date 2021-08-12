@@ -232,12 +232,16 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 
 <img src="https://live.staticflickr.com/65535/51222661454_4bfd413109.jpg"/>
 
+<img src="https://live.staticflickr.com/65535/51342225992_ccdbe97d40.jpg"/>
+
 ### Hardware
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
 - [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
+- [Pot Fixture](OpenScad/PoePiCam_PotFixture)
+- [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - M4 * 25mm Screw
 - M4 Locking Nut
@@ -301,6 +305,7 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 - [Gore Membrane](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - [Gore Nut](https://www.distrelec.ch/de/gegenmutter-m12x1-m12-grau-gore-associates-gmbh-m10510-009/p/30155048)
 - [Camouflage](https://www.hornbach.ch/shop/Tarnnetz-gruen-200x300-cm/10174067/artikel.html) (optional, or [this](https://www.jumbo.ch/de/tarnnetz-camouflage-26397?sku=1359450))
+- [Sun Protection](https://www.jumbo.ch/de/rettungsdecke-160x210cm-4633?sku=1074645) (optional)
 - 4 * 30 mm Wood Screws
 
 ### Stand
