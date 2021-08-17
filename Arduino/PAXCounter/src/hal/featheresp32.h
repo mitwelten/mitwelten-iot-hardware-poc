@@ -15,6 +15,10 @@
 
 #define HAS_LED 13
 
+// Battery measurement
+#define BAT_MEASURE_ADC ADC1_GPIO35_CHANNEL
+#define BAT_VOLTAGE_DIVIDER 2
+
 #define HAS_LORA 1       // comment out if device shall not send data via LoRa
 
 #define CFG_sx1276_radio 1 // RFM95 module
