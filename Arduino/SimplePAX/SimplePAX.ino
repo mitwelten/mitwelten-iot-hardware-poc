@@ -79,7 +79,6 @@ boolean addCRC(uint32_t crc) {
 		if (randomDeviceCrcs[i] == crc) {
 			return false;
 		}
-
 	}
 	randomDeviceCrcs[nrOfRandomDevices] = crc;
 	nrOfRandomDevices++;
