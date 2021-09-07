@@ -8,6 +8,8 @@
 #include <BLEAdvertisedDevice.h>
 #include <CRC32.h>
 
+#define BATTERY_PIN A13
+
 int bleScanTime = 3; // in seconds
 int scanInterval = 30; // perform a scan every <scanInterval> seconds
 int intervalsUntilTransmit = 10; // transmit the data after <intervalsUntilTransmit> scans
@@ -16,16 +18,19 @@ BLEScan* pBLEScan;
 
 
 // Stored in SRAM, still there after deep sleep
-RTC_DATA_ATTR uint32_t randomDeviceCrcs[50];
-RTC_DATA_ATTR uint8_t nrOfRandomDevices = 0;
+RTC_DATA_ATTR uint32_t randomizedDeviceCrcs[50];
+RTC_DATA_ATTR uint8_t nrOfRandomizedDevices = 0;
 RTC_DATA_ATTR uint8_t scanCounter = 0;
 
 
 // used for additional info
 int publicdevs = 0;
-int randomdevs = 0;
+int randomizeddevs = 0;
 int starttime = 0;
 
+float getBatteryLevel() {
+	return (analogRead(BATTERY_PIN) / 4095.0) * 2 * 1.1 * 3.3;
+}
 
 uint32_t getCrc32(const char* payload) {
 	return  CRC32::calculate(payload, sizeof(payload) - 1);
@@ -52,7 +57,7 @@ void printDeviceDetails(BLEAdvertisedDevice dev) {
 	}
 	case 0x01: {
 		Serial.print("RANDOM");
-		randomdevs++;
+		randomizeddevs++;
 		const char* address = dev.getAddress().toString().c_str();
 		addCRC(getCrc32(address));
 		break;
@@ -75,21 +80,21 @@ void printDeviceDetails(BLEAdvertisedDevice dev) {
 }
 
 boolean addCRC(uint32_t crc) {
-	for (int i = 0; i < nrOfRandomDevices; ++i) {
-		if (randomDeviceCrcs[i] == crc) {
+	for (int i = 0; i < nrOfRandomizedDevices; ++i) {
+		if (randomizedDeviceCrcs[i] == crc) {
 			return false;
 		}
 	}
-	randomDeviceCrcs[nrOfRandomDevices] = crc;
-	nrOfRandomDevices++;
+	randomizedDeviceCrcs[nrOfRandomizedDevices] = crc;
+	nrOfRandomizedDevices++;
 	return true;
 }
 
 void clearCRCs() {
-	for (int i = 0; i < nrOfRandomDevices; ++i) {
-		randomDeviceCrcs[i] = 0;
+	for (int i = 0; i < nrOfRandomizedDevices; ++i) {
+		randomizedDeviceCrcs[i] = 0;
 	}
-	nrOfRandomDevices = 0;
+	nrOfRandomizedDevices = 0;
 }
 
 class MyAdvertisedDeviceCallbacks : public BLEAdvertisedDeviceCallbacks {
@@ -124,18 +129,18 @@ void setup() {
 	//  Serial.print(foundDevices.getCount());
 	pBLEScan->clearResults();   // delete results fromBLEScan buffer to release memory
 
-	Serial.printf("Found %d random devices\n", nrOfRandomDevices);
+	Serial.printf("Found %d randomized devices\n", nrOfRandomizedDevices);
 	scanCounter++;
 
 	if (scanCounter >= intervalsUntilTransmit) {
-		Serial.printf("Time to transmit. Total %d random devices\n", nrOfRandomDevices);
+		Serial.printf("Time to transmit. Total %d randomized devices\n", nrOfRandomizedDevices);
 		// put value in payload
 		// transmit to ttn
 		clearCRCs();
 	}
 
 	uint32_t sleepduration = (scanInterval * 1000) < millis() ? 0 : (scanInterval * 1000 - millis()) * 1000;
-	Serial.printf("going to sleep for %d us", sleepduration);
+	Serial.printf("Battery Level is %f, going to sleep for %d us",getBatteryLevel(), sleepduration);
 	ESP.deepSleep(sleepduration);
 }
 
