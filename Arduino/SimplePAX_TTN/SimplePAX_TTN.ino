@@ -26,7 +26,7 @@
 #define LORA_TX_DATARATE DR_SF8 // SF to transmit
 
 #define MAC_BUFFER_SIZE 50 // maximum number of unique randomized devices
-#define BLE_SCANDURATION 3 // maximum number of unique randomized devices
+#define BLE_SCANDURATION 3 // duration of a single scan, in seconds
 #define BLE_SCAN_INTERVAL 150 // ble scan interval in ms
 #define BLE_SCAN_WINDOW 150 // ble scan window in ms (must be less or equal to BLE_SCAN_INTERVAL)
 
