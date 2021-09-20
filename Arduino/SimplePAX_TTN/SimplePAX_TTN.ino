@@ -158,8 +158,8 @@ void setupBleScanner() {
 
 void scanPAX() {
 	//Serial.printf("bt_status calling scanPAX=%d\n", esp_bt_controller_get_status());
-	uint32_t m1 = millis();
-	setupBleScanner();
+	//uint32_t m1 = millis();
+	//setupBleScanner();
 	//Serial.printf("time to setup: %d\n", millis() - m1);
 	//Serial.print("Scan #");
 	//Serial.print(scanCounter);
@@ -172,8 +172,8 @@ void scanPAX() {
 	scanCounter++;
 	//esp_bt_controller_disable(); // is this done by esp light sleep?
 	////Serial.printf("bt_status before deinit=%d\n", esp_bt_controller_get_status());
-	uint32_t m2 = millis();
-	BLEDevice::deinit();
+	//uint32_t m2 = millis();
+	//BLEDevice::deinit();
 	//Serial.printf("bt_status end of scanPAX=%d\n", esp_bt_controller_get_status());
 	//Serial.printf("time to deinit: %d, duration deinit = %d\n", millis() - m1, millis()-m2);
 
@@ -265,6 +265,7 @@ void setup() {
 	digitalWrite(ONBOARD_LED_PIN, HIGH);
 	setupLora();
 	delay(100);
+	setupBleScanner();
 	scanPAX(); // do one scan
 	do_send(&sendjob); // transmit data
 }
