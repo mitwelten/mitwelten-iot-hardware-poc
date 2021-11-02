@@ -71,6 +71,7 @@ Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar pow
 
 ### Enclosure
 - [Solar PVC Tube fixture](OpenScad/Solar_PVCTubeFixture)
+- [Solar Hinge fixture](OpenScad/Solar_PVCTubeFixture)
 
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
