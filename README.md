@@ -69,6 +69,9 @@ Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar pow
 - [4700uF, 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589) (optional)
 - [10K Precision Epoxy Thermistor](https://www.adafruit.com/product/372)(optional)
 
+### Enclosure
+- [Solar PVC Tube fixture](OpenScad/Solar_PVCTubeFixture)
+
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
 
