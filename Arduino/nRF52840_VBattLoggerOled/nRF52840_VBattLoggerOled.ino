@@ -1,3 +1,5 @@
+// https://fhnw.mit-license.org/
+
 // Using https://wiki.seeedstudio.com/Grove-OLED-Display-0.66-SSD1306_v1.0/
 // Start the point at (32,16) instead of (0,0). The range is from (31,16) to (95,63).
 
