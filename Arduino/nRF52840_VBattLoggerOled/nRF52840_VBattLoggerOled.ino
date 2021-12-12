@@ -1,7 +1,7 @@
 // https://fhnw.mit-license.org/
 
-// Using https://wiki.seeedstudio.com/Grove-OLED-Display-0.66-SSD1306_v1.0/
-// Top left is (32, 16) not (0, 0). Visible range is (31, 16) to (95, 63).
+// Using https://wiki.seeedstudio.com/Grove-OLED-Display-0.66-SSD1306_v1.0/ on Grove I2C_1 or _2
+// Top left is (32, 16) not (0, 0), visible range is (31, 16) to (95, 63)
 
 //#include "Adafruit_TinyUSB.h"; // Fix https://github.com/adafruit/Adafruit_nRF52_Arduino/issues/653
 #include <SPI.h>
@@ -25,7 +25,7 @@ const int len = dsp_w;
 int pos = 0;
 float values[len] = {0};
 
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET); // Grove I2C, 0.66"
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 void setup() {
   //Serial.begin(115200);
