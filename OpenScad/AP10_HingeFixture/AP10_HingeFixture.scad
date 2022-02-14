@@ -1,3 +1,5 @@
+// CC BY-SA, FHNW (University of Applied Sciences and Arts Northwestern Switzerland)
+
 $fn = 360;
 
 module rounded_square(w, r) {
