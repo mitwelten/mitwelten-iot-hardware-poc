@@ -157,6 +157,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - 3D printed [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
 - 3D printed [AP9 Hinge Fixture](OpenScad/AP9_HingeFixture) (optional)
 - 3D printed [PVCTubeFixture](OpenScad/Solar_PVCTubeFixture) (optional)
+- 1 M4 x 40mm screw w/ locking nut
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
