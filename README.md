@@ -151,7 +151,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
 - [3.7V, 6600 mAh LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
-- Micro SD Card
+- Micro SD Card (ExFAT, Master Boot Record)
 
 ### Enclosure
 - 3D printed [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
@@ -163,7 +163,6 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - [OpenMV IDE](https://openmv.io/pages/download)
 
 ### Deploy
-- Format SD card (ExFAT, Master Boot Record)
 - Set RTC time t0 in the source code
 - Save code to SD card as main.py
 - Connect LiPo battery at t0
