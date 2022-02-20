@@ -142,7 +142,7 @@ This charging station allows to safely charge LiPo or Li-Ion batteries.
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.
 
-<img src="https://live.staticflickr.com/65535/51893228830_758510dd83_z.jpg"/>
+<img src="https://live.staticflickr.com/65535/51893228830_758510dd83.jpg"/>
 
 ### Software
 - [OpenMVH7_PhotoLogging.py](OpenMV/OpenMVH7_PhotoLogging.py)
