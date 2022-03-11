@@ -328,3 +328,16 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 ### Setup
 - [APGateway Setup](RaspberryPi/APGateway/README.md)
 - [TPLink MR6400 Setup](TPLink/MR6400/README.md)
+
+## ZaunPixel Actuator
+### Hardware
+- [Feather M4 Express](https://www.adafruit.com/product/3857) or any other Feather board with PWM
+- [Feather Grove Adapter](https://www.adafruit.com/product/4309) (optional)
+- [AP3602A](https://www.adafruit.com/product/3661) (or [TPS61023](https://www.adafruit.com/product/4654)) 5V charge pump
+- [74AHCT125](https://www.adafruit.com/product/1787) 3V to 5V level shifter
+- Jumper wires M-M
+- Mini Breadboard
+- Servo
+
+### Enclosure
+- [ZaunPixel](OpenScad/ZaunPixel)
