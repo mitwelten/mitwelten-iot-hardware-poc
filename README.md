@@ -332,6 +332,9 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 ## ZaunPixel Actuator
 <img src="https://live.staticflickr.com/65535/51931885094_091e2b1777.jpg"/>
 
+### Software
+- Arduino IDE > Examples > Servo > swipe (e.g. on M4 pin 9)
+
 ### Hardware
 - [Feather M4 Express](https://www.adafruit.com/product/3857) or any other Feather board with PWM
 - [Feather Grove Adapter](https://www.adafruit.com/product/4309) (optional)
