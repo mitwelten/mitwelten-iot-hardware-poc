@@ -142,7 +142,7 @@ This charging station allows to safely charge LiPo or Li-Ion batteries.
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.
 
-<img src="https://live.staticflickr.com/65535/51013775987_e3de2c364e.jpg"/>
+<img src="https://live.staticflickr.com/65535/51893228830_758510dd83.jpg"/>
 
 ### Software
 - [OpenMVH7_PhotoLogging.py](OpenMV/OpenMVH7_PhotoLogging.py)
@@ -151,16 +151,18 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 ### Hardware
 - [OpenMV Cam H7](https://openmv.io/collections/products/products/openmv-cam-h7)
 - [3.7V, 6600 mAh LiIon Battery](https://www.adafruit.com/product/353) (JST 2, check polarity)
-- Micro SD Card
+- Micro SD Card (ExFAT, Master Boot Record)
 
 ### Enclosure
-- Laser-cut [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
+- 3D printed [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
+- 3D printed [AP9 Hinge Fixture](OpenScad/AP9_HingeFixture) (optional)
+- 3D printed [PVCTubeFixture](OpenScad/Solar_PVCTubeFixture) (optional)
+- 1 M4 x 40mm screw w/ locking nut
 
 ### Setup
 - [OpenMV IDE](https://openmv.io/pages/download)
 
 ### Deploy
-- Format SD card (ExFAT, Master Boot Record)
 - Set RTC time t0 in the source code
 - Save code to SD card as main.py
 - Connect LiPo battery at t0
