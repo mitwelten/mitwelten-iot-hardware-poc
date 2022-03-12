@@ -17,6 +17,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
+- [ZaunPixel Actuator](#zaunpixel-actuator)
 
 ## LoRaWAN Sensor Nodes
 These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
@@ -328,3 +329,22 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 ### Setup
 - [APGateway Setup](RaspberryPi/APGateway/README.md)
 - [TPLink MR6400 Setup](TPLink/MR6400/README.md)
+
+## ZaunPixel Actuator
+<img src="https://live.staticflickr.com/65535/51931885094_091e2b1777.jpg"/>
+
+### Software
+- Arduino IDE > Examples > Servo > swipe (e.g. on M4 pin 9)
+
+### Hardware
+- [Feather M4 Express](https://www.adafruit.com/product/3857) or any other Feather board with PWM
+- [Feather Grove Adapter](https://www.adafruit.com/product/4309) (optional)
+- [3.7V Li-Ion Battery](https://www.adafruit.com/product/1781)
+- [AP3602A](https://www.adafruit.com/product/3661) (or [TPS61023](https://www.adafruit.com/product/4654)) 5V charge pump
+- [74AHCT125](https://www.adafruit.com/product/1787) 3V to 5V level shifter
+- Jumper wires M-M
+- Mini Breadboard
+- Servo
+
+### Enclosure
+- [ZaunPixel](OpenScad/ZaunPixel)
