@@ -31,12 +31,12 @@ difference() {
         translate([wi, wi, -1]) cylinder(h + 2, r, r);
         translate([wi, 0, -1]) cylinder(h + 2, r, r);
     }
-    // zip tie holes
-    translate([-r -5, 2.5, -1]) cube([2, 5, h + 2]);
-    translate([-r -10 - 5 + 4, 0, 12]) cube([10, 10, 5.201]);
-    translate([-r - 1, 0, 12 + 5.2]) overhang(6, 10);
-
-    translate([-r + 3 + 81, 2.5, -1]) cube([2, 5, h + 2]);
-    translate([-r + 1 + 81, 0, 12]) cube([10, 10, 5.201]);
-    translate([-r + 1 + 81, 10, 12 + 5.2]) rotate([0, 0, 180]) overhang(6, 10);
+    // zip tie hole
+    translate([-r -5, 2.5, -1]) cube([2, 5, h - 2]);
+    translate([-r -10 - 5 + 4, 0, 12]) cube([10, 10, 8.01]);
+    translate([-r - 1, 0, 12 + 8]) overhang(6, 10);
+    // zip tie hole
+    translate([-r + 3 + 81, 2.5, -1]) cube([2, 5, h - 2]);
+    translate([-r + 1 + 81, 0, 12]) cube([10, 10, 8.01]);
+    translate([-r + 1 + 81, 10, 12 + 8]) rotate([0, 0, 180]) overhang(6, 10);
 }
