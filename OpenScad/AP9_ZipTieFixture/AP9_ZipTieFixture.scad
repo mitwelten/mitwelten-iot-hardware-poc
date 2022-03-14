@@ -14,7 +14,8 @@ difference() {
         translate([0, wi, 0]) cylinder(h, r + d, r + d);
         translate([wi, wi, 0]) cylinder(h, r + d, r + d);
         translate([wi, 0, 0]) cylinder(h, r + d, r + d);
-        translate([-16, 12 + (wi / 2), 8]) rotate([90, 0, 0]) cylinder(h=24, r=8);
+        translate([-r - 8,  0, 0]) cube([8, 10, h/2]);
+        translate([-r + 81,  0, 0]) cube([8, 10, h/2]);
     }
     hull() {
         translate([0, 0, -1]) cylinder(h + 2, r, r);
@@ -22,5 +23,10 @@ difference() {
         translate([wi, wi, -1]) cylinder(h + 2, r, r);
         translate([wi, 0, -1]) cylinder(h + 2, r, r);
     }
-    translate([-r - 12, -r, 4 + 1.5]) cube([5, 81, 2]);
+    // zip tie holes
+    translate([-r -5, 2.5, -1]) cube([2, 5, h + 2]);
+    translate([-r -10 - 5, 2.5, 12]) cube([10, 5, 8]);
+
+    translate([-r + 3 + 81, 2.5, -1]) cube([2, 5, h + 2]);
+    translate([-r + 5 + 81, 2.5, 12]) cube([10, 5, 8]);
 }
