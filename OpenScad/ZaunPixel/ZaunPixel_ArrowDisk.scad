@@ -9,10 +9,10 @@ d = 0.2;
 deg = 0;
 
 // cover
-difference() {
-  translate([-s/2, -s/2, 0]) cube([s, s, 1.5]);
-  translate([0, 0, -1]) cylinder(3, r + d, r + d);
-}
+//difference() {
+//  translate([-s/2, -s/2, 0]) cube([s, s, 1.5]);
+//  translate([0, 0, -1]) cylinder(3, r + d, r + d);
+//}
 
 rotate([0, 0, deg]) {
   difference() {
