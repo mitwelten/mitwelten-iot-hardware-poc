@@ -17,6 +17,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
+- [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
 
 ## LoRaWAN Sensor Nodes
@@ -329,6 +330,18 @@ This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to
 ### Setup
 - [APGateway Setup](RaspberryPi/APGateway/README.md)
 - [TPLink MR6400 Setup](TPLink/MR6400/README.md)
+
+## PoE Access Point Port Upgrade
+Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe-access-point-with-4g-uplink).
+
+### Hardware
+- [TP-Link TL-SG105PE PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153) (4 * 802.3af)
+- [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/steffen-abzweigstecker-3xt13-ks-schwarz-mehrfachstecker-6153542)
+- 2 * [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
+
+### Enclosure
+- 3D-printed [Barrel Plug Port Upgrade](OpenScad/AccessPoint_Plug_Port_Upgrade)
+- Laser-cut [Barrel Fixture Port Upgrade](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 
 ## ZaunPixel Actuator
 <img src="https://live.staticflickr.com/65535/51931885094_091e2b1777.jpg"/>
