@@ -337,7 +337,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 ### Hardware
 - [TP-Link TL-SG105PE PoE Switch](https://www.digitec.ch/de/s1/product/tp-link-poe-switch-tl-sg105pe-5-port-5ports-switch-13966153) (4 * 802.3af)
 - [Outlet Power Adapter](https://www.digitec.ch/de/s1/product/steffen-abzweigstecker-3xt13-ks-schwarz-mehrfachstecker-6153542)
-- 2 * [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
+- [0.5m RJ45 Cable](https://www.digitec.ch/de/s1/product/lindy-netzwerkkabel-sftp-kat-6-50cm-netzwerkkabel-5692267)
 
 ### Enclosure
 - 3D-printed [Barrel Plug Port Upgrade](OpenScad/AccessPoint_Plug_Port_Upgrade)
