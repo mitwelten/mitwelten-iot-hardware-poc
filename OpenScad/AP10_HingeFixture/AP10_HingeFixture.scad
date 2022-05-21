@@ -93,4 +93,5 @@ difference() {
         }
     }
 }
-//hinge_tube_fixture();
+
+hinge_tube_fixture();
