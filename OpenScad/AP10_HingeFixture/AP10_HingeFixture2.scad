@@ -28,7 +28,7 @@ difference() {
     translate([-24 -12, -12 + (wi/2) + 16, -1]) cube([24, 4, 24 + 2]);
     translate([-24, -12 + (wi/2) - 4, 12]) rotate([90, 0, 0]) cylinder(h=24, r=4);
     translate([-24, wi + 1, 12]) rotate([90, 0, 0]) cylinder(h=(wi/2 - 12 + 1), r=4.1, $fn=6);
-    translate([-24, wi + 1, 12]) rotate([90, 0, 0]) cylinder(h=81, r=2);
+#    translate([-24, wi + 1, 12]) rotate([90, 0, 0]) cylinder(h=81, r=2);
 #    translate([-40, 13, 15]) rotate([0, 90, 0]) cylinder(60, 10, 10);
 #    translate([-40, wi - 13, 15]) rotate([0, 90, 0]) cylinder(60, 10, 10);
 }
