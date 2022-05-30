@@ -6,23 +6,23 @@ layer = 3; // 0-3
 r = .1;
 
 module layer3d(layer) {
-difference() {
-  hull() {
-    translate([6, 6]) {
-      translate([0, 0]) {
-        circle(6);
-      }
-      translate([77 - 2 * 6, 0]) {
-        circle(6);
-      }
-      translate([77 - 2 * 6, 77 - 2 * 6]) {
-        circle(6);
-      }
-      translate([0, 77 - 2 * 6]) {
-        circle(6);
+  difference() {
+    hull() {
+      translate([6, 6]) {
+        translate([0, 0]) {
+          circle(6);
+        }
+        translate([77 - 2 * 6, 0]) {
+          circle(6);
+        }
+        translate([77 - 2 * 6, 77 - 2 * 6]) {
+          circle(6);
+        }
+        translate([0, 77 - 2 * 6]) {
+          circle(6);
+        }
       }
     }
-  }
     if (layer >= 0) {
       translate([44, 77.5 - 15 - 12]) {
         square([16.5, 12]);
