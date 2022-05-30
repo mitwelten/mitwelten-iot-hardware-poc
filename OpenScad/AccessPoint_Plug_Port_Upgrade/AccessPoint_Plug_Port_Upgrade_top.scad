@@ -57,10 +57,14 @@ difference() {
             }
         }
         rotate(0) wire_220v();
-        rotate(72) wire_rj45();
-        rotate(2 * 72) wire_rj45();
-        rotate(3 * 72) wire_rj45();
-        rotate(4 * 72) wire_rj45();
+        rotate(40) wire_rj45();
+        rotate(2 * 40) wire_rj45();
+        rotate(3 * 40) wire_rj45();
+        rotate(4 * 40) wire_rj45();
+        rotate(5 * 40) wire_rj45();
+        rotate(6 * 40) wire_rj45();
+        rotate(7 * 40) wire_rj45();
+        rotate(8 * 40) wire_rj45();
         translate([0, 0, 8.15]) cylinder(1, 52 + 1, 52 + 1);
     }
 }
