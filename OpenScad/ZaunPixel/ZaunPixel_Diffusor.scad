@@ -1,6 +1,6 @@
 // CC BY-SA, FHNW (University of Applied Sciences and Arts Northwestern Switzerland)
 
-$fn=360;
+$fn=72;
 
 s = 76;
 r = (s/2) - (1.5 + 4);
