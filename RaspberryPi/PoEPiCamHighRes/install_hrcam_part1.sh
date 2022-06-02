@@ -15,5 +15,3 @@ chmod +x install_pivariety_pkgs.sh
 ./install_pivariety_pkgs.sh -p libcamera_dev
 
 ./install_pivariety_pkgs.sh -p libcamera_apps
-
-./install_pivariety_pkgs.sh -p imx519_kernel_driver
