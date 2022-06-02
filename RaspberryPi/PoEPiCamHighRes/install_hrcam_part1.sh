@@ -1,6 +1,9 @@
 #!/bin/sh
 sudo apt update 
 sudo apt upgrade -y
+
+sudo raspi-config nonint do_memory_split 256
+
 sudo apt install -y git python3-pip python3-pyqt5
 sudo apt install -y python3-prctl libatlas-base-dev ffmpeg libopenjp2-7
 pip3 install numpy --upgrade
