@@ -11,6 +11,8 @@
 
 ```sh
 curl https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCamHighRes/install_hrcam_part1.sh | bash
+
+./install_pivariety_pkgs.sh -p imx519_kernel_driver
 ```
 
 After the execution of the script, you will be asked if you want to reboot. Type `y`.
