@@ -65,6 +65,13 @@ difference() {
         rotate(6 * 40) wire_rj45();
         rotate(7 * 40) wire_rj45();
         rotate(8 * 40) wire_rj45();
-        translate([0, 0, 8.15]) cylinder(1, 52 + 1, 52 + 1);
+
+       // 5 rj45
+       //rotate(60) wire_rj45();
+       //rotate(2 * 60) wire_rj45();
+       //rotate(3 * 60) wire_rj45();
+       //rotate(4 * 60) wire_rj45();
+       //rotate(5 * 60) wire_rj45();
+       translate([0, 0, 8.15]) cylinder(1, 52 + 1, 52 + 1);
     }
 }
