@@ -1,0 +1,17 @@
+[Unit]
+Requires=network.target
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/mjpg-streamer/mjpg-streamer-experimental
+EnvironmentFile=/etc/systemd/system/.mjpgconf
+ExecStart=/home/pi/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer $INPUTARG $OUTPUTARG
+Restart=always
+TimeoutSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+
