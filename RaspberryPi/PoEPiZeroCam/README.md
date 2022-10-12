@@ -11,7 +11,7 @@ On the computer
     $ touch /Volumes/boot/ssh
     ```
 
-### Prepare Raspberry Pi 3B+
+### Prepare Raspberry Pi Zero W
 On the Pi
 - Insert prepared SD Card
 - Add PoE hat hardware extension
