@@ -1,4 +1,4 @@
-# PoE Pi Cam
+# PoE Pi Zero Cam
 ## Setup
 ### Prepare SD Card
 On the computer
