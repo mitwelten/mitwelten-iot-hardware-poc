@@ -31,7 +31,7 @@ On the Pi
     ```
     $ passwd
     ```
-- Set the hostname to cam-0000-0000 (using the [deploy.mitwelten.org](https://deploy.mitwelten.org/) node ID)
+- Set the hostname to _cam-0000-0000_ (using the [deploy.mitwelten.org](https://deploy.mitwelten.org/) node ID)
     ```
     $ sudo raspi-config # System Options > Hostname
     ```
