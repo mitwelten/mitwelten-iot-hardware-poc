@@ -31,6 +31,10 @@ On the Pi
     ```
     $ passwd
     ```
+- Set the hostname to cam-0000-0000 (using the [deploy.mitwelten.org](https://deploy.mitwelten.org/) node ID)
+    ```
+    $ sudo raspi-config # System Options > Hostname
+    ```
 - Expand the filesystem
     ```
     $ sudo raspi-config # Advanced Options > Expand Filesystem
