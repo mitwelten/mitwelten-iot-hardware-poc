@@ -249,6 +249,8 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 <img src="https://live.staticflickr.com/65535/51342225992_ccdbe97d40.jpg"/>
 
 ### Hardware
+- [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/) or USB Camera
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
 ### Enclosure
@@ -273,6 +275,8 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 <img src=""/>
 
 ### Hardware
+- [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/) or USB Camera
 - [PoE Splitter](https://www.pi-shop.ch/uctronics-poe-splitter-gigabit-5v-micro-usb-power-and-ethernet-to-raspberry-pi-3b) (802.3af)
 
 ### Enclosure
