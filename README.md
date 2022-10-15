@@ -241,7 +241,7 @@ This Raspberry Pi camera provides a basic video stream.
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
 
 ## Raspberry Pi Streaming Camera with PoE
-Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
+Derived from [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
 
 <img src="https://live.staticflickr.com/65535/51161321095_3d5992ed48.jpg"/>
 
