@@ -14,6 +14,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe)
+- [Raspberry Pi Zero Streaming Camera with PoE](#raspberry-pi-zero-streaming-camera-with-poe)
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
