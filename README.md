@@ -278,6 +278,7 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 ### Hardware
 - [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
 - [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/)
+- [Pi Zero Camera Cable](https://www.pi-shop.ch/raspberry-pi-zero-kamera-kabel)
 - [PoE Splitter](https://www.pi-shop.ch/uctronics-poe-splitter-gigabit-5v-micro-usb-power-and-ethernet-to-raspberry-pi-3b) (802.3af)
 
 ### Enclosure
