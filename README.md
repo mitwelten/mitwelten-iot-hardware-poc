@@ -263,6 +263,33 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 ### Setup
 - [PoEPiCam Setup](RaspberryPi/PoEPiCam)
 
+## Raspberry Pi Zero Streaming Camera with PoE
+Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe), based on a Pi Zero W with Wi-Fi.
+
+<img src=""/>
+
+<img src=""/>
+
+<img src=""/>
+
+### Hardware
+- [PoE Splitter](https://www.pi-shop.ch/uctronics-poe-splitter-gigabit-5v-micro-usb-power-and-ethernet-to-raspberry-pi-3b) (802.3af)
+
+### Enclosure
+- [AP10 Adapter](OpenScad/PoEPiZeroCam_AP10Adapter)
+- [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
+- [Pot Fixture](OpenScad/PoePiCam_PotFixture)
+- [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
+- [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- 4 * [10mm Spacers](https://www.conrad.ch/de/p/526363-abstandsbolzen-x-l-7-mm-x-10-mm-polystyrol-1-st-526363.html)
+- 4 * [M2.5 * 16mm Screws](https://www.conrad.ch/de/p/toolcraft-to-5371935-zylinderschrauben-m2-5-16-mm-innensechskant-iso-4762-edelstahl-a2-100-st-1790645.html)
+- 4 * [M2 * 3mm Screws](https://www.conrad.ch/de/p/toolcraft-1061796-zylinderschrauben-m2-3-mm-innensechskant-din-912-edelstahl-a2-100-st-1061796.html)
+- M4 * 25mm Screw
+- M4 Locking Nut
+
+### Setup
+- [PoEPiCam Setup](RaspberryPi/PoEPiCam)
+
 ## Raspberry Pi Streaming Camera with Solar Power
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
 
