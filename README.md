@@ -286,8 +286,8 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
 - [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
-- 4 * [10mm Spacers](https://www.conrad.ch/de/p/526363-abstandsbolzen-x-l-7-mm-x-10-mm-polystyrol-1-st-526363.html)
-- 4 * [M2.5 * 16mm Screws](https://www.conrad.ch/de/p/toolcraft-to-5371935-zylinderschrauben-m2-5-16-mm-innensechskant-iso-4762-edelstahl-a2-100-st-1790645.html)
+- 3 * [10mm Spacers](https://www.conrad.ch/de/p/526363-abstandsbolzen-x-l-7-mm-x-10-mm-polystyrol-1-st-526363.html)
+- 3 * [M2.5 * 16mm Screws](https://www.conrad.ch/de/p/toolcraft-to-5371935-zylinderschrauben-m2-5-16-mm-innensechskant-iso-4762-edelstahl-a2-100-st-1790645.html)
 - 4 * [M2 * 3mm Screws](https://www.conrad.ch/de/p/toolcraft-1061796-zylinderschrauben-m2-3-mm-innensechskant-din-912-edelstahl-a2-100-st-1061796.html)
 - M4 * 25mm Screw
 - M4 Locking Nut
