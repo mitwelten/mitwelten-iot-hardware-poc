@@ -235,7 +235,7 @@ This Raspberry Pi camera provides a basic video stream.
 
 ### Hardware
 - [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
-- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/) or USB Camera
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/)
 
 ### Setup
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
@@ -277,7 +277,7 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 
 ### Hardware
 - [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
-- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/) or USB Camera
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/)
 - [PoE Splitter](https://www.pi-shop.ch/uctronics-poe-splitter-gigabit-5v-micro-usb-power-and-ethernet-to-raspberry-pi-3b) (802.3af)
 
 ### Enclosure
