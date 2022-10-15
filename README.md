@@ -269,9 +269,9 @@ Derived from [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), wi
 ## Raspberry Pi Zero Streaming Camera with PoE
 Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe), based on a Pi Zero W with Wi-Fi.
 
-<img src=""/>
+<img src="https://live.staticflickr.com/65535/52321569953_042afc24ef.jpg"/>
 
-<img src=""/>
+<img src="https://live.staticflickr.com/65535/52321682179_f4437c3679.jpg"/>
 
 <img src=""/>
 
