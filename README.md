@@ -14,6 +14,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [OpenMV Video Streaming Camera](#openmv-video-streaming-camera)
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe)
+- [Raspberry Pi Zero Streaming Camera with PoE](#raspberry-pi-zero-streaming-camera-with-poe)
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
@@ -234,13 +235,13 @@ This Raspberry Pi camera provides a basic video stream.
 
 ### Hardware
 - [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
-- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/) or USB Camera
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/)
 
 ### Setup
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
 
 ## Raspberry Pi Streaming Camera with PoE
-Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
+Derived from [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
 
 <img src="https://live.staticflickr.com/65535/51161321095_3d5992ed48.jpg"/>
 
@@ -249,6 +250,8 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 <img src="https://live.staticflickr.com/65535/51342225992_ccdbe97d40.jpg"/>
 
 ### Hardware
+- [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/) or USB Camera
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
 ### Enclosure
@@ -257,6 +260,36 @@ Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with ad
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
 - [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- M4 * 25mm Screw
+- M4 Locking Nut
+
+### Setup
+- [PoEPiCam Setup](RaspberryPi/PoEPiCam)
+
+## Raspberry Pi Zero Streaming Camera with PoE
+Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe), based on a Pi Zero W with Wi-Fi.
+
+<img src="https://live.staticflickr.com/65535/52321569953_042afc24ef.jpg"/>
+
+<img src="https://live.staticflickr.com/65535/52321682179_f4437c3679.jpg"/>
+
+<img src="https://live.staticflickr.com/65535/52321570893_41ac4244c8.jpg"/>
+
+### Hardware
+- [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
+- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/)
+- [Pi Zero Camera Cable](https://www.pi-shop.ch/raspberry-pi-zero-kamera-kabel)
+- [PoE Splitter](https://www.pi-shop.ch/uctronics-poe-splitter-gigabit-5v-micro-usb-power-and-ethernet-to-raspberry-pi-3b) (802.3af)
+
+### Enclosure
+- [AP10 Adapter](OpenScad/PoEPiZeroCam_AP10Adapter)
+- [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
+- [Pot Fixture](OpenScad/PoePiCam_PotFixture)
+- [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
+- [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
+- 3 * [10mm Spacers](https://www.conrad.ch/de/p/526363-abstandsbolzen-x-l-7-mm-x-10-mm-polystyrol-1-st-526363.html)
+- 3 * [M2.5 * 16mm Screws](https://www.conrad.ch/de/p/toolcraft-to-5371935-zylinderschrauben-m2-5-16-mm-innensechskant-iso-4762-edelstahl-a2-100-st-1790645.html)
+- 4 * [M2 * 3mm Screws](https://www.conrad.ch/de/p/toolcraft-1061796-zylinderschrauben-m2-3-mm-innensechskant-din-912-edelstahl-a2-100-st-1061796.html)
 - M4 * 25mm Screw
 - M4 Locking Nut
 
