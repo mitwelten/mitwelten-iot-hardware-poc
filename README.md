@@ -273,7 +273,7 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 
 <img src="https://live.staticflickr.com/65535/52321682179_f4437c3679.jpg"/>
 
-<img src=""/>
+<img src="https://live.staticflickr.com/65535/52321570893_41ac4244c8.jpg"/>
 
 ### Hardware
 - [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)
