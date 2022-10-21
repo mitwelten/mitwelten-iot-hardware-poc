@@ -294,7 +294,8 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 - M4 Locking Nut
 
 ### Setup
-- [PoEPiCam Setup](RaspberryPi/PoEPiCam)
+- [PoEPiCam Setup](RaspberryPi/PoEPiCam) (Pi Cam) or
+- [PoePiZeroArducam](RaspberryPi/PoePiZeroArducam) (ArduCam 16MP)
 
 ## Raspberry Pi Streaming Camera with Solar Power
 Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional solar power.
