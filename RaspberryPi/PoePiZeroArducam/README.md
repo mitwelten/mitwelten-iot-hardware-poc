@@ -147,7 +147,7 @@ sudo apt-get install vlc
 Install mjpeg_streamer
 ```
 cd ~
-sudo apt-get install cmake libjpeg8-dev
+sudo apt-get install cmake libjpeg9-dev
 sudo apt-get install gcc g++
 sudo apt-get install cmake
 git clone https://github.com/jacksonliam/mjpg-streamer
