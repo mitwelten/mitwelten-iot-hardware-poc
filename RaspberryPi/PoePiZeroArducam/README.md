@@ -7,7 +7,7 @@ On the computer
 - Select _Raspberry Pi OS (other)_ > _Raspberry Pi OS Lite (32-bit)_
 - Click _Choose SD Card_
 - Before write, go to advanced settings and configure:
-    - SSH with password
+    - SSH user _pi_ with password _raspberry_
     - Custom Wi-Fi
 - _Write_ image
 - Remove, re-insert SD Card
