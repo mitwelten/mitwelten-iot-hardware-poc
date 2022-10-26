@@ -232,6 +232,5 @@ http://LOCAL_IP:8080/?action=snapshot
 - https://www.arducam.com/docs/cameras-for-raspberry-pi/raspberry-pi-libcamera-guide/
 - https://github.com/raspberrypi/libcamera-apps/issues/144
 - https://forum.arducam.com/t/setup-raspberry-pi-zero-with-arducam-16mp/3671
-
-## Libcamera Doc:
-https://www.waveshare.com/wiki/RPi_Camera_(I)
+- https://www.waveshare.com/wiki/RPi_Camera_(I)
+- https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps
