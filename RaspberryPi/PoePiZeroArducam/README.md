@@ -130,33 +130,46 @@ sudo reboot
 ## Software Installation
 
 
-Install git
+### Git
 ```
 sudo apt-get update
 sudo apt-get install git
 ```
-Optional: Install GPAC (for MP4Box)
+### Optional: Install GPAC (for MP4Box)
 ```
 sudo apt install -y gpac
 ```
-Optional: Install VLC (for streaming)
+### Optional: Install VLC (for streaming)
 ```
 sudo apt-get install vlc
 ```
 
-Install mjpeg_streamer
+### mjpeg-streamer
 ```
 cd ~
 sudo apt-get install cmake libjpeg9-dev
 sudo apt-get install gcc g++
 sudo apt-get install cmake
-git clone https://github.com/jacksonliam/mjpg-streamer
+git clone https://github.com/ArduCAM/mjpg-streamer
 cd mjpg-streamer
 cd mjpg-streamer-experimental
 make
-./mjpg_streamer
+sudo make install
+./mjpg-streamer
 ```
-Install mjpg-streamer.service
+
+Test mjpg-streamer:
+```
+cd ~
+cd mjpg-streamer/mjpg-streamer-experimental
+./mjpg_streamer -i "input_libcamera.so -r FHD -f 2 -b 4 -s 1080x1080" -o "output_http.so -w ./www"
+```
+Correct input is `input_libcamera`. [See here](https://github.com/ArduCAM/mjpg-streamer/blob/master/mjpg-streamer-experimental/plugins/input_libcamera/README.md)
+
+Now the application should run on a port (default 8080) and can be accessed within the same network.
+
+
+### mjpg-streamer.service
 ```
 sudo wget -O /etc/systemd/system/mjpg-streamer.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/mjpg-streamer.service
 sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/.mjpgconf
