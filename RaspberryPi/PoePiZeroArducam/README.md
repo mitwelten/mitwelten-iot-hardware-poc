@@ -172,7 +172,7 @@ Now the application should run on a port (default 8080) and can be accessed with
 ### mjpg-streamer.service
 ```
 sudo wget -O /etc/systemd/system/mjpg-streamer.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/mjpg-streamer.service
-sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/.mjpgconf
+sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoePiZeroArducam/.mjpconf
 ```
 Edit parameters and credentials in [.mjpgconf](.mjpgconf)
 
