@@ -1,0 +1,2 @@
+INPUTARG=-i "input_libcamera.so -r 3280x2464 --fps 5"
+OUTPUTARG=-o "output_http.so -p 8080 --credentials MY_USER:MY_PASSWORD -www ./www"
