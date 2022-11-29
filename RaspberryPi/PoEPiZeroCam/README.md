@@ -55,20 +55,20 @@ On the Pi
     ```
 
 - Install git
-    ```
+    ```bash
     sudo apt-get update
     sudo apt-get install git
     ```
 - <s>Install GPAC (for MP4Box)</s>
-    ```
+    ```bash
     sudo apt install -y gpac
     ```
 - <s>Install VLC (for streaming)</s>
-    ```
+    ```bash
     sudo apt-get install vlc
     ```
 - Install mjpeg_streamer
-    ```
+    ```bash
     cd ~
     sudo apt-get install cmake libjpeg8-dev
     sudo apt-get install gcc g++
@@ -78,12 +78,24 @@ On the Pi
     make
     ./mjpg_streamer
     ```
+    **Note**: Raspberry PI OS with kernel version >= 5.15 the installation of `libjpeg9-dev` is required and `libjpeg8-dev` not longer supported. Kernel version can be checked with cmd `uname -a`.
+
 - Install mjpg-streamer.service
-    ```
+    ```bash
     sudo wget -O /etc/systemd/system/mjpg-streamer.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/mjpg-streamer.service
+    ```
+    Kernel version < 5.15
+    ```bash
     sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiCam/.mjpgconf
     ```
+    Kernel version >= 5.15
+    ```bash
+    sudo wget -O /etc/systemd/system/.mjpconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiZeroCam/.mjpgconf
+    ```
+    
     > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
+
+
 - Start mjpg-streamer.service
     ```
     sudo systemctl daemon-reload
