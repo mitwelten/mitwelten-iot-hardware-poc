@@ -90,7 +90,7 @@ On the Pi
     ```
     Kernel version >= 5.15
     ```bash
-    sudo wget -O /etc/systemd/system/.mjpconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiZeroCam/.mjpgconf
+    sudo wget -O /etc/systemd/system/.mjpgconf https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/PoEPiZeroCam/.mjpgconf
     ```
     
     > Edit parameters and credentials in [.mjpgconf](.mjpgconf)
