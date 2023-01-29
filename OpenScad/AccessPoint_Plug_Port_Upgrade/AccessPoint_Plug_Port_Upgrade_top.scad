@@ -56,18 +56,30 @@ difference() {
                 }       
             }
         }
+
         rotate(0) wire_220v();
-        rotate(40) wire_rj45();
-        rotate(2 * 40) wire_rj45();
-        rotate(3 * 40) wire_rj45();
-        rotate(4 * 40) wire_rj45();
-        rotate(5 * 40) wire_rj45();
-        rotate(6 * 40) wire_rj45();
-        rotate(7 * 40) wire_rj45();
-        rotate(8 * 40) wire_rj45();
+        
+        // 8 rj45
+        //rotate(1 * 40) wire_rj45();
+        //rotate(2 * 40) wire_rj45();
+        //rotate(3 * 40) wire_rj45();
+        //rotate(4 * 40) wire_rj45();
+        //rotate(5 * 40) wire_rj45();
+        //rotate(6 * 40) wire_rj45();
+        //rotate(7 * 40) wire_rj45();
+        //rotate(8 * 40) wire_rj45();
+
+        // 7 rj45
+        rotate(1 * 45) wire_rj45();
+        rotate(2 * 45) wire_rj45();
+        rotate(3 * 45) wire_rj45();
+        rotate(4 * 45) wire_rj45();
+        rotate(5 * 45) wire_rj45();
+        rotate(6 * 45) wire_rj45();
+        rotate(7 * 45) wire_rj45();
 
        // 5 rj45
-       //rotate(60) wire_rj45();
+       //rotate(1 * 60) wire_rj45();
        //rotate(2 * 60) wire_rj45();
        //rotate(3 * 60) wire_rj45();
        //rotate(4 * 60) wire_rj45();
