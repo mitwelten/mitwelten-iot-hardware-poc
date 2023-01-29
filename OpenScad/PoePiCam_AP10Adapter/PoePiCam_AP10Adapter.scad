@@ -2,78 +2,33 @@
 
 $fn = 360;
 
-// lens cover, acrylic
-module cover(ring) {
-    difference() {
-        circle(d=20);
-        if (ring == true) {
-            circle(d=12);
-        }
+d = 3;
+h = 12; // // 24 // 30?
+r = 9;
+wi = 100 - 2 * r;
+
+difference() {
+    hull() {
+        translate([0, 0, 0]) cylinder(h, r + d, r + d);
+        translate([0, wi, 0]) cylinder(h, r + d, r + d);
+        translate([wi, wi, 0]) cylinder(h, r + d, r + d);
+        translate([wi, 0, 0]) cylinder(h, r + d, r + d);
+        translate([-24, 12 + (wi / 2), 12]) rotate([90, 0, 0]) cylinder(h=24, r=12);
+        translate([-12, 15, 15]) rotate([0, 90, 0]) cylinder(5, 15, 15);
+        translate([-12, wi - 15, 15]) rotate([0, 90, 0]) cylinder(5, 15, 15);
     }
-}
-
-module cover2(ring) {
-    difference() {
-        circle(d=34);
-        if (ring == true) {
-            circle(d=24);
-        }
+    hull() {
+        translate([0, 0, -1]) cylinder(20 + h + 2, r, r);
+        translate([0, wi, -1]) cylinder(20 + h + 2, r, r);
+        translate([wi, wi, -1]) cylinder(20 + h + 2, r, r);
+        translate([wi, 0, -1]) cylinder(20 + h + 2, r, r);
     }
-}
-
-//cover(false);
-//translate([20 + 2, 0]) cover(true);
-//translate([-(20 + 2), 0]) cover(true);
-//translate([0, 20 + 2]) {
-//    difference() {
-//        cover(true);
-//        translate([-12/2, 0]) square([12, 12]);
-//    }
-//}
-
-// bottom cam
-//cover2(false);
-//translate([34 + 2, 0]) cover2(true);
-//translate([-(34/2 + 20/2 + 2), 0]) cover(true);
-
-layer = 0;
-w = 95;
-
-translate([0, 0]) { 
-    difference() {
-        translate([6, 6]) hull() {
-            translate([0, 0]) circle(6);
-            translate([w - 2 * 6, 0]) circle(6);
-            translate([0, w - 2 * 6]) circle(6);
-            translate([w - 2 * 6, w - 2 * 6]) circle(6);
-        }
-//        translate([13.5, 13.5]) circle(d=2.5);
-//        translate([13.5, w - 13.5]) circle(d=2.5);
-//        translate([w - 13.5, 13.5]) circle(d=2.5);
-//        translate([w - 13.5, w - 13.5]) circle(d=2.5);
-        // cam
-        translate([w - 13.5 - 24.1 - 4 - 1, w - 13.5 - 25.2 - 1]) square([24.1, 25.2]);
-        //translate([7 + 2, 4]) square([57, 90]); // pi
-        // chip
-        translate([7 + 2 + 18, 4 + 18]) square([57 - 2 * 18, 90 - 2 * 18]);
-//        translate([7, 22]) square([2, 5]);
-//        translate([66, 22]) square([2, 5]);
-        if (layer == 0) {
-            translate([0, 0]) square([8, 8]);
-            translate([w - 8, 0]) square([8, 8]);
-            translate([w - 8, w - 8]) square([8, 8]);
-            translate([0, w - 8]) square([8, 8]);
-        }
-        if (layer == 1) {
-            translate([w - 4, w - 13.5 - 4 - 1 - 18]) square([4, 18]);    
-        }
-        // pi
-        translate([8, 0]) square([57, 45]);
-    }
-    if (layer ==  1) {
-        translate([w - 13.5 - 24.1 - 4 - 1, w - 13.5 - 25.2 - 1]) square([4, 4]);
-        translate([w - 13.5 - 24.1 - 4 - 1, w - 13.5 - 4 - 1]) square([4, 4]);
-        translate([w - 13.5 - 8 - 1, w - 13.5 - 25.2 - 1]) square([4, 2]);
-        translate([w - 13.5 - 8 - 1, w - 13.5 - 2 - 1]) square([4, 2]);
-    }
+    translate([-24 -12, -12 + (wi/2), -1]) cube([24, 4, 24 + 2]);
+    translate([-24 -12, -12 + (wi/2) + 8, -1]) cube([24, 4, 24 + 2]);
+    translate([-24 -12, -12 + (wi/2) + 16, -1]) cube([24, 4, 24 + 2]);
+    translate([-24, -12 + (wi/2) - 4, 12]) rotate([90, 0, 0]) cylinder(h=24, r=4);
+    translate([-24, wi + 1, 12]) rotate([90, 0, 0]) cylinder(h=(wi/2 - 12 + 1), r=4.1, $fn=6);
+    translate([-24, wi + 1, 12]) rotate([90, 0, 0]) cylinder(h=81, r=2);
+    translate([-40, 13, 15]) rotate([0, 90, 0]) cylinder(60, 10, 10);
+    translate([-40, wi - 13, 15]) rotate([0, 90, 0]) cylinder(60, 10, 10);
 }
