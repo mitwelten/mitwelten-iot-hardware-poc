@@ -375,6 +375,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 
 ### Enclosure
 - 3D-printed [Barrel Plug Port Upgrade](OpenScad/AccessPoint_Plug_Port_Upgrade)
+- 3D-printed [AccessPoint Switch Fixture](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 - Laser-cut [Barrel Fixture Port Upgrade](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 
 ## ZaunPixel Actuator
