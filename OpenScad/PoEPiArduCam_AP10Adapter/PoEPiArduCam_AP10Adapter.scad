@@ -36,9 +36,11 @@ module pi3() {
     }
 }
 
-module base(w, z) {
+module base() {
   // box size
-  e = 4;
+  w = 94.9;
+  z = 3;
+  e = 5;
   w2 = w - 2 * e;
   difference() {
     translate([e, e, 0]) hull() {
@@ -76,11 +78,9 @@ module pi_cam_v2_cutout() {
   translate([13 + 2, cam_h - 4 + 2, -1]) cylinder(cam_z + 2, rc, rc);
 }
 
-!projection() 
+//!projection() 
 difference() {
-  ap10_inner_w = 94.8;
-  base_z = 3;
-  base(ap10_inner_w, base_z);
- translate([ap10_inner_w - 18.5 - 24.1, ap10_inner_w - 14.5 - 25.2, -5]) pi_cam_v2_cutout();
-# translate([8, 1, base_z + 3]) pi3();
+  base();
+# translate([51.3, 55.2, -5]) pi_cam_v2_cutout();
+# translate([8, 1, 3 + 3]) pi3();
 }
