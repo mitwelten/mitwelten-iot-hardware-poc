@@ -78,7 +78,7 @@ module pi_cam_v2_cutout() {
   translate([13 + 2, cam_h - 4 + 2, -1]) cylinder(cam_z + 2, rc, rc);
 }
 
-//!projection() 
+!projection() 
 difference() {
   base();
 # translate([51.3, 55.2, -5]) pi_cam_v2_cutout();
