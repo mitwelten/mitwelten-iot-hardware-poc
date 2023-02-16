@@ -269,6 +269,10 @@ Derived from [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), wi
 ## Raspberry Pi ArduCam Streaming Camera with PoE
 Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe) and [Raspberry Pi Zero Streaming Camera with PoE](#raspberry-pi-zero-streaming-camera-with-poe).
 
+<img src="https://live.staticflickr.com/65535/52679079723_f55189d6db.jpg"/>
+
+<img src="https://live.staticflickr.com/65535/52678869339_024d2578ef.jpg"/>
+
 ### Hardware
 - [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
 - [Raspberry Pi Cam 3](https://www.raspberrypi.com/products/camera-module-3/) or this [ArduCam](https://www.arducam.com/16mp-autofocus-camera-for-raspberry-pi/)
@@ -282,8 +286,11 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - 4 * [M2.5 * 16mm Screws](https://www.conrad.ch/de/p/toolcraft-to-5371935-zylinderschrauben-m2-5-16-mm-innensechskant-iso-4762-edelstahl-a2-100-st-1790645.html)
 - 2 * [M2 * 3mm Screws](https://www.conrad.ch/de/p/toolcraft-1061796-zylinderschrauben-m2-3-mm-innensechskant-din-912-edelstahl-a2-100-st-1061796.html)
-- M4 * 25mm Screw
+- M4 * 40mm Screw
 - M4 Locking Nut
+
+### Setup
+- TODO
 
 ## Raspberry Pi Zero Streaming Camera with PoE
 Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe), based on a Pi Zero W with Wi-Fi.
@@ -302,14 +309,14 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoEPiZeroCam_AP10Adapter)
-- [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
+- [AP10 Hinge Fixture v2](OpenScad/AP10_HingeFixture/AP10_HingeFixture2.stl)
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
 - [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
 - 3 * [10mm Spacers](https://www.conrad.ch/de/p/526363-abstandsbolzen-x-l-7-mm-x-10-mm-polystyrol-1-st-526363.html)
 - 3 * [M2.5 * 16mm Screws](https://www.conrad.ch/de/p/toolcraft-to-5371935-zylinderschrauben-m2-5-16-mm-innensechskant-iso-4762-edelstahl-a2-100-st-1790645.html)
 - 4 * [M2 * 3mm Screws](https://www.conrad.ch/de/p/toolcraft-1061796-zylinderschrauben-m2-3-mm-innensechskant-din-912-edelstahl-a2-100-st-1061796.html)
-- M4 * 25mm Screw
+- M4 * 40mm Screw
 - M4 Locking Nut
 
 ### Setup
