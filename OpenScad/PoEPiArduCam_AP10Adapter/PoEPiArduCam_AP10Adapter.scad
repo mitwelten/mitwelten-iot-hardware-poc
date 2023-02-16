@@ -49,6 +49,7 @@ module base() {
       translate([0, w2, 0]) cylinder(z, e, e);
       translate([w2, w2, 0]) cylinder(z, e, e);
     }
+/*
     // screw holes
     translate([w/2 - 67/2, w - 5, -1]) cylinder(z + 2, 1, 1);
     //translate([w/2, w - 5, -1]) cylinder(z + 2, 1, 1);
@@ -56,6 +57,7 @@ module base() {
     translate([w/2 - 67/2, 5, -1]) cylinder(z + 2, 1, 1);
     //translate([w/2, 5, -1]) cylinder(z + 2, 1, 1);
     translate([w/2 + 67/2, 5, -1]) cylinder(z + 2, 1, 1);
+*/
   }
 }
 
@@ -81,6 +83,8 @@ module pi_cam_v2_cutout() {
 !projection() 
 difference() {
   base();
-# translate([51.3, 55.2, -5]) pi_cam_v2_cutout();
-# translate([8, 1, 3 + 3]) pi3();
+  //#translate([51.3, 55.2, -5]) pi_cam_v2_cutout();
+  # translate([51.3, 55.2, -5]) cube([24.1, 25.2, 9]);
+  # translate([6, 0, -1]) cube([32, 2, 5]);
+  # translate([8, 1, 3 + 3]) pi3();
 }
