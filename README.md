@@ -312,7 +312,8 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoEPiArduCam_AP10Adapter)
 - [AP10 Hinge Fixture v2](OpenScad/AP10_HingeFixture/AP10_HingeFixture2.stl)
-- [RJ45 Wire Gland Tube](OpenScad/RJ45_WireGland_Tube) and - [Plug](OpenScad/RJ45_WireGland_Plug)
+- [RJ45 Wire Gland Tube](OpenScad/RJ45_WireGland_Tube) (TPU)
+- [RJ45 Wire Gland Plug](OpenScad/RJ45_WireGland_Plug)
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
 - [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
