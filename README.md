@@ -82,6 +82,14 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 <img src="https://live.staticflickr.com/65535/52725541713_38c395331f.jpg"/>
 
 ### Hardware
+- [FeatherS3 ESP32-S3](https://www.adafruit.com/product/5399)
+- [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
+- [Stacking Headers](https://www.adafruit.com/product/2830)
+- [RFM95W Adapter](https://github.com/tamberg/fhnw-iot/tree/master/08/Fritzing)
+- [Antenna Connector](https://www.adafruit.com/product/1865)
+- [Mini Antenna](https://www.adafruit.com/product/1858)
+- [Grove Adapter](https://github.com/tamberg/fhnw-iot-bricks/tree/master/Hardware/Adapter_M4_v0.2)
+- [3000mAh Li-ion Battery](https://www.bastelgarage.ch/solar-lipo/li-ion-akku-3000ma-18650-mit-schutzelektronik-und-stecker)
 - [6V, 2W Solar Panel](https://www.adafruit.com/product/200)
 - [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
 - [JST 2-pin Jumper Cable](https://www.adafruit.com/product/4714)
