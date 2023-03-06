@@ -81,6 +81,9 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 
 <img src="https://live.staticflickr.com/65535/52725541713_38c395331f.jpg"/>
 
+### Software
+- TODO
+
 ### Hardware
 - [FeatherS3 ESP32-S3](https://www.adafruit.com/product/5399)
 - [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
