@@ -6,8 +6,9 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
 - [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
-- [LoRaWAN Sensor Node](#lorawan-sensor-node)
-- [LoRaWAN Sensor Node with Solar Power](#lorawan-sensor-node-with-solar-power)
+- [LoRaWAN Env Sensor Node](#lorawan-env-sensor-node)
+- [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-with-solar-power)
+- [LoRaWAN Pax Sensor Node with Solar Power](#lorawan-pax-sensor-node-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
 - [OpenMV Photo Logging Camera with PIR](#openmv-photo-logging-camera-with-pir)
@@ -22,8 +23,8 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
 
-## LoRaWAN Sensor Node
-This LoRaWAN sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
+## LoRaWAN Env Sensor Node
+This LoRaWAN environment sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
 
 <img src="https://live.staticflickr.com/65535/50949785202_b05df960fc.jpg"/>
 
@@ -56,8 +57,8 @@ This LoRaWAN sensor node can send small amounts (< 52 bytes) of data with a low 
 ### Data
 - https://mitwelten.org/id/0000-0001
 
-## LoRaWAN Sensor Node with Solar Power
-Same as [LoRaWAN Sensor Node](#lorawan-sensor-node), with additional solar power.
+## LoRaWAN Env Sensor Node with Solar Power
+Same as [LoRaWAN Env Sensor Node](#lorawan-env-sensor-node), with additional solar power.
 
 <img src="https://live.staticflickr.com/65535/50975641601_07fd28bbbd.jpg"/>
 
@@ -75,8 +76,8 @@ Same as [LoRaWAN Sensor Node](#lorawan-sensor-node), with additional solar power
 - [Solar PVC Tube fixture](OpenScad/Solar_PVCTubeFixture)
 - [Solar Hinge fixture](OpenScad/Solar_PVCTubeFixture)
 
-## LoRaWAN PAX Sensor Node with Solar Power
-Based on [LoRaWAN Sensor Node with Solar Power](#lorawan-sensor-node-with-solar-power), with more solar power.
+## LoRaWAN Pax Sensor Node with Solar Power
+Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-with-solar-power), with more solar power.
 
 <img src="https://live.staticflickr.com/65535/52725541713_38c395331f.jpg"/>
 
