@@ -6,8 +6,9 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
 - [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
-- [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes)
-- [LoRaWAN Sensor Nodes with Solar Power](#lorawan-sensor-nodes-with-solar-power)
+- [LoRaWAN Env Sensor Node](#lorawan-env-sensor-node)
+- [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-with-solar-power)
+- [LoRaWAN Pax Sensor Node with Solar Power](#lorawan-pax-sensor-node-with-solar-power)
 - [OpenMV Bug Tracking Camera](#openmv-bug-tracking-camera)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
 - [OpenMV Photo Logging Camera with PIR](#openmv-photo-logging-camera-with-pir)
@@ -15,14 +16,15 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe)
 - [Raspberry Pi Zero Streaming Camera with PoE](#raspberry-pi-zero-streaming-camera-with-poe)
+- [Raspberry Pi ArduCam Streaming Camera with PoE](#raspberry-pi-arducam-streaming-camera-with-poe)
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
 - [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
 
-## LoRaWAN Sensor Nodes
-These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
+## LoRaWAN Env Sensor Node
+This LoRaWAN environment sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
 
 <img src="https://live.staticflickr.com/65535/50949785202_b05df960fc.jpg"/>
 
@@ -33,8 +35,6 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 ### Software
 - [FeatherM4Express_TtnVBattDHT11.ino](Arduino/FeatherM4Express_TtnVBattDHT11/FeatherM4Express_TtnVBattDHT11.ino)
 - [FeatherM4Express_TtnVBattMoisture.ino](Arduino/FeatherM4Express_TtnVBattMoisture/FeatherM4Express_TtnVBattMoisture.ino)
-- FeatherM4Express_TtnVBattButton.ino (TODO)
-- FeatherM4Express_TtnVBattPIR.ino (TODO)
 
 ### Hardware
 - [Feather M4 Express](https://github.com/tamberg/fhnw-iot/wiki/Feather-M4-Express)
@@ -57,8 +57,8 @@ These LoRaWAN sensor nodes can send small amounts (< 52 bytes) of data with a lo
 ### Data
 - https://mitwelten.org/id/0000-0001
 
-## LoRaWAN Sensor Nodes with Solar Power
-Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar power.
+## LoRaWAN Env Sensor Node with Solar Power
+Same as [LoRaWAN Env Sensor Node](#lorawan-env-sensor-node), with additional solar power.
 
 <img src="https://live.staticflickr.com/65535/50975641601_07fd28bbbd.jpg"/>
 
@@ -75,6 +75,33 @@ Same as [LoRaWAN Sensor Nodes](#lorawan-sensor-nodes), with additional solar pow
 ### Enclosure
 - [Solar PVC Tube fixture](OpenScad/Solar_PVCTubeFixture)
 - [Solar Hinge fixture](OpenScad/Solar_PVCTubeFixture)
+
+## LoRaWAN Pax Sensor Node with Solar Power
+Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-with-solar-power), with more solar power.
+
+<img src="https://live.staticflickr.com/65535/52725541713_38c395331f.jpg"/>
+
+### Software
+- TODO
+
+### Hardware
+- [FeatherS3 ESP32-S3](https://www.adafruit.com/product/5399)
+- [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
+- [Stacking Headers](https://www.adafruit.com/product/2830)
+- [RFM95W Adapter](https://github.com/tamberg/fhnw-iot/tree/master/08/Fritzing)
+- [Antenna Connector](https://www.adafruit.com/product/1865)
+- [Mini Antenna](https://www.adafruit.com/product/1858)
+- [Grove Adapter](https://github.com/tamberg/fhnw-iot-bricks/tree/master/Hardware/Adapter_M4_v0.2)
+- [3000mAh Li-ion Battery](https://www.bastelgarage.ch/solar-lipo/li-ion-akku-3000ma-18650-mit-schutzelektronik-und-stecker)
+- [6V, 2W Solar Panel](https://www.adafruit.com/product/200)
+- [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
+- [JST 2-pin Jumper Cable](https://www.adafruit.com/product/4714)
+- [3.5/1.1mm to 5.5/2.1mm Jack Adapter](https://www.adafruit.com/product/4287)
+- [4700uF, 10v Electrolytic Capacitor](https://www.adafruit.com/product/1589) (optional)
+- [10K Precision Epoxy Thermistor](https://www.adafruit.com/product/372)(optional)
+
+### Enclosure
+- TODO
 
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
@@ -312,6 +339,8 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 ### Enclosure
 - [AP10 Adapter](OpenScad/PoEPiArduCam_AP10Adapter)
 - [AP10 Hinge Fixture v2](OpenScad/AP10_HingeFixture/AP10_HingeFixture2.stl)
+- [RJ45 Wire Gland Tube](OpenScad/RJ45_WireGland_Tube) (TPU)
+- [RJ45 Wire Gland Plug](OpenScad/RJ45_WireGland_Plug)
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
 - [Alu Tube](https://www.elektrobedarf.ch/aluminiumrohr-m20-b%2071.20)
 - [Gore Vent](https://www.distrelec.ch/de/druckausgleichsstopfen-m12-12-2mm-ip69k-polyamid-schwarz-gore-associates-gmbh-pmf-100585/p/30082596)
