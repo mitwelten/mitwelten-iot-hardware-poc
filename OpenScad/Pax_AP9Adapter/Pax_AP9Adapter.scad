@@ -24,8 +24,8 @@ module base() {
   union() {
     difference() {
       union() {
-        cube([box_w - ant_w, bat_w + 2 * mat_z, mat_z]);
-        translate([box_w - ant_w - 3 * mat_z, 0, 0]) cube([3 * mat_z, box_w, mat_z]);
+        cube([box_w - ant_w, bat_w + 3 * mat_z, mat_z]);
+        translate([box_w - ant_w - 4 * mat_z, 0, 0]) cube([4 * mat_z, box_w, mat_z]);
       }    
       translate([2 * mat_z, (bat_w - 3 * mat_z) / 2, 0]) cube([mat_z, 3 * mat_z, mat_z]);
       translate([(box_w - ant_w) - (3) * mat_z, (bat_w - 3 * mat_z) / 2, 0]) cube([mat_z, 3 * mat_z, mat_z]);
@@ -79,7 +79,7 @@ module rest() {
   }
 }
 
-d = 2; // 2D or 3D
+d = 3; // 2D or 3D
 
 if (d == 2) {
   projection() {
@@ -87,7 +87,7 @@ if (d == 2) {
     translate([-1, 32, 0]) rotate([180, 0, 0]) wall();
     translate([-2.5, 33.5, 0]) rotate([0, 0, 0]) rest();
     translate([17, 59.5, 0]) rotate([0, 0, 90]) rest();
-    translate([105, 3.5, 0]) rotate([0, 0, 90]) base();
+    translate([108, 6.5, 0]) rotate([0, 0, 90]) base();
   }
 } else {
   translate([0, 0, -mat_z]) base();
