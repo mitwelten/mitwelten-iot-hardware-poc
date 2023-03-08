@@ -1,9 +1,9 @@
 ant_w = 12;
 bat_w = 21.5;
 box_w = 77;
-box_z = 35;
+box_z = 34;
 box_r = 6;
-mat_z = 3;
+mat_z = 2.8;//3;
 
 /*
 module base() {
@@ -43,11 +43,13 @@ module wall() {
   union() {
     difference() {
       cube([box_w, box_z - mat_z, mat_z]);
-      translate([box_w - ant_w, 0, -1]) cube([ant_w, ant_w, mat_z + 2]);
+      translate([box_w - ant_w, 0, -1]) cube([ant_w, ant_w - mat_z, mat_z + 2]);
 //      translate([2 * mat_z, mat_z, 0]) cube([mat_z, mat_z, mat_z]);
 //      translate([(box_w - ant_w) - (3) * mat_z, mat_z, 0]) cube([mat_z, mat_z, mat_z]);
-    translate([3 * mat_z, 3 * mat_z, 0]) cube([3 * mat_z, mat_z, mat_z]);
-    translate([box_w - ant_w - (1 + 1) * 3 * mat_z, 3 * mat_z, 0]) cube([3 * mat_z, mat_z, mat_z]);
+      translate([3 * mat_z, 2 * mat_z, 0]) cube([3 * mat_z, mat_z, mat_z]);
+      translate([box_w - ant_w - (1 + 1) * 3 * mat_z, 2 * mat_z, 0]) cube([3 * mat_z, mat_z, mat_z]);
+      translate([0, box_z - 3 * mat_z, 0]) cube([mat_z, 2 * mat_z, mat_z]);
+      translate([box_w - mat_z, box_z - 3 * mat_z, 0]) cube([mat_z, 2 * mat_z, mat_z]);
     }
     translate([3 * mat_z, -mat_z, 0]) cube([3 * mat_z, mat_z, mat_z]);
     translate([box_w - ant_w - (1 + 1) * 3 * mat_z, -mat_z, 0]) cube([3 * mat_z, mat_z, mat_z]);
@@ -72,14 +74,14 @@ module bank() {
 
 module rest() {
   union() {
-    cube([3 * mat_z, bat_w, mat_z]);
-    translate([3 * mat_z, (bat_w - 3 * mat_z) / 2, 0]) cube([mat_z, 3 * mat_z, mat_z]);
+    cube([2 * mat_z, bat_w, mat_z]);
+    translate([2 * mat_z, (bat_w - 3 * mat_z) / 2, 0]) cube([mat_z, 3 * mat_z, mat_z]);
     translate([-mat_z, (bat_w - 3 * mat_z) / 2, 0]) cube([mat_z, 3 * mat_z, mat_z]);
 //    translate([mat_z, bat_w, 0]) cube([mat_z, mat_z, mat_z]);
   }
 }
 
-d = 3; // 2D or 3D
+d = 2; // 2D or 3D
 
 if (d == 2) {
   projection() {
@@ -94,5 +96,5 @@ if (d == 2) {
   translate([0, bat_w + mat_z + mat_z, mat_z]) rotate([90, 0, 0]) wall();
   translate([3 * mat_z, 0, mat_z]) rotate([0, -90, 0]) rest();
   translate([(box_w - ant_w) - (3 - 1) * mat_z, 0, mat_z]) rotate([0, -90, 0]) rest();
-  translate([0, 0, 5 * mat_z]) bank();
+  translate([0, 0, 4 * mat_z]) bank();
 }
