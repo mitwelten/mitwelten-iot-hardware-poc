@@ -101,7 +101,8 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 - [10K Precision Epoxy Thermistor](https://www.adafruit.com/product/372)(optional)
 
 ### Enclosure
-- TODO
+- [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
+- Laser-cut [AP9 Adapter](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/Pax_AP9Adapter)
 
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
