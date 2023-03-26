@@ -93,7 +93,7 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 - [Mini Antenna](https://www.adafruit.com/product/1858)
 - [Grove Adapter](https://github.com/tamberg/fhnw-iot-bricks/tree/master/Hardware/Adapter_M4_v0.2)
 - [3000mAh Li-ion Battery](https://www.bastelgarage.ch/solar-lipo/li-ion-akku-3000ma-18650-mit-schutzelektronik-und-stecker)
-- [6V, 2W Solar Panel](https://www.adafruit.com/product/200)
+- [6V, 2W Solar Panel](https://www.adafruit.com/product/200) (or [this](https://www.adafruit.com/product/5366) w/ [this](https://adafruit.com/products/2788))
 - [USB, Solar, LiPo Charger](https://www.adafruit.com/product/4755)
 - [JST 2-pin Jumper Cable](https://www.adafruit.com/product/4714)
 - [3.5/1.1mm to 5.5/2.1mm Jack Adapter](https://www.adafruit.com/product/4287)
