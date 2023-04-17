@@ -69,7 +69,7 @@ On the Pi
     dtoverlay=gpio-fan,gpiopin=18,temp=55000
     ```
 
-- Format and mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
+- Format and mount the hard disk
 
     ```bash
     sudo apt update
