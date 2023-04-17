@@ -44,18 +44,15 @@ On the Pi
     ...
     dtoverlay=gpio-fan,gpiopin=18,temp=55000
     ```
-- Mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
+- Format and mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
     ```
     $ sudo apt update
-    $ sudo apt install exfat-fuse # for ExFAT
-    $ sudo apt install ntfs-3g # for NTFS
-    $ sudo blkid # note UUID, e.g. 0000-0001
-    $ sudo nano /etc/fstab # edit using UUID
-    ...
-    #UUID=0000-0001 /mnt/elements exfat defaults,auto,users,rw,nofail,x-systemd.device-timeout=30 0 0
-    UUID=0000-0001 /mnt/elements ntfs defaults,auto,users,rw,nofail,umask=000,x-systemd.device-timeout=30 0 0
-    $ sudo reboot
-    $ ls /mnt/elements
+    $ sudo apt install -y btrfs-progs # for BTRFS
+    $ sudo blkid # identify the device (i.e. /dev/sda)
+    $ sudo mkfs.btrfs -L capture /dev/sda1 # matching the device identified in previous step
+    $ echo '/dev/disk/by-label/capture /mnt/elements btrfs   defaults,auto,user    0 0' | sudo tee --append /etc/fstab
+    $ sudo mount /mnt/elements
+    $ sudo chown pi /mnt/elements
     ```
 - Install nmap
     ```
