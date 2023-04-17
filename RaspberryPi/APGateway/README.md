@@ -45,14 +45,14 @@ On the Pi
     dtoverlay=gpio-fan,gpiopin=18,temp=55000
     ```
 - Format and mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
-    ```
-    $ sudo apt update
-    $ sudo apt install -y btrfs-progs # for BTRFS
-    $ sudo blkid # identify the device (i.e. /dev/sda)
-    $ sudo mkfs.btrfs -L capture /dev/sda1 # matching the device identified in previous step
-    $ echo '/dev/disk/by-label/capture /mnt/elements btrfs   defaults,auto,user    0 0' | sudo tee --append /etc/fstab
-    $ sudo mount /mnt/elements
-    $ sudo chown pi /mnt/elements
+    ```bash
+    sudo apt update
+    sudo apt install -y btrfs-progs # for BTRFS
+    sudo blkid # identify the device (i.e. /dev/sda)
+    sudo mkfs.btrfs -L capture /dev/sda1 # matching the device identified in previous step
+    echo '/dev/disk/by-label/capture /mnt/elements btrfs   defaults,auto,user    0 0' | sudo tee --append /etc/fstab
+    sudo mount /mnt/elements
+    sudo chown pi /mnt/elements
     ```
 - Install nmap
     ```
