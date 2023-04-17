@@ -1,50 +1,76 @@
 # APGateway
+
 ## Setup
+
 ### Prepare SD Card
+
 On the computer
+
 - Install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 - Select _Raspberry Pi OS (other)_ > _Raspberry Pi OS Lite (32-bit)_
 - Click _Choose SD Card_, then _Write_
 - Remove, re-insert SD Card
 - To enable SSH, type
-    ```
-    $ touch /Volumes/boot/ssh
+
+    ```bash
+    touch /Volumes/boot/ssh
     ```
 
 ### Prepare Raspberry Pi 4B
+
 On the Pi
+
 - Insert prepared SD Card
 - Connect to power via USB-C
 - Connect to Ethernet via RJ45
 - Add Argon Poly+ case with fan
 
 On the computer
+
 - Share Computer Wi-Fi to Ethernet
 - Log into Pi via SSH (pw: raspberry)
-    ```
-    $ ssh pi@raspberrypi.local
+
+    ```bash
+    ssh pi@raspberrypi.local
     ```
 
 On the Pi
+
 - Change the password
+
+    ```bash
+    passwd
     ```
-    $ passwd
-    ```
+
 - Note the MAC address
+
+    ```bash
+    ifconfig | grep ether
     ```
-    $ ifconfig | grep ether
-    ```
+
 - Expand the filesystem
+
+    ```bash
+    sudo raspi-config # Advanced Options > Expand Filesystem
     ```
-    $ sudo raspi-config # Advanced Options > Expand Filesystem
-    ```
+
 - Enable the fan
+  - in `/boot/config.txt`, replace:
+
+    ```ini
+    [all]
+    dtoverlay=vc4-fkms-v3d
     ```
-    $ sudo nano /boot/config.txt
-    ...
+
+  - by:
+
+    ```ini
+    [all]
     dtoverlay=gpio-fan,gpiopin=18,temp=55000
     ```
+
 - Format and mount the hard disk (based on [this](https://www.raspberrypi.org/documentation/configuration/external-storage.md))
+
     ```bash
     sudo apt update
     sudo apt install -y btrfs-progs # for BTRFS
@@ -54,23 +80,28 @@ On the Pi
     sudo mount /mnt/elements
     sudo chown pi /mnt/elements
     ```
+
 - Install nmap
+
+    ```bash
+    sudo apt-get install nmap
     ```
-    $ sudo apt-get install nmap
-    ```
+
 - Install capture.py & .service
+
+    ```bash
+    cd ~
+    mkdir capture
+    cd capture
+    wget -O capture.py https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.py
+    wget -O config.json https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/config.json
+    nano config.json # edit camera_ids
+    sudo wget -O /etc/systemd/system/capture.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.service
+    sudo systemctl daemon-reload
+    sudo systemctl enable capture.service
+    sudo systemctl start capture.service
     ```
-    $ cd ~
-    $ mkdir capture
-    $ cd capture
-    $ wget -O capture.py https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.py
-    $ wget -O config.json https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/config.json
-    $ nano config.json # edit camera_ids
-    $ sudo wget -O /etc/systemd/system/capture.service https://raw.githubusercontent.com/mitwelten/mitwelten-iot-hardware-poc/main/RaspberryPi/APGateway/Capture/capture.service
-    $ sudo systemctl daemon-reload
-    $ sudo systemctl enable capture.service
-    $ sudo systemctl start capture.service
-    ```
+
 - [Install Yaler](https://yaler.net/raspberrypi) (or an [alternative](https://alternativeto.net/software/yaler/)) and enable [SSH access](https://yaler.net/raspberrypi#SSH)
 - Install and set up image uploader and monitoring
   - Clone mitwelten-ml-backend repo, install dependencies, set credentials
