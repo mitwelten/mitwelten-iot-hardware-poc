@@ -3,7 +3,7 @@
 $fn=36;
 
 // box size
-w=95;
+w=94.7;
 h=3;
 
 // cam size
@@ -27,11 +27,19 @@ rp = .95;
 module base() {
     e=4;
     w2=w-2*e;
-    translate([e, e, 0]) hull() {
-        translate([0, 0, 0]) cylinder(h, e, e);
-        translate([w2, 0, 0]) cylinder(h, e, e);
-        translate([0, w2, 0]) cylinder(h, e, e);
-        translate([w2, w2, 0]) cylinder(h, e, e);
+    difference() {
+        translate([e, e, 0]) hull() {
+            translate([0, 0, 0]) cylinder(h, e, e);
+            translate([w2, 0, 0]) cylinder(h, e, e);
+            translate([0, w2, 0]) cylinder(h, e, e);
+            translate([w2, w2, 0]) cylinder(h, e, e);
+        }
+        // ABB IP55 corner cutouts >>
+    #    translate([0, 0, 0]) cube([8, 8, 3]);
+    #    translate([w2, 0, 0]) cube([8, 8, 3]);
+    #    translate([w2, w2, 0]) cube([8, 8, 3]);
+    #    translate([0, w2, 0]) cube([8, 8, 3]);
+        // <<
     }
 }
 
@@ -42,12 +50,12 @@ difference() {
             base();
 
             // screw holes
-            translate([w/2 - 67/2, w - 5, -1]) cylinder(h + 2, 1, 1);
+//            translate([w/2 - 67/2, w - 5, -1]) cylinder(h + 2, 1, 1);
 //            translate([w/2, w - 5, -1]) cylinder(h + 2, 1, 1);
-            translate([w/2 + 67/2, w - 5, -1]) cylinder(h + 2, 1, 1);
-            translate([w/2 - 67/2, 5, -1]) cylinder(h + 2, 1, 1);
+//            translate([w/2 + 67/2, w - 5, -1]) cylinder(h + 2, 1, 1);
+//            translate([w/2 - 67/2, 5, -1]) cylinder(h + 2, 1, 1);
 //            translate([w/2, 5, -1]) cylinder(h + 2, 1, 1);
-            translate([w/2 + 67/2, 5, -1]) cylinder(h + 2, 1, 1);
+//            translate([w/2 + 67/2, 5, -1]) cylinder(h + 2, 1, 1);
 
             // rj45 hole
             translate([0, 0, -1]) cube([33, 82, h + 2]);
