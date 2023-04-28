@@ -60,6 +60,8 @@ translate([2 * d1 + 4, 0]) difference() {
     // cutout
     translate([0, wy / 2]) circle(r=(wx - 2 * d1)/2);
     translate([wx, wy / 2]) circle(r=(wx - 2 * d1)/2);
+    translate([wx / 2, 0]) circle(r=(wx - 2 * d1)/2);
+    translate([wx / 2, wy]) circle(r=(wx - 2 * d1)/2);
     // corners
     translate([wx - 11.5, wy - 11.5]) rotate([0, 0, 0]) corner();
     translate([11.5, wy - 11.5]) rotate([0, 0, 90]) corner();
