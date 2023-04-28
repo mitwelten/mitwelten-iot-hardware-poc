@@ -38,7 +38,8 @@ module pi3() {
 
 module base() {
   // box size
-  w = 94.9;
+  //w = 94.9; // ABB IP65
+  w = 94.7; //w = 94.9; // ABB IP55
   z = 3;
   e = 5;
   w2 = w - 2 * e;
@@ -49,6 +50,14 @@ module base() {
       translate([0, w2, 0]) cylinder(z, e, e);
       translate([w2, w2, 0]) cylinder(z, e, e);
     }
+
+    // ABB IP55 corner cutouts >>
+    translate([0, 0, 0]) cube([8, 8, z]);
+    translate([w2 + 2, 0, 0]) cube([8, 8, z]);
+    translate([w2 + 2, w2 + 2, 0]) cube([8, 8, z]);
+    translate([0, w2 + 2, 0]) cube([8, 8, z]);
+    // <<
+
 /*
     // screw holes
     translate([w/2 - 67/2, w - 5, -1]) cylinder(z + 2, 1, 1);
