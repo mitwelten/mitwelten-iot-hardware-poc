@@ -1,3 +1,5 @@
+// CC BY-SA, FHNW (University of Applied Sciences and Arts Northwestern Switzerland)
+
 $fn = 36;
 
 module round_rect(w, h, r, d) {
@@ -69,7 +71,7 @@ module back_panel() {
     }
 }
 
-rotate([0, 270, 0]) side_panel(r, d);
+rotate([0, 270, 0]) side_panel();
 //! projection()
 //rotate([0, 90, 0])
 //difference() {
