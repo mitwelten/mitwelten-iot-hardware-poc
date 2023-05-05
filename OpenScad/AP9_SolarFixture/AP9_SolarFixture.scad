@@ -77,6 +77,6 @@ translate([112 - 2 * off + d, 0, 0]) rotate([0, 270, 0]) side_panel();
 translate([-off, r, 7.5]) rotate([45, 0, 0]) solar_panel();
 //}
 translate([0, 0, -6 * d]) {
-    translate([0, 112 - 27.5 + d, 0]) rotate([90, 0, 0]) ! projection()  back_panel();
+    translate([0, 112 - 27.5 + d, 0]) rotate([90, 0, 0]) /* ! projection() */ back_panel();
     translate([(112 - 2 * off - 85) / 2, 112, (112 - 2 * off - 85) / 2]) rotate([90, 0, 0]) box();
 }
