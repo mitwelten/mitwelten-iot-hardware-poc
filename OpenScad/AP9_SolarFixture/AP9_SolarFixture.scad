@@ -28,24 +28,26 @@ module side_panel() {
     h = 112;
     difference() {
         hull() {
-            #translate([r + 14, r + 14, 0]) cylinder(d, r, r);
+            translate([r + 14, r + 14, 0]) cylinder(d, r, r);
 //#            translate([r, r + 42, 0]) cylinder(d, r, r);
-            #translate([r + w - 2 * r, r + h - 2 * r, 0]) cylinder(d, r, r);
+            translate([r + w - 2 * r, r + h - 2 * r, 0]) cylinder(d, r, r);
             translate([r + 14, r + h - 2 * r, 0]) cylinder(d, r, r);
 
 //#            translate([r + w - 2 * r, r + h - 2 * r, 0]) cylinder(d, r, r);
 //#            translate([r, r + h - 2 * r, ]) cylinder(d, r, r);
         }
         translate([-30 - d, 112 - 27.5 + d, 0]) {
-            #translate([h - 5 * d, -d, 0]) cube([3 * d, d , d]);
-            #translate([h - 11 * d, -d, 0]) cube([3 * d, d , d]);
-            #translate([h - 17 * d, -d, 0]) cube([3 * d, d , d]);
+            translate([h - 5 * d, -d, 0]) cube([3 * d, d , d]);
+            translate([h - 11 * d, -d, 0]) cube([3 * d, d , d]);
+            translate([h - 17 * d, -d, 0]) cube([3 * d, d , d]);
         }
         translate([25, 30.5 - d, 0]) {
-            #translate([-d, 3 * d, 0]) cube([d, 3 * d, d]);
-            #translate([-d, 9 * d, 0]) cube([d, 3 * d, d]);
-            #translate([-d, 15 * d, 0]) cube([d, 3 * d, d]);
+            translate([-d, 3 * d, 0]) cube([d, 3 * d, d]);
+            translate([-d, 9 * d, 0]) cube([d, 3 * d, d]);
+            translate([-d, 15 * d, 0]) cube([d, 3 * d, d]);
         }
+#            translate([38, 71.5, 0]) cube([6, 2, 20 * d]);
+
     }
 }
 
@@ -53,7 +55,7 @@ module side_panel() {
 
 module box() {
     color("#dddddd") translate([2, 2, 0]) {
-//        translate([-2, -2, 27.5]) round_rect(85, 85, 6, 11);
+        translate([-2, -2, 27.5]) round_rect(85, 85, 6, 11);
         round_rect(82, 82, 6, 27.5);
     }
 }
@@ -71,9 +73,9 @@ module mid_panel() {
             translate([w, 9 * d, 0]) cube([d, 3 * d, d]);
             translate([w, 15 * d, 0]) cube([d, 3 * d, d]);
         }
-        translate([(w - 85) / 2, 84.5 - 27.5 - 11, 0]) round_rect(85, 11 + 4, 4, 27.5);
+        translate([(w - 86) / 2, 84.5 - 27.5 - 12, 0]) round_rect(86, 11 + 4, 2, 27.5);
         //#translate([(w - 85) / 2, 84.5 - 27.5 - 11, 0]) round_rect(85, (84.5 - 27.5) - (11 + 4), 4, 27.5);
-        #translate([(w - 85) / 2, x, 0]) round_rect(85, (84.5 - 27.5) - (11) - 2 * x, 4, 27.5);
+        translate([(w - 86) / 2, x, 0]) round_rect(86, (84.5 - 27.5) - (11) - 2 * x, 4, 27.5);
     }
 }
 
