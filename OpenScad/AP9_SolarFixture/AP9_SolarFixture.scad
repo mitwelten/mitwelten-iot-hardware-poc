@@ -11,9 +11,9 @@ module round_rect(w, h, r, d) {
     }
 }
 
-d = 5;
-r = 10;
-off = 5;
+d = 4; // material thickness
+r = 10; // corner radius
+off = 4;// + 4; // offset
 
 module solar_panel() {
     color("#444444") round_rect(112, 136, r, 2.7);
@@ -26,16 +26,19 @@ module solar_panel() {
 module side_panel() {
     w = 112;
     h = 112;
-    color("#aaaa00") difference() {
+    difference() {
         hull() {
             translate([r, r, 0]) cylinder(d, r, r);
             translate([r + w - 2 * r, r + h - 2 * r, 0]) cylinder(d, r, r);
             translate([r, r + h - 2 * r, ]) cylinder(d, r, r);
+
+//#            translate([r + w - 2 * r, r + h - 2 * r, 0]) cylinder(d, r, r);
+//#            translate([r, r + h - 2 * r, ]) cylinder(d, r, r);
         }
         translate([-30 - d, 112 - 27.5 + d, 0]) {
-            translate([h - 5 * d, -d, 0]) cube([3 * d, d , d]);
+    #        translate([h - 5 * d, -d, 0]) cube([3 * d, d , d]);
     #        translate([h - 11 * d, -d, 0]) cube([3 * d, d , d]);
-//            translate([h - 17 * d, -d, 0]) cube([3 * d, d , d]);
+    #        translate([h - 17 * d, -d, 0]) cube([3 * d, d , d]);
         }
     }
 }
@@ -61,14 +64,19 @@ module back_panel() {
             }
             translate([-d, h - 5 * d, 0]) cube([d, 3 * d, d]);
             translate([-d, h - 11 * d, 0]) cube([d, 3 * d, d]);
-//            translate([-d, h - 17 * d, 0]) cube([d, 3 * d, d]);
+            translate([-d, h - 17 * d, 0]) cube([d, 3 * d, d]);
 
             translate([w, h - 5 * d, 0]) cube([d, 3 * d, d]);
             translate([w, h - 11 * d, 0]) cube([d, 3 * d, d]);
-//            translate([w, h - 17 * d, 0]) cube([d, 3 * d, d]);
+            translate([w, h - 17 * d, 0]) cube([d, 3 * d, d]);
         }
         translate([(112 - 2 * off - 85) / 2, (112 - 2 * off - 85) / 2, -1]) box();
     }
+}
+
+// TODO
+module mid_panel() {
+//    round_rect(112, 39 + 10);
 }
 
 rotate([0, 270, 0]) side_panel();
