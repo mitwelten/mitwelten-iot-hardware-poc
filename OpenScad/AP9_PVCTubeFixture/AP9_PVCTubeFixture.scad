@@ -9,6 +9,7 @@ module ring() {
     }
 }
 
+//projection() {
 linear_extrude(4) {
 union() {
     ring();
@@ -38,3 +39,5 @@ union() {
 translate([0, 0, 4]) linear_extrude(4) {
     ring();
 }
+
+//}
