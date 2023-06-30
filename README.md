@@ -84,10 +84,10 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 <img src="https://live.staticflickr.com/65535/52928472378_59d4da718c.jpg"/>
 
 ### Software
-- TODO
+- [https://github.com/mitwelten/mitwelten-21hs-p7-esp32-lora-wifi-paxcounter](https://github.com/mitwelten/mitwelten-21hs-p7-esp32-lora-wifi-paxcounter)
 
 ### Hardware
-- [FeatherS3 ESP32-S3](https://www.adafruit.com/product/5399)
+- [Feather HUZZAH32 ESP32](https://www.adafruit.com/product/3591)
 - [FeatherWing RFM95W](https://github.com/tamberg/fhnw-iot/wiki/FeatherWing-RFM95W)
 - [Stacking Headers](https://www.adafruit.com/product/2830)
 - [RFM95W Adapter](https://github.com/tamberg/fhnw-iot/tree/master/08/Fritzing)
@@ -105,6 +105,7 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - Laser-cut [AP9 Adapter](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/Pax_AP9Adapter)
+- Laser-cut [AP9 Solar Fixture](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_SolarFixture)
 
 ## LoRaWAN Gateway with 3G Uplink
 This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over a long range (1+ km).
