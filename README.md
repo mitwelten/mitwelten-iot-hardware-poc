@@ -81,6 +81,8 @@ Based on [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-wit
 
 <img src="https://live.staticflickr.com/65535/52725541713_38c395331f.jpg"/>
 
+<img src="https://live.staticflickr.com/65535/52928472378_59d4da718c.jpg"/>
+
 ### Software
 - TODO
 
