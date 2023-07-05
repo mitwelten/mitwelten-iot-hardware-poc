@@ -22,7 +22,10 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
-
+- [NEMA8 Stepper Motor](#nema8-stepper-motor)
+- [Automotive Gauge](#automotive-gauge)
+- [Small Reduction Stepper Motor](#small-reduction-stepper-motor)
+- [TT DC Gearbox Motor 1:48](#tt-dc-gearbox-motor-148) 
 ## LoRaWAN Env Sensor Node
 This LoRaWAN environment sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
 
@@ -454,7 +457,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [ZaunPixel](OpenScad/ZaunPixel)
 
 
-## NEMA8 Stepper Motor 
+## NEMA8 Stepper Motor
 ![Stepper](./Arduino/Stepper/nema8.jpg)
 
 ### Software
@@ -490,7 +493,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [Automotive Gauge Stepper](https://www.adafruit.com/product/2424)
   - 600 Steps (0.525 deg per step)
   - Range 315 deg
-- [Adafruit TB6612 1.2A DC/Stepper Motor Driver](https://www.adafruit.com/product/3243) (or any other appropriate stepper driver)
+- [Adafruit TB6612 1.2A DC/Stepper Motor Driver](https://www.adafruit.com/product/2448) (or any other appropriate stepper driver)
   - Runs motors between 4.5 - 13.5V 1.2A
   - Logic 2.7 - 5V
 - Power Supply 5V
@@ -499,7 +502,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 ### Enclosure
 - tbd
 
-## Small Reduction Stepper Motor 
+## Small Reduction Stepper Motor
 ![Small_Reduction_Stepper](./Arduino/Stepper/small_reduction_stepper.gif)
 
 ### Software
@@ -511,7 +514,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [Small Reduction Stepper Motor ](https://www.adafruit.com/product/858)
   - 32 Steps with 1/16 reduction gear (516 Steps ~0.7 deg per step)
   - 5V
-- [Adafruit TB6612 1.2A DC/Stepper Motor Driver](https://www.adafruit.com/product/3243) (or any other appropriate stepper driver)
+- [Adafruit TB6612 1.2A DC/Stepper Motor Driver](https://www.adafruit.com/product/2448) (or any other appropriate stepper driver)
   - Runs motors between 4.5 - 13.5V 1.2A
   - Logic 2.7 - 5V
 - Power Supply 5V
