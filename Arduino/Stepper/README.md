@@ -30,7 +30,7 @@
 - tbd
  
 ## Automotive Gauge
-![Automotive Gauge](./Arduino/Stepper/automotive_gauge_stepper.gif)
+![Automotive Gauge](automotive_gauge_stepper.gif)
 
 ### Software
 - Arduino IDE > Examples > Stepper > oneRevolution 
@@ -51,7 +51,7 @@
 - tbd
 
 ## Small Reduction Stepper Motor
-![Small_Reduction_Stepper](./Arduino/Stepper/small_reduction_stepper.gif)
+![Small_Reduction_Stepper](small_reduction_stepper.gif)
 
 ### Software
 - Arduino IDE > Examples > Stepper > oneRevolution
@@ -72,7 +72,7 @@
 - tbd
 
 ## TT DC Gearbox Motor 1:48
-![TT DC Gearbox Motor](./Arduino/Stepper/dc_motor.gif)
+![TT DC Gearbox Motor](dc_motor.gif)
 
 ### Software
 - Arduino IDE > Just write `analogWrite(value)` to `A0` or `A1`
