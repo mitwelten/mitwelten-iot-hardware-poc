@@ -9,7 +9,6 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-with-solar-power)
 - [LoRaWAN Pax Sensor Node with Solar Power](#lorawan-pax-sensor-node-with-solar-power)
 - [OpenMV Photo Logging Camera](#openmv-photo-logging-camera)
-- [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera)
 - [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-camera-with-poe)
 - [Raspberry Pi Zero Streaming Camera with PoE](#raspberry-pi-zero-streaming-camera-with-poe)
 - [Raspberry Pi ArduCam Streaming Camera with PoE](#raspberry-pi-arducam-streaming-camera-with-poe)
@@ -178,22 +177,8 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - Save code to SD card as main.py
 - Connect LiPo battery at t0
 
-## Raspberry Pi Streaming Camera
-This Raspberry Pi camera provides a basic video stream.
-
-### Software
-- [StreamEye](https://github.com/ccrisan/streameye)
-- [FFmpeg](https://www.ffmpeg.org/)
-
-### Hardware
-- [Raspberry Pi 3 B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
-- [Raspberry Camera](https://www.raspberrypi.org/products/camera-module-v2/)
-
-### Setup
-- [StreamEye Setup](RaspberryPi/StreamEye/README.md)
-
 ## Raspberry Pi Streaming Camera with PoE
-Derived from [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), with additional power over Ethernet.
+A Raspberry Pi-based streaming camera with power over Ethernet.
 
 <img src="https://live.staticflickr.com/65535/51161321095_3d5992ed48.jpg"/>
 
