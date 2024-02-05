@@ -2,7 +2,7 @@
 
 Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelten.technik@fhnw.ch)
 
-- [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
+- [AudioMoth Audio Logger with LiPo Battery](#audiomoth-audio-logger-with-lipo-battery)
 - [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Env Sensor Node](#lorawan-env-sensor-node)
@@ -128,7 +128,7 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 - http://192.168.1.1/
 - SIM Provider Backend
 
-## AudioMoth Audio Logging Microphone with LiPo Battery
+## AudioMoth Audio Logger with LiPo Battery
 This audio logging microphone can record and store a broad range of frequencies, triggered by time of day or loudness.
 
 <img src="https://live.staticflickr.com/65535/51145373400_7879ec11d9.jpg"/>
