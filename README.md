@@ -371,4 +371,4 @@ Source code (.C, .PY, ...) is licensed under MIT license, except where noted oth
 ### Design Files
 Design files (.DXF, .SVG, .STL, ...) are licensed CC BY-SA 4.0, except where noted otherwise.
 ### Documentation
-Documentation (README.md, ...) is licensed CC BY-SA 4.0, except where noted otherwise.
+Documentation (.TXT, .MD, ...) is licensed CC BY-SA 4.0, except where noted otherwise.
