@@ -17,6 +17,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
 - [Unfinished PoC](#unfinished-poc)
+- [License](#license)
 
 ## LoRaWAN Env Sensor Node
 This LoRaWAN environment sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
@@ -362,3 +363,12 @@ Additional, unfinished or abandoned PoC.
 - [AudioMoth-based](AudioMoth/README.md)
 - [OpenMV-based](OpenMV/README.md)
 - [Raspberry Pi-based](RaspberryPi/README.md)
+
+## License
+Copyright (c) 2024 University of Applied Sciences and Arts, FHNW
+### Source Code
+Source code (.C, .PY, ...) is licensed under MIT license, except where noted otherwise.
+### Design Files
+Design files (.DXF, .SVG, .STL, ...) are licensed CC BY-SA 4.0, except where noted otherwise.
+### Documentation
+Documentation (README.md, ...) is licensed CC BY-SA 4.0, except where noted otherwise.
