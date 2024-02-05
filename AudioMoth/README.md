@@ -1,0 +1,3 @@
+# Unfinished AudioMoth-based PoC
+
+
