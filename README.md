@@ -365,7 +365,7 @@ Additional, unfinished or abandoned PoC.
 - [Raspberry Pi-based](RaspberryPi/README.md)
 
 ## License
-Copyright (c) 2024 FHNW University of Applied Sciences and Arts
+Copyright (c) 2024 FHNW University of Applied Sciences and Arts Northwestern Switzerland
 ### Source Code
 Source code (.C, .PY, ...) is licensed under [MIT license](LICENSE), except where noted otherwise.
 ### Design Files
