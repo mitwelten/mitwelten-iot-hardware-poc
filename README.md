@@ -2,7 +2,6 @@
 
 Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelten.technik@fhnw.ch)
 
-- [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone)
 - [AudioMoth Audio Logging Microphone with LiPo Battery](#audiomoth-audio-logging-microphone-with-lipo-battery)
 - [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
@@ -128,37 +127,22 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 - http://192.168.1.1/
 - SIM Provider Backend
 
-## AudioMoth Audio Logging Microphone
-This audio logging microphone can record and store a broad range of frequencies, triggered by time of day or loudness.
-
-### Hardware
-- https://www.openacousticdevices.info/audiomoth
-- 3 * AA Batteries
-- [Micro SD Card](https://www.digitec.ch/de/s1/product/sandisk-extreme-microsd-a2-inkl-sd-adapter-microsdxc-64gb-u3-uhs-i-speicherkarte-9706365) (ExFAT)
-
-### Enclosure
-- [AudioMoth Vault](https://www.thingiverse.com/thing:4546491) by [@brandonh](https://www.thingiverse.com/brandonh), CC BY-NC-SA
-- [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
-- [Magnets](https://www.supermagnete.ch/scheibenmagnete-neodym/scheibenmagnet-6mm-3mm_S-06-03-N)
-- [Glue](https://www.supermagnete.ch/werkstatt-magnete/uhu-max-repair_WS-ADH-01)
-
-### Setup
-- [AudioMoth Desktop App](https://www.openacousticdevices.info/applications)
-- [AudioMoth LED Guide](https://www.openacousticdevices.info/led-guide)
-- [Sonic Visualiser](https://sonicvisualiser.org/download.html)
-
 ## AudioMoth Audio Logging Microphone with LiPo Battery
 Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), but with LiPo Battrey.
 
 <img src="https://live.staticflickr.com/65535/51145373400_7879ec11d9.jpg"/>
 
+### Hardware
+- https://www.openacousticdevices.info/audiomoth
+- [Micro SD Card](https://www.digitec.ch/de/s1/product/sandisk-extreme-microsd-a2-inkl-sd-adapter-microsdxc-64gb-u3-uhs-i-speicherkarte-9706365) (ExFAT)
+- [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
+- [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
+- [USB Li-Ion charger](https://www.adafruit.com/product/1304) (optional)
+
 ### Enclosure
 - [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - Laser-cut [AP9 Adapter](OpenScad/AudioMoth_AP9Adapter)
 - [Membrane](https://www.alibaba.com/product-detail/Customized-IP67-protective-vent-waterproof-acoustic_62076766363.html)
-- [3.7V, 4400 mAh LiIon Battery](https://www.adafruit.com/product/354)
-- [JST 2-Pin Header Cable M](https://www.adafruit.com/product/3814)
-- [USB Li-Ion charger](https://www.adafruit.com/product/1304) (optional)
 
 ## LiPo/Li-Ion Charging Station
 This charging station allows to safely charge LiPo or Li-Ion batteries.
