@@ -15,7 +15,6 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi Zero Streaming Camera with PoE](#raspberry-pi-zero-streaming-camera-with-poe)
 - [Raspberry Pi ArduCam Streaming Camera with PoE](#raspberry-pi-arducam-streaming-camera-with-poe)
 - [Raspberry Pi Streaming Camera with Solar Power](#raspberry-pi-streaming-camera-with-solar-power)
-- [Raspberry Pi Streaming Endoscope](#raspberry-pi-streaming-endoscope)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
@@ -315,14 +314,6 @@ Based on [this example](https://github.com/danjulio/MPPT-Solar-Charger/tree/mast
 ### Enclosure
 - [IP67 Box with Clear Lid](https://www.mouser.ch/ProductDetail/Bud-Industries/PIP-11774-C/?qs=%2Fha2pyFaduhWtJcHf4Wic0ePltHJ10nv%252BRGIcnz2UHY8U4iCR362lHUokvZ%252BawDliJqYr5a2Kxo%3D)
 - Laser-cut [Box Fixture](https://github.com/danjulio/MPPT-Solar-Charger/tree/master/examples/enclosure) by [@danjulio](https://github.com/danjulio)
-
-## Raspberry Pi Streaming Endoscope
-Same as [Streaming Raspberry Pi Camera](#streaming-raspberry-pi-camera), but with a USB endoscope.
-
-<img src="https://live.staticflickr.com/65535/50979064987_da8b5c72d7.jpg"/>
-
-### Hardware
-- [USB endoscope](https://de.aliexpress.com/item/32954115464.html?spm=a2g0s.9042311.0.0.27424c4dtKIQ4i)
 
 ## Wi-Fi and PoE Access Point with 4G Uplink
 This Wi-Fi and PoE Access Point with 4G uplink provides Internet-connectivity to Wi-Fi and PoE devices.
