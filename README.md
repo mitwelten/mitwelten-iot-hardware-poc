@@ -16,6 +16,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
+
 - [Unfinished PoC](#unfinished-poc)
 - [License](#license)
 
