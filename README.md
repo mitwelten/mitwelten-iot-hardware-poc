@@ -366,9 +366,6 @@ Additional, unfinished or abandoned PoC.
 
 ## License
 Copyright (c) 2024 FHNW University of Applied Sciences and Arts Northwestern Switzerland
-### Source Code
-Source code (.C, .PY, ...) is licensed under [MIT license](LICENSE), except where noted otherwise.
-### Design Files
-Design files (.DXF, .SVG, .STL, ...) are licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), except where noted otherwise.
-### Documentation
-Documentation (.TXT, .MD, ...) is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), except where noted otherwise.
+- Source code (.C, .PY, ...) is licensed under [MIT license](LICENSE), except where noted otherwise.
+- Design files (.DXF, .SVG, .STL, ...) are licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), except where noted otherwise.
+- Documentation (.PDF, .TXT, .MD, ...) is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), except where noted otherwise.
