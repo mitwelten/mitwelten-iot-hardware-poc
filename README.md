@@ -17,6 +17,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
 - [ZaunPixel Actuator](#zaunpixel-actuator)
+- [Unused PoC](#unused-poc)
 
 ## LoRaWAN Env Sensor Node
 This LoRaWAN environment sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
@@ -367,3 +368,10 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 
 ### Enclosure
 - [ZaunPixel](OpenScad/ZaunPixel)
+
+## Unused PoC
+Additional PoC that were not used.
+- [Arduino-based](Arduino/README.md)
+- [AudioMoth-based](AudioMoth/README.md)
+- [OpenMV-based](OpenMV/README.md)
+- [Raspberry Pi-based](RaspberryPi/README.md)
