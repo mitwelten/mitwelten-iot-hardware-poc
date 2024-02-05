@@ -17,7 +17,7 @@ This Raspberry Pi camera provides a basic video stream.
 - [StreamEye Setup](RaspberryPi/StreamEye/README.md)
 
 ## Raspberry Pi Streaming Endoscope
-Same as [Streaming Raspberry Pi Camera](../README.md#streaming-raspberry-pi-camera), but with a USB endoscope.
+Same as [Raspberry Pi Streaming Camera](#raspberry-pi-streaming-camera), but with a USB endoscope.
 
 <img src="https://live.staticflickr.com/65535/50979064987_da8b5c72d7.jpg"/>
 
