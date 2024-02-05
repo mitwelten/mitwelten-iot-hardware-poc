@@ -131,10 +131,6 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 ## AudioMoth Audio Logging Microphone
 This audio logging microphone can record and store a broad range of frequencies, triggered by time of day or loudness.
 
-<img src="https://live.staticflickr.com/65535/50949169428_b02b0b8b92.jpg"/>
-
-<img src="https://live.staticflickr.com/65535/50926837493_deef6a66f1.jpg"/>
-
 ### Hardware
 - https://www.openacousticdevices.info/audiomoth
 - 3 * AA Batteries
