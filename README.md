@@ -370,7 +370,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [ZaunPixel](OpenScad/ZaunPixel)
 
 ## Unfinished PoC
-Additional PoC that were not finished.
+Additional, unfinished or abandoned PoC.
 - [Arduino-based](Arduino/README.md)
 - [AudioMoth-based](AudioMoth/README.md)
 - [OpenMV-based](OpenMV/README.md)
