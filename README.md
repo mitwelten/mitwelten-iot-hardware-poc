@@ -438,7 +438,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - Laser-cut [Barrel Fixture Port Upgrade](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 
 ## ZaunPixel Actuator
-<img src="https://live.staticflickr.com/65535/51931885094_091e2b1777.jpg"/>
+<img src="https://live.staticflickr.com/65535/51937596536_6558b23d7d.jpg"/>
 
 ### Software
 - Arduino IDE > Examples > Servo > swipe (e.g. on M4 pin 9)
