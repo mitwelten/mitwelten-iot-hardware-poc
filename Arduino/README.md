@@ -1,4 +1,4 @@
-# Unused PoC
+# Unused Arduino PoC
 
 - [NEMA8 Stepper Motor](#nema8-stepper-motor)
 - [Automotive Gauge](#automotive-gauge)
