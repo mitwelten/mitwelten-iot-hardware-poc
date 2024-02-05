@@ -6,7 +6,7 @@
 - [TT DC Gearbox Motor 1:48](#tt-dc-gearbox-motor-148) 
 
 ## NEMA8 Stepper Motor
-![Stepper](./Arduino/Stepper/nema8.jpg)
+![Stepper](nema8.jpg)
 
 ### Software
 - Arduino IDE > Examples > Adafruit Motor Shield V2 > StepperTest 
