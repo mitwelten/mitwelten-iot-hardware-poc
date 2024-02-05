@@ -128,7 +128,7 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 - SIM Provider Backend
 
 ## AudioMoth Audio Logging Microphone with LiPo Battery
-Like [AudioMoth Audio Logging Microphone](#audiomoth-audio-logging-microphone), but with LiPo Battrey.
+This audio logging microphone can record and store a broad range of frequencies, triggered by time of day or loudness.
 
 <img src="https://live.staticflickr.com/65535/51145373400_7879ec11d9.jpg"/>
 
