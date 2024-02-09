@@ -21,7 +21,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 ## LoRaWAN Env Sensor Node
 This LoRaWAN environment sensor node can send small amounts (< 52 bytes) of data with a low frequency (1 per 15+ min) over long distances (1+ km).
 
-<img src="https://live.staticflickr.com/65535/50949785202_b05df960fc.jpg"/>
+<img src="https://live.staticflickr.com/65535/51345501692_c15b172346.jpg"/>
 
 <img src="https://live.staticflickr.com/65535/50938710327_e62cc90963.jpg"/>
 
