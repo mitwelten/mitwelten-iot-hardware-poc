@@ -328,6 +328,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 
 ## Direction Indicator
 <img src="https://live.staticflickr.com/65535/51936432943_f15ca18707.jpg"/>
+<img src="https://live.staticflickr.com/65535/51935374882_113c21700f.jpg"/>
 <img src="https://live.staticflickr.com/65535/51937596536_6558b23d7d.jpg"/>
 
 ### Software
