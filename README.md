@@ -371,6 +371,8 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [ZaunPixel](OpenScad/ZaunPixel)
 
 ## Bluetooth Speaker
+<img src="https://live.staticflickr.com/65535/53037322902_6c5800eda9.jpg"/>
+
 <img src="https://live.staticflickr.com/65535/53038086409_804e42065e.jpg"/>
 
 ### Hardware
