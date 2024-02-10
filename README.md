@@ -4,6 +4,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 
 - [Audio Logger with Large Battery](#audio-logger-with-large-battery)
 - [LiPo/Li-Ion Charging Station](#lipoli-ion-charging-station)
+- [LiPo/Li-Ion Charger with Display](#lipoli-ion-charger-with-display)
 - [LoRaWAN Gateway with 3G Uplink](#lorawan-gateway-with-3g-uplink)
 - [LoRaWAN Env Sensor Node](#lorawan-env-sensor-node)
 - [LoRaWAN Env Sensor Node with Solar Power](#lorawan-env-sensor-node-with-solar-power)
@@ -152,6 +153,19 @@ This audio logging microphone can record and store a broad range of frequencies,
 This charging station allows to safely charge LiPo or Li-Ion batteries.
 
 <img src="https://live.staticflickr.com/65535/51264412719_f9fc83c7d6.jpg"/>
+
+## LiPo/Li-Ion Charger with Display
+<img src="https://live.staticflickr.com/65535/51737262196_1ef97d272a.jpg"/>
+
+<img src="https://live.staticflickr.com/65535/51741375698_6e51741369.jpg"/>
+
+## Software
+- [nRF52840_VBattLoggerOled.ino](nRF52840_VBattLoggerOled/nRF52840_VBattLoggerOled.ino]
+
+## Hardware
+- https://www.adafruit.com/product/4062
+- https://www.adafruit.com/product/4309
+- https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html
 
 ## OpenMV Photo Logging Camera
 This photo logging camera allows to continuously take snapshots in an outdoor setting.
