@@ -160,7 +160,7 @@ This charging station allows to safely charge LiPo or Li-Ion batteries.
 <img src="https://live.staticflickr.com/65535/51741375698_6e51741369.jpg"/>
 
 ## Software
-- [nRF52840_VBattLoggerOled.ino](Arduino/nRF52840_VBattLoggerOled/nRF52840_VBattLoggerOled.ino]
+- [nRF52840_VBattLoggerOled.ino](Arduino/nRF52840_VBattLoggerOled/nRF52840_VBattLoggerOled.ino)
 
 ## Hardware
 - https://www.adafruit.com/product/4062
