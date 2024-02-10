@@ -353,8 +353,11 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 ## Bluetooth Speaker
 <img src="https://live.staticflickr.com/65535/53038086409_804e42065e.jpg"/>
 
+### Hardware
+- [Hama Pocket 3.0](https://www.digitec.ch/de/s1/product/hama-pocket-30-14-h-10-m-akkubetrieb-bluetooth-lautsprecher-23952994)
+
 ### Enclosure
-- TODO
+- [Hama_AP10Adapter](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/Hama_AP10Adapter)
 
 ## Unfinished PoC
 Additional, unfinished or abandoned PoC.
