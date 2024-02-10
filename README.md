@@ -14,7 +14,9 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi ArduCam Streaming Camera with PoE](#raspberry-pi-arducam-streaming-camera-with-poe)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
-- [ZaunPixel Actuator](#zaunpixel-actuator)
+- [Multicolor LED Pixel](#multicolor-led-pixel)
+- [Direction Indicator](#direction-indicator)
+- [Bluetooth Speaker](#bluetooth-speaker)
 - [Unfinished PoC](#unfinished-poc)
 - [License](#license)
 
@@ -318,6 +320,9 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - 3D-printed [AccessPoint Switch Fixture](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 - Laser-cut [Barrel Fixture Port Upgrade](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 
+## Multicolor LED Pixel
+TODO
+
 ## Direction Indicator
 <img src="https://live.staticflickr.com/65535/51937596536_6558b23d7d.jpg"/>
 
@@ -336,6 +341,9 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 
 ### Enclosure
 - [ZaunPixel](OpenScad/ZaunPixel)
+
+## Bluetooth Speaker
+TODO
 
 ## Unfinished PoC
 Additional, unfinished or abandoned PoC.
