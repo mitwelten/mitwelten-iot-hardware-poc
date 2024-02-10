@@ -182,6 +182,7 @@ This photo logging camera allows to continuously take snapshots in an outdoor se
 - Micro SD Card (ExFAT, Master Boot Record)
 
 ### Enclosure
+- [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - 3D printed [AP9 Adapter](OpenScad/OpenMVH7_AP9Adapter)
 - 3D printed [AP9 Hinge Fixture](OpenScad/AP9_HingeFixture) (optional)
 - 3D printed [PVCTubeFixture](OpenScad/Solar_PVCTubeFixture) (optional)
@@ -210,6 +211,7 @@ A Raspberry Pi-based streaming camera with power over Ethernet.
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
 ### Enclosure
+- [AP10 Junction Box](https://new.abb.com/products/2TKA140002G1/ap10-junction-box-ip65)
 - [AP10 Adapter](OpenScad/PoePiCam_AP10Adapter)
 - [AP10 Hinge Fixture](OpenScad/AP10_HingeFixture)
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
@@ -237,6 +239,7 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 - [PoE Splitter](https://www.pi-shop.ch/uctronics-poe-splitter-gigabit-5v-micro-usb-power-and-ethernet-to-raspberry-pi-3b) (802.3af)
 
 ### Enclosure
+- [AP10 Junction Box](https://new.abb.com/products/2TKA140002G1/ap10-junction-box-ip65)
 - [AP10 Adapter](OpenScad/PoEPiZeroCam_AP10Adapter)
 - [AP10 Hinge Fixture v2](OpenScad/AP10_HingeFixture/AP10_HingeFixture2.stl)
 - [Pot Fixture](OpenScad/PoePiCam_PotFixture)
@@ -265,6 +268,7 @@ Derived from [Raspberry Pi Streaming Camera with PoE](#raspberry-pi-streaming-ca
 - [Raspberry Pi PoE Hat](https://www.raspberrypi.org/products/poe-hat/) (802.3af)
 
 ### Enclosure
+- [AP10 Junction Box](https://new.abb.com/products/2TKA140002G1/ap10-junction-box-ip65)
 - [AP10 Adapter](OpenScad/PoEPiArduCam_AP10Adapter)
 - [AP10 Hinge Fixture v2](OpenScad/AP10_HingeFixture/AP10_HingeFixture2.stl)
 - [RJ45 Wire Gland Tube](OpenScad/RJ45_WireGland_Tube) (TPU)
@@ -345,6 +349,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [Grove LED Ring](https://www.seeedstudio.com/Grove-RGB-LED-Ring-20-WS2813-Mini.html)
  
 ### Enclosure
+- [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - [AP9_Pixel_Cover](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Cover)
 - [AP9_Pixel_Fixture](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Fixture)
 - [AP9_Pixel_Tube](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Tube)
@@ -368,6 +373,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - Servo
 
 ### Enclosure
+- [AP9 Junction Box](https://new.abb.com/products/2TKA140012G1/ap9-junction-box-ip65)
 - [ZaunPixel](OpenScad/ZaunPixel)
 
 ## Bluetooth Speaker
@@ -379,6 +385,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [Hama Pocket 3.0](https://www.digitec.ch/de/s1/product/hama-pocket-30-14-h-10-m-akkubetrieb-bluetooth-lautsprecher-23952994)
 
 ### Enclosure
+- [AP10 Junction Box](https://new.abb.com/products/2TKA140002G1/ap10-junction-box-ip65)
 - [Hama_AP10Adapter](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/Hama_AP10Adapter)
 
 ## Unfinished PoC
