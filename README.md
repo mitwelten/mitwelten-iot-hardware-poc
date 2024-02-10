@@ -320,7 +320,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - 3D-printed [AccessPoint Switch Fixture](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 - Laser-cut [Barrel Fixture Port Upgrade](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 
-## LED Pixel
+## Color LED Pixel
 <img src="https://live.staticflickr.com/65535/52846789322_25510d4b3e.jpg"/>
 
 <img src="https://live.staticflickr.com/65535/52847365296_5c077737f7.jpg"/>
