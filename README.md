@@ -321,9 +321,13 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - Laser-cut [Barrel Fixture Port Upgrade](OpenScad/AccessPoint_Fixture_Port_Upgrade)
 
 ## Multicolor LED Pixel
-TODO
+<img src="https://live.staticflickr.com/65535/52847365296_5c077737f7.jpg"/>
+
+### Enclosure
+- TODO
 
 ## Direction Indicator
+<img src="https://live.staticflickr.com/65535/51936432943_f15ca18707.jpg"/>
 <img src="https://live.staticflickr.com/65535/51937596536_6558b23d7d.jpg"/>
 
 ### Software
@@ -343,7 +347,10 @@ TODO
 - [ZaunPixel](OpenScad/ZaunPixel)
 
 ## Bluetooth Speaker
-TODO
+<img src="https://live.staticflickr.com/65535/53038086409_804e42065e.jpg"/>
+
+### Enclosure
+- TODO
 
 ## Unfinished PoC
 Additional, unfinished or abandoned PoC.
