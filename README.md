@@ -324,7 +324,8 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 <img src="https://live.staticflickr.com/65535/52847365296_5c077737f7.jpg"/>
 
 ### Enclosure
-- TODO
+- [AP9_Pixel_Tube](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Tube)
+- [AP9_Pixel_Cover](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Cover)
 
 ## Direction Indicator
 <img src="https://live.staticflickr.com/65535/51936432943_f15ca18707.jpg"/>
