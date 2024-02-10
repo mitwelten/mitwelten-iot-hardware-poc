@@ -339,6 +339,11 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 
 <img src="https://live.staticflickr.com/65535/52847365296_5c077737f7.jpg"/>
 
+### Hardware
+- [Feather HUZZAH32 ESP32](https://www.adafruit.com/product/3591)
+- [Grove Adapter](https://www.seeedstudio.com/Grove-Shield-for-Particle-Mesh-p-4080.html)
+- [Grove LED Ring](https://www.seeedstudio.com/Grove-RGB-LED-Ring-20-WS2813-Mini.html)
+ 
 ### Enclosure
 - [AP9_Pixel_Cover](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Cover)
 - [AP9_Pixel_Fixture](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Fixture)
