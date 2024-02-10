@@ -14,7 +14,7 @@ Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelte
 - [Raspberry Pi ArduCam Streaming Camera with PoE](#raspberry-pi-arducam-streaming-camera-with-poe)
 - [Wi-Fi and PoE Access Point with 4G Uplink](#wi-fi-and-poe-access-point-with-4g-uplink)
 - [PoE Access Point Port Upgrade](#poe-access-point-port-upgrade)
-- [LED Pixel](#led-pixel)
+- [Color LED Pixel](#color-led-pixel)
 - [Direction Indicator](#direction-indicator)
 - [Bluetooth Speaker](#bluetooth-speaker)
 - [Unfinished PoC](#unfinished-poc)
