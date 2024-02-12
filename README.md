@@ -137,6 +137,10 @@ This audio logging microphone can record and store a broad range of frequencies,
 
 <img src="https://live.staticflickr.com/65535/51145373515_9d780563e6.jpg"/>
 
+### Software
+- https://www.openacousticdevices.info/mobileapplications
+- https://github.com/mitwelten/mitwelten-audio-uploader
+
 ### Hardware
 - https://www.openacousticdevices.info/audiomoth
 - [Micro SD Card](https://www.digitec.ch/de/s1/product/sandisk-extreme-microsd-a2-inkl-sd-adapter-microsdxc-64gb-u3-uhs-i-speicherkarte-9706365) (ExFAT)
