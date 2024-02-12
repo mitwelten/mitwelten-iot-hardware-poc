@@ -353,6 +353,7 @@ Adds 4 extra PoE ports to an existing [Wi-Fi and PoE Access Point](wi-fi-and-poe
 - [AP9_Pixel_Cover](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Cover)
 - [AP9_Pixel_Fixture](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Fixture)
 - [AP9_Pixel_Tube](https://github.com/mitwelten/mitwelten-iot-hardware-poc/tree/main/OpenScad/AP9_Pixel_Tube)
+- [Tombola Capsule](https://shop.tombotto.ch/produkt-kategorie/Tombola/Leerkapseln/)
 
 ## Direction Indicator
 <img src="https://live.staticflickr.com/65535/51936432943_f15ca18707.jpg"/>
