@@ -1,4 +1,4 @@
-# Mitwelten.org IoT Hardware Proof of Concept
+# Mitwelten IoT Hardware Proof of Concept
 
 Work in progress. Questions? Contact [mitwelten.technik@fhnw.ch](mailto:mitwelten.technik@fhnw.ch)
 
