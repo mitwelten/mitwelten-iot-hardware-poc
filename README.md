@@ -110,6 +110,9 @@ This LoRaWAN gateway provides Internet-connectivity to LoRaWAN sensor nodes over
 
 <img src="https://live.staticflickr.com/65535/50949786697_853167d179.jpg"/>
 
+### Software
+- https://github.com/ttn-zh/ic880a-gateway/wiki
+  
 ### Hardware
 - [Geneko GWR352-EM770W 3G Router](https://www.geneko.rs/en/products/m2m-products-and-solutions/gwr-cellular-router-series/gwr352-3g-router)
 - [IMST iC880a SPI LoRaWAN Concentrator](https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz)
